@@ -33,6 +33,10 @@ namespace Interface
                 Debug.LogError("Could not find Material for this item?");
                 return;
             }
+
+            interactiveItem.OnOver += OnGaze;
+            interactiveItem.OnOut += OnGazeLeave;
+            glowAmount = itemMaterial.GetFloat("_GlowAmount");
         }
 
         void Update()
@@ -42,39 +46,72 @@ namespace Interface
                 return;
             }
 
-            if (interactiveItem.IsOver && !glowState)
+            if (transitionDirection == Direction.none)
             {
-                glowState = true;
-                if (transitionStart < 0.0f)
+                return;
+            }
+
+            normalizedTime = (transitionEnd - Time.time) / glowTransitionTime;
+
+            if (transitionDirection == Direction.glow)
+            {
+                glowAmount = Mathf.Lerp(1.0f, 0.0f, normalizedTime);
+                if (glowAmount > 0.99f)
                 {
-                    transitionStart = Time.time;
+                    transitionDirection = Direction.none;
                 }
             }
-            else if (!interactiveItem.IsOver && glowState)
+            else
             {
-                glowState = false;
-                if (transitionStart < 0.0f)
+                glowAmount = Mathf.Lerp(0.0f, 1.0f, normalizedTime);
+                if (glowAmount < 0.01f)
                 {
-                    transitionStart = Time.time;
+                    transitionDirection = Direction.none;
                 }
             }
 
-            if (glowState && glowAmount < 0.99f)
+            if (transitionDirection == Direction.none)
             {
-                glowAmount = Mathf.Lerp(0.0f, 1.0f, Time.time - transitionStart);
-            } else if (!glowState && glowAmount > 0.01f)
-            {
-                glowAmount = Mathf.Lerp(1.0f, 0.0f, Time.time - transitionStart);
-            } else {
-                transitionStart = -1.0f;
-                return;
+                Debug.Log("Transition Complete");
+                transitionEnd = -1.0f;
             }
 
             itemMaterial.SetFloat("_GlowAmount", glowAmount);
         }
 
-        private float transitionStart;
-        private bool glowState;
+        public void OnGaze()
+        {
+            transitionDirectionTo(Direction.glow);
+        }
+
+        public void OnGazeLeave()
+        {
+            transitionDirectionTo(Direction.fade);
+        }
+
+        private void transitionDirectionTo(Direction newDirection)
+        {
+            if (transitionDirection != newDirection)
+            {
+                if (transitionEnd < 0.0f)
+                {
+                    transitionEnd = Time.time + glowTransitionTime;
+                }
+                else
+                {
+                    normalizedTime = (transitionEnd - Time.time) / glowTransitionTime;
+                    normalizedTime = 1.0f - normalizedTime;
+                    transitionEnd = Time.time + glowTransitionTime * normalizedTime;                    
+                }
+                transitionDirection = newDirection;
+            }
+
+        }
+
+        private enum Direction { glow, fade, none };
+        private Direction transitionDirection = Direction.none;
+        private float normalizedTime;
+        private float transitionEnd = -1.0f;
         private float glowAmount;
         private VRInteractiveItem interactiveItem;
         private Material itemMaterial;
