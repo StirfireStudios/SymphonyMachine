@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.VR;
 
 public class VRSetup : MonoBehaviour {
 
@@ -17,7 +18,15 @@ public class VRSetup : MonoBehaviour {
 	void Update () {
         if (!vrSettingsDone)
         {
-            UnityEngine.VR.VRSettings.renderScale = PCRenderScale;
+#if !UNITY_ANDROID
+            VRSettings.renderScale = PCRenderScale;
+#else
+            VRSettings.renderScale = GearVRRenderScale;
+#endif
+
+#if UNITY_PS4 && !UNITY_EDITOR
+		    VRSettings.loadedDevice = VRDeviceType.Morpheus;
+#endif
             vrSettingsDone = true;
         }
 	}
