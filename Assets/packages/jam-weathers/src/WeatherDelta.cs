@@ -27,6 +27,9 @@ namespace Jam.Weathers
         {
             this.phrase = phrase;
             weather = pattern;
+            Aggregate();
+            Normalize();
+            Delta();
         }
 
         /// Aggregate score
@@ -34,7 +37,11 @@ namespace Jam.Weathers
         {
             score = new SymbolBase();
             foreach (var sym in phrase.symbols)
-            { score.Add(sym); }
+            {
+                UnityEngine.Debug.Log(string.Format("{0} + {1} ->", score.Debug(), sym.Debug()));
+                score.Add(sym);
+                UnityEngine.Debug.Log(score.Debug());
+            }
         }
 
         /// Normalize
@@ -46,13 +53,15 @@ namespace Jam.Weathers
         /// Calculate delta
         private void Delta()
         {
-            match = weather.detail.Delta(normalized);
+            match = 1f - weather.detail.Delta(normalized);
         }
 
         /// Print the match value
-        private void Debug()
+        public void Debug()
         {
-            UnityEngine.Debug.Log(string.Format("", ));
+            UnityEngine.Debug.Log(string.Format("phrase match to {0} is {1}, with argregate {2} and normalized {3} vs weather {4}",
+              weather.weather, match, score.Debug(), normalized.Debug(), weather.detail.Debug()
+            ));
         }
     }
 }
