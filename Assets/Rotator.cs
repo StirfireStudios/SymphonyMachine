@@ -3,60 +3,74 @@ using System.Collections;
 
 public class Rotator : MonoBehaviour 
 {
+    public float transitionTime = 1.0f;
     public enum Direction { left, right, none }  
     public Direction testRotateDirection = Direction.none;
-    public float transitionTime = 1.0f;
+    public Vector3 singleRotation = new Vector3();
 
 	// Update is called once per frame
 	public void Update () 
     {
         if (testRotateDirection != Direction.none)
         {
-            transitioner.transitionDirectionTo(StateTransitioner.Direction.forward);
+            transitionTo(testRotateDirection);
             testRotateDirection = Direction.none;
         }
 
-        if (transitioner.CurrentDirection != StateTransitioner.Direction.stopped)
+        if (transitioner.CurrentDirection == StateTransitioner.Direction.stopped)
         {
-
+            currentDirection = Direction.none;
         }
+
+        if (currentDirection == Direction.left)
+        {
+            this.transform.localEulerAngles = startRotation + transitioner.updateValue() * singleRotation;
+        }
+        else
+        {
+            this.transform.localEulerAngles = startRotation - transitioner.updateValue() * singleRotation;
+        }
+
 	}
 
     public void OnTriggerRotateLeft()
     {
-        transitioner.transitionDirectionTo(StateTransitioner.Direction.forward);
+        transitionTo(Direction.left);
     }
 
     public void OnTriggerRotateRight()
     {
-        transitioner.transitionDirectionTo(StateTransitioner.Direction.backward);
+        transitionTo(Direction.right);
     }
 
-    private StateTransitioner.Direction mapDirections(Direction direction)
+    private void transitionTo(Direction direction)
     {
-        switch (direction)
+        if (currentDirection == Direction.none)
         {
-            case Direction.left:
-                return StateTransitioner.Direction.forward;
-            case Direction.right:
-                return StateTransitioner.Direction.backward;
-            default:
-                return StateTransitioner.Direction.stopped;
+            Debug.Log("move!");
+            currentDirection = direction;
+            transitioner.currentValue = 0.0f;
+            transitioner.transitionDirectionTo(StateTransitioner.Direction.forward);
+            startRotation = this.transform.localEulerAngles;
+            return;
         }
-    }
 
-    private Direction mapStateDirections(StateTransitioner.Direction direction)
-    {
-        switch (direction)
+        if (currentDirection != direction && transitioner.CurrentDirection == StateTransitioner.Direction.forward)
         {
-            case StateTransitioner.Direction.forward:
-                return Direction.left;
-            case StateTransitioner.Direction.backward:
-                return Direction.right;
-            default:
-                return Direction.none;
+            Debug.Log("Reversal!");
+            transitioner.transitionDirectionTo(StateTransitioner.Direction.backward);
+            return;
+        }
+
+        if (currentDirection == direction && transitioner.CurrentDirection == StateTransitioner.Direction.backward)
+        {
+            Debug.Log("Resume!");
+            transitioner.transitionDirectionTo(StateTransitioner.Direction.backward);
+            return;
         }
     }
 
     private StateTransitioner transitioner = new StateTransitioner();
+    private Vector3 startRotation = new Vector3();
+    private Direction currentDirection = Direction.none;
 }

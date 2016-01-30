@@ -60,7 +60,7 @@ public class StateTransitioner {
         }
     }
 
-    private Direction currentDirection;
+    private Direction currentDirection = Direction.stopped;
     private float normalizedTime;
     private float transitionEnd = -1.0f;
 }
