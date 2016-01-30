@@ -4,6 +4,7 @@ using Jam.Symbols;
 using Jam.Utils;
 using System;
 using System.Linq;
+using Weather;
 
 namespace Jam.Weathers
 {
@@ -11,7 +12,7 @@ namespace Jam.Weathers
     public class WeatherUtils
     {
         /// Get the prefab symbol for a weather id
-        public static GameObject WeatherPrefab(Weather id)
+        public static GameObject WeatherPrefab(WeatherId id)
         {
             GameObject rtn = null;
             foreach (var cp in Scene.FindComponents<WeatherSymbolBinding>())

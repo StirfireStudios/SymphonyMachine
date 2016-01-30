@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Weather;
 
 namespace Jam.Symbols
 {
@@ -13,7 +14,7 @@ namespace Jam.Symbols
         public List<Symbol> symbols = new List<Symbol>();
 
         [Tooltip("The weather this phrase resulted in")]
-        public Weather weather = Weather.Unresolved;
+        public WeatherId weather = WeatherId.FINE;
 
         [Tooltip("The weather token for this symbol; don't assign this, it's automatically generated")]
         public GameObject weatherPrefab;
@@ -41,7 +42,7 @@ namespace Jam.Symbols
         public void Clear()
         {
             symbols.Clear();
-            weather = Weather.Unresolved;
+            weather = WeatherId.FINE;
         }
 
         /// Is this phrase complete?

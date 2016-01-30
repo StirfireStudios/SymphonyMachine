@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using Jam.Symbols;
+using Weather;
 
 namespace Jam.Weathers
 {
@@ -10,7 +11,7 @@ namespace Jam.Weathers
     public class KnownWeatherPattern : MonoBehaviour
     {
         [Tooltip("The weather id")]
-        public Weather weather;
+        public WeatherId weather;
 
         [Tooltip("The weather details")]
         public SymbolBase detail;

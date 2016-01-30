@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: phong1
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
-  m_LightmapFlags: 1
-  m_CustomRenderQueue: -1
+  m_Name: Clouds2
+  m_Shader: {fileID: 4800000, guid: b6468858b535ae44f8257b9600583ba0, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -19,14 +19,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 615bfc3a0d36b4049a4c6ac8ab896d09, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: c1435469df47ee0409b7b8123890c630, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -54,7 +54,7 @@ Material:
         first:
           name: _EmissionMap
         second:
-          m_Texture: {fileID: 2800000, guid: af57ac0f59412704893b43ae1a1129aa, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -75,7 +75,21 @@ Material:
         first:
           name: _MetallicGlossMap
         second:
-          m_Texture: {fileID: 2800000, guid: f56b26f3b6088864982885fdaab11380, type: 3}
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MainClouds
+        second:
+          m_Texture: {fileID: 2800000, guid: 44207acab53034a45967ff7c563ae831, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CloudMask1
+        second:
+          m_Texture: {fileID: 2800000, guid: 534b6dfa8427b6642bdb45dd81cc428f, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -94,7 +108,7 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 1
+        second: 0
       data:
         first:
           name: _Parallax
@@ -106,7 +120,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: 0.739
+        second: 0.5
       data:
         first:
           name: _BumpScale
@@ -127,12 +141,32 @@ Material:
         first:
           name: _Mode
         second: 0
+      data:
+        first:
+          name: _CloudSpeed
+        second: 0.3
+      data:
+        first:
+          name: _Density
+        second: 0.336
+      data:
+        first:
+          name: _MaskDensity
+        second: 0.056
+      data:
+        first:
+          name: _MaskSpeed
+        second: -0.01
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0, g: 3.551724, b: 5, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _Color
         second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _CloudColour
+        second: {r: 0.44117647, g: 0.44117647, b: 0.44117647, a: 1}
