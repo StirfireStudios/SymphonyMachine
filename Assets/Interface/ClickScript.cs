@@ -22,7 +22,8 @@ public class ClickScript : MonoBehaviour {
 
     public void OnActivate()
     {
-        Debug.Log("Activate!");
+        Jam.Actions.RotateConsole instance = gameObject.GetComponent<Jam.Actions.RotateConsole>();
+        instance.action.execute = true;
     }
 
     public void Update()

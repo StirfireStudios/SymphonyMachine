@@ -46,8 +46,8 @@ namespace Jam.Actions
             if (action.execute)
             {
                 action.execute = false;
-                action.active = true;
                 Execute();
+                action.active = true;
             }
             if (action.active)
             {

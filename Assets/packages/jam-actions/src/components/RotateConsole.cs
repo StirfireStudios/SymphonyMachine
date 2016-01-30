@@ -26,8 +26,8 @@ namespace Jam.Actions
         {
             if (!action.active)
             {
-                originalRotation = target.transform.rotation;
-                targetRotation = target.transform.rotation;
+                originalRotation = target.transform.localRotation;
+                targetRotation = target.transform.localRotation;
                 targetRotation *= Quaternion.Euler(up * amount);
                 elapsed = 0f;
                 if (duration <= 0f)
@@ -40,7 +40,7 @@ namespace Jam.Actions
             elapsed += dt;
             var offset = elapsed / duration;
             if (offset > 1f) { offset = 1f; }
-            target.transform.rotation = Quaternion.Slerp(originalRotation, targetRotation, offset);
+            target.transform.localRotation = Quaternion.Slerp(originalRotation, targetRotation, offset);
             if (offset == 1f)
             {
                 Complete();
