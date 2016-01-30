@@ -10,7 +10,7 @@ namespace Interface
         private static float glowTransitionTime = 1.0f;
 
         // Use this for initialization
-        void Start()
+        public void Start()
         {
             interactiveItem = gameObject.GetComponent<VRInteractiveItem>();
             if (interactiveItem == null)
@@ -39,7 +39,7 @@ namespace Interface
             glowAmount = itemMaterial.GetFloat("_GlowAmount");
         }
 
-        void Update()
+        public void Update()
         {
             if (interactiveItem == null || itemMaterial == null)
             {
