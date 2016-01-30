@@ -1,5 +1,7 @@
 using UnityEngine;
 using Jam.Symbols;
+using Jam.Utils;
+using System;
 
 namespace Jam.Actions
 {
@@ -12,7 +14,10 @@ namespace Jam.Actions
 
         public void Execute(TaskComplete callback)
         {
-            // TODO: Something smart here.
+            var weatherControl = Scene.FindComponent<WeatherSystem>();
+            if (weatherControl == null)
+            { throw new Exception("No WeatherSystem found on scene; cannot perform weather transition"); }
+            weatherControl.TransitionTo(phrase.weather);
             Debug.Log("Execute weather change");
 
             // Done~
