@@ -41,8 +41,10 @@ namespace Jam.Utils.Layout
             forward = Vector3.Cross(up, left);
 
             // Align to plane
+            // HAX! Screw the plane, align to this vector
             rotation = alignToTarget.transform.rotation;
-            rotation *= Quaternion.Euler(up * 90f);
+            rotation *= Quaternion.Euler(-left * 90f);
+            rotation *= Quaternion.Euler(up * 180f);
         }
 
         /// Yield a set of locations and orientations for each target
