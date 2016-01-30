@@ -24,6 +24,7 @@ public class ClickScript : MonoBehaviour {
         }
 
         interactiveItem.OnClick += OnActivate;
+        interactiveItem.OnUp += OnActivate;
 	
 	}
 
