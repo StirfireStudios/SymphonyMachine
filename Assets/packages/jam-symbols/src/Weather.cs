@@ -9,8 +9,14 @@ namespace Jam.Symbols
     public enum Weather
     {
         Unresolved,
-        Clear,
+        Sunny,
         Blizzard,
+        Cloudy,
+        Heatwave,
+        HeavyRain,
+        Rainy,
+        Snow,
+        Storm,
         Windy
     }
 }

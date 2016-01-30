@@ -15,7 +15,7 @@ namespace Jam.Actions
         {
             // Find all the matches we can to various weathers
             var match = WeatherUtils.OrderedMatches(phrase);
-            var selected = match.Count > 0 ? match[0].weather.weather : Weather.Clear;
+            var selected = match.Count > 0 ? match[0].weather.weather : Weather.Sunny;
 
             // Update symbol phrase
             phrase.weather = selected;
