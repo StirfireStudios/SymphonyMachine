@@ -1,6 +1,6 @@
 using System;
 
-namespace Jam.Symbols
+namespace Jam.Utils
 {
 
     /// Type of the internal data

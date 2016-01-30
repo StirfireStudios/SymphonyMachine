@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Jam.Symbols
+namespace Jam.Actions
 {
     /// Callback type
     public delegate void TaskComplete(ITask task);

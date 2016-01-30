@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Jam.Actions;
 
 namespace Jam.Symbols
 {
@@ -12,6 +13,21 @@ namespace Jam.Symbols
 
         /// The set of past symbol states
         public List<SymbolPhrase> history = new List<SymbolPhrase>();
+
+        [Tooltip("Number of history items to display")]
+        public int historySize = 4;
+
+        [Tooltip("The vertical space between each line of history")]
+        public float historyLineSpace = 1f;
+
+        [Tooltip("Width of the history panel")]
+        public float historyWidth = 5f;
+
+        [Tooltip("Height of the history panel")]
+        public float historyHeight = 4f;
+
+        [Tooltip("Plane that defines where to layout history items")]
+        public GameObject historyDisplay;
 
         /// Push a symbol into the current symbol phrase
         public bool AddSymbol(Symbol symbol)
@@ -36,7 +52,9 @@ namespace Jam.Symbols
                 ExecuteWeather(current);
 
                 history.Add(current);
-                UpdatePhraseHistory(history);
+                if (history.Count > historySize)
+                { history.RemoveAt(0); }
+                UpdatePhraseHistory();
 
                 current = new SymbolPhrase();
                 UpdateDisplayedSymbols(current);
@@ -61,9 +79,9 @@ namespace Jam.Symbols
             SetSymbolsReadyState(current.Ready);
         }
 
-        private void UpdatePhraseHistory(List<SymbolPhrase> history)
+        private void UpdatePhraseHistory()
         {
-            new UpdatePhraseHistory(history).Execute(null);
+            new UpdatePhraseHistory(this).Execute(null);
         }
 
         /// change the visual state to indicate that the right number of symbols is selected, or not

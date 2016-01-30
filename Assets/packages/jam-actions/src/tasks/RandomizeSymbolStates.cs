@@ -1,7 +1,8 @@
 using UnityEngine;
-using Jam.Actions;
+using Jam.Symbols;
+using Jam.Utils;
 
-namespace Jam.Symbols
+namespace Jam.Actions
 {
     /// Run this to reset the states of the symbols
     public class RandomizeSymbolStates : ITask
@@ -18,7 +19,7 @@ namespace Jam.Symbols
             // Shuffle components, then make sure at least 1 of each type is present
             // and the rest are all random.
             var components = Scene.FindComponents<SelectSymbol>();
-            Random.Shuffle(components);
+            Jam.Utils.Random.Shuffle(components);
 
             /// Default symbol states we always expect
             /// In format: humidity, temperature, wind

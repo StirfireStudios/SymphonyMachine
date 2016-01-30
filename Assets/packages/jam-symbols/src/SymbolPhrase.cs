@@ -15,6 +15,9 @@ namespace Jam.Symbols
         [Tooltip("The weather this phrase resulted in")]
         public Weather weather = Weather.Unresolved;
 
+        [Tooltip("The weather token for this symbol; don't assign this, it's automatically generated")]
+        public GameObject weatherPrefab;
+
         /// Add a symbol to the set
         public bool Add(Symbol symbol)
         {

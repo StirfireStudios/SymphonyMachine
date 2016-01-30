@@ -1,7 +1,7 @@
 using UnityEngine;
-using Jam.Actions;
+using Jam.Symbols;
 
-namespace Jam.Symbols
+namespace Jam.Actions
 {
     public class DispatchWeatherRequest : ITask
     {

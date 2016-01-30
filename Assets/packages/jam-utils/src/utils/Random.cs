@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Jam.Symbols
+namespace Jam.Utils
 {
     /// Some common random helpers
     public class Random
