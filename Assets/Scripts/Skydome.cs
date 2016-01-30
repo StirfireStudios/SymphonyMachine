@@ -15,10 +15,6 @@ public class Skydome : MonoBehaviour {
         transform.parent = null;
 	}
 	
-	void Update () {
-        transform.position = player.position;
-	}
-
     public void SetCloudDensity(float density)
     {
         thisRend.material.SetFloat("_Density", density / 100);

@@ -16,7 +16,8 @@ public class VRSetup : MonoBehaviour {
         removeObjectsInLayer("GearVR Disable");
         disableBloom();
 #endif
-
+        Camera camera = gameObject.GetComponent<Camera>();
+        camera.clearFlags = CameraClearFlags.Depth;
     }
 	
 	// Update is called once per frame
