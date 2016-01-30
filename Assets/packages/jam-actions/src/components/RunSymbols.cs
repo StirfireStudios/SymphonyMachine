@@ -11,10 +11,19 @@ namespace Jam.Actions
         [Tooltip("The player to update")]
         public PlayerSymbolState player;
 
+        public AudioClip successSound;
+        public AudioClip failureSound;
+
         protected override void Execute()
         {
             if (player == null) { throw new Exception(string.Format("RunSymbols {0} had no assigned player object", this)); }
-            player.ExecutePhrase();
+            
+            bool success = player.ExecutePhrase();
+
+            AudioSource audio = gameObject.AddComponent<AudioSource>();
+            audio.clip = success ? successSound : failureSound;
+            audio.Play();
+
         }
 
         protected override void Step(float dt)
