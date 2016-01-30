@@ -13,6 +13,8 @@ namespace Jam.Symbols
         public GameObject historyContainer;
 
         public float historyOffset;
+        public float historyWidth;
+        public float historyHeight;
 
         public UpdatePhraseHistory(PlayerSymbolState player)
         {
@@ -20,6 +22,8 @@ namespace Jam.Symbols
             history = player.history;
             historyContainer = player.historyDisplay;
             historyOffset = player.historyLineSpace;
+            historyWidth = player.historyWidth;
+            historyHeight = player.historyHeight;
         }
 
         public void Execute(TaskComplete callback)
@@ -27,6 +31,9 @@ namespace Jam.Symbols
             // Push the history into the display?
             DeleteOldHistory();
             var offset = 0;
+            var history = new List<SymbolPhrase>();
+            history.AddRange(this.history);
+            history.Reverse();
             foreach (var historyItem in history)
             {
                 SpawnHistoryPrefabsAndLayout(historyItem, offset);
@@ -47,12 +54,11 @@ namespace Jam.Symbols
         /// Reset history items
         private void DeleteOldHistory()
         {
-            int numChildren = historyContainer.transform.childCount;
-            for (int i = 0; i < numChildren; ++i)
+            // Destroy children
+            foreach (var child in Scene.FindComponents<HistoryMarker>())
             {
-                var child = historyContainer.transform.GetChild(i);
                 child.transform.parent = null;
-                GameObject.Destroy(child);
+                GameObject.Destroy(child.gameObject);
             }
         }
 
@@ -66,10 +72,10 @@ namespace Jam.Symbols
 
             // assign parent
             foreach (var gp in targets)
-            { gp.transform.parent = historyContainer.transform; }
+            { gp.AddComponent<HistoryMarker>(); }
 
             // Apply layout
-            var layout = new LinearLayout(historyContainer, historyOffset * offset);
+            var layout = new LinearLayout(historyContainer, historyOffset * offset, historyWidth, historyHeight);
             LayoutManager.ApplyLayout(layout, targets);
         }
     }

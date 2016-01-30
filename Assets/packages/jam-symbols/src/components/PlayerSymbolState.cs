@@ -19,6 +19,12 @@ namespace Jam.Symbols
         [Tooltip("The vertical space between each line of history")]
         public float historyLineSpace = 1f;
 
+        [Tooltip("Width of the history panel")]
+        public float historyWidth = 5f;
+
+        [Tooltip("Height of the history panel")]
+        public float historyHeight = 4f;
+
         [Tooltip("Plane that defines where to layout history items")]
         public GameObject historyDisplay;
 
@@ -45,7 +51,9 @@ namespace Jam.Symbols
                 ExecuteWeather(current);
 
                 history.Add(current);
-                UpdatePhraseHistory(history);
+                if (history.Count > historySize)
+                { history.RemoveAt(0); }
+                UpdatePhraseHistory();
 
                 current = new SymbolPhrase();
                 UpdateDisplayedSymbols(current);
@@ -70,7 +78,7 @@ namespace Jam.Symbols
             SetSymbolsReadyState(current.Ready);
         }
 
-        private void UpdatePhraseHistory(List<SymbolPhrase> history)
+        private void UpdatePhraseHistory()
         {
             new UpdatePhraseHistory(this).Execute(null);
         }
