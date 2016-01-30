@@ -50,6 +50,36 @@ ModelImporter:
     100084: Cylinder013
     100086: Cylinder014
     100088: Plane001
+    100090: floorTile_002
+    100092: floorTile_003
+    100094: floorTile_004
+    100096: floorTile_005
+    100098: floorTile_006
+    100100: floorTile_007
+    100102: floorTile_008
+    100104: floorTile_009
+    100106: floorTile_01
+    100108: floorTile_010
+    100110: floorTile_011
+    100112: floorTile_012
+    100114: metalShell001
+    100116: metalShell002
+    100118: metalShell003
+    100120: metalShell004
+    100122: metalShell005
+    100124: metalShell006
+    100126: Object007
+    100128: Object008
+    100130: Object009
+    100132: Object010
+    100134: Object011
+    100136: levitator
+    100138: pit
+    100140: rims
+    100142: roof
+    100144: rubberLip
+    100146: innerShell
+    100148: outerShell
     400000: //RootNode
     400002: Cylinder001
     400004: Cylinder002
@@ -95,6 +125,36 @@ ModelImporter:
     400084: Cylinder013
     400086: Cylinder014
     400088: Plane001
+    400090: floorTile_002
+    400092: floorTile_003
+    400094: floorTile_004
+    400096: floorTile_005
+    400098: floorTile_006
+    400100: floorTile_007
+    400102: floorTile_008
+    400104: floorTile_009
+    400106: floorTile_01
+    400108: floorTile_010
+    400110: floorTile_011
+    400112: floorTile_012
+    400114: metalShell001
+    400116: metalShell002
+    400118: metalShell003
+    400120: metalShell004
+    400122: metalShell005
+    400124: metalShell006
+    400126: Object007
+    400128: Object008
+    400130: Object009
+    400132: Object010
+    400134: Object011
+    400136: levitator
+    400138: pit
+    400140: rims
+    400142: roof
+    400144: rubberLip
+    400146: innerShell
+    400148: outerShell
     2300000: Cylinder001
     2300002: Cylinder002
     2300004: Cylinder003
@@ -138,6 +198,36 @@ ModelImporter:
     2300080: Cylinder013
     2300082: Cylinder014
     2300084: Plane001
+    2300086: floorTile_002
+    2300088: floorTile_003
+    2300090: floorTile_004
+    2300092: floorTile_005
+    2300094: floorTile_006
+    2300096: floorTile_007
+    2300098: floorTile_008
+    2300100: floorTile_009
+    2300102: floorTile_01
+    2300104: floorTile_010
+    2300106: floorTile_011
+    2300108: floorTile_012
+    2300110: metalShell001
+    2300112: metalShell002
+    2300114: metalShell003
+    2300116: metalShell004
+    2300118: metalShell005
+    2300120: metalShell006
+    2300122: Object007
+    2300124: Object008
+    2300126: Object009
+    2300128: Object010
+    2300130: Object011
+    2300132: levitator
+    2300134: pit
+    2300136: rims
+    2300138: roof
+    2300140: rubberLip
+    2300142: innerShell
+    2300144: outerShell
     3300000: Cylinder001
     3300002: Cylinder002
     3300004: Cylinder003
@@ -181,6 +271,36 @@ ModelImporter:
     3300080: Cylinder013
     3300082: Cylinder014
     3300084: Plane001
+    3300086: floorTile_002
+    3300088: floorTile_003
+    3300090: floorTile_004
+    3300092: floorTile_005
+    3300094: floorTile_006
+    3300096: floorTile_007
+    3300098: floorTile_008
+    3300100: floorTile_009
+    3300102: floorTile_01
+    3300104: floorTile_010
+    3300106: floorTile_011
+    3300108: floorTile_012
+    3300110: metalShell001
+    3300112: metalShell002
+    3300114: metalShell003
+    3300116: metalShell004
+    3300118: metalShell005
+    3300120: metalShell006
+    3300122: Object007
+    3300124: Object008
+    3300126: Object009
+    3300128: Object010
+    3300130: Object011
+    3300132: levitator
+    3300134: pit
+    3300136: rims
+    3300138: roof
+    3300140: rubberLip
+    3300142: innerShell
+    3300144: outerShell
     4300000: Sphere001
     4300002: Cylinder001
     4300004: Object001
@@ -224,6 +344,37 @@ ModelImporter:
     4300080: Cylinder013
     4300082: Cylinder014
     4300084: Plane001
+    4300086: floorTile_01
+    4300088: metalShell001
+    4300090: metalShell002
+    4300092: metalShell003
+    4300094: metalShell004
+    4300096: metalShell005
+    4300098: metalShell006
+    4300100: Object007
+    4300102: Object008
+    4300104: Object009
+    4300106: Object010
+    4300108: Object011
+    4300110: floorTile_002
+    4300112: floorTile_003
+    4300114: floorTile_004
+    4300116: floorTile_005
+    4300118: floorTile_006
+    4300120: floorTile_007
+    4300122: floorTile_008
+    4300124: floorTile_009
+    4300126: floorTile_010
+    4300128: floorTile_011
+    4300130: floorTile_012
+    4300132: roof
+    4300134: rims
+    4300136: pit
+    4300138: levitator
+    4300140: rubberLip
+    4300142: innerShell
+    4300144: outerShell
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
