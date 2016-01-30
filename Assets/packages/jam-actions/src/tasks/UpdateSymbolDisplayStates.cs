@@ -43,17 +43,23 @@ namespace Jam.Actions
                 }
                 if (parent != null)
                 {
-                    // FIXME
-/*                    Scene.Spawn(symbol.symbolPrefab).Then((gp) =>
+                    if (symbol.symbolPrefab == null)
                     {
-                        gp.transform.position = parent.transform.position;
+                        Debug.LogError(string.Format("Warning: Symbol {0} does not have a prefab assigned forward it's symbol", symbol));
+                    }
+                    else
+                    {
+                        Scene.Spawn(symbol.symbolPrefab).Then((gp) =>
+                        {
+                            gp.transform.position = parent.transform.position;
 
-                        var rotation = parent.transform.rotation;
-                        rotation *= Quaternion.Euler(parent.transform.forward * 90f);
-                        gp.transform.rotation = rotation;
+                            var rotation = parent.transform.rotation;
+                            gp.transform.rotation = rotation;
+                            gp.transform.localScale = new Vector3(0.12f, 0.12f, 0.12f);
 
-                        gp.AddComponent<SlotMarker>();
-                    });*/
+                            gp.AddComponent<SlotMarker>();
+                        });
+                    }
                 }
                 offset += 1;
             }

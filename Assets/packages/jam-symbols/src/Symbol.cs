@@ -58,6 +58,12 @@ namespace Jam.Symbols
             diff += Math.Abs(other.wind - this.wind);
             return diff / 3f;
         }
+
+        /// Return self as vector
+        public string Debug()
+        {
+            return string.Format("H: {0}, T: {1}, W: {2}", humidity, temperature, wind);
+        }
     }
 
     /// A single symbol input value
