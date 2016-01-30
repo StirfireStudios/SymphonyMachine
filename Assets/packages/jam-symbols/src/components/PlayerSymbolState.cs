@@ -45,32 +45,31 @@ namespace Jam.Symbols
             }
             Debug.Log("Player tried to run an incomplete symbol, doing nothing");
             return false;
-
         }
 
         private void ExecuteWeather(SymbolPhrase phrase)
         {
-            // TODO
-            Debug.Log("Execute weather change");
+            new PickWeatherForPhrase(current).Execute((ip) =>
+            {
+                new DispatchWeatherRequest(current).Execute(null);
+            });
         }
 
         private void UpdateDisplayedSymbols(SymbolPhrase phrase)
         {
-            // TODO
+            new UpdateSymbolDisplayStates(current).Execute(null);
             SetSymbolsReadyState(current.Ready);
-            Debug.Log("Update displayed symbols");
         }
 
         private void UpdatePhraseHistory(List<SymbolPhrase> history)
         {
-            // TODO
-            Debug.Log("Update phrase history");
+            new UpdatePhraseHistory(history).Execute(null);
         }
 
         /// change the visual state to indicate that the right number of symbols is selected, or not
-        private void SetSymbolsReadyState(bool ready) {
-            // TODO
-            Debug.Log(string.Format("Set ready displayed state to {0}", ready));
+        private void SetSymbolsReadyState(bool ready)
+        {
+            new UpdateSymbolsReadyState(ready).Execute(null);
         }
     }
 }

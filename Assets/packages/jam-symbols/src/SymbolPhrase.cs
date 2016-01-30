@@ -28,6 +28,12 @@ namespace Jam.Symbols
             return false;
         }
 
+        /// Return true if the phrase has the given symbol
+        public bool Has(Symbol symbol)
+        {
+            return symbols.Contains(symbol);
+        }
+
         /// Clear this phrase
         public void Clear()
         {

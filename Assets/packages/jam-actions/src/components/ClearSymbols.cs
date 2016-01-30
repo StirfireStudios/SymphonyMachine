@@ -8,8 +8,6 @@ namespace Jam.Actions
     [AddComponentMenu("Jam/Actions/Clear Symbols")]
     public class ClearSymbols : ActionBase
     {
-        public Symbol symbol;
-
         [Tooltip("The player to update")]
         public PlayerSymbolState player;
 

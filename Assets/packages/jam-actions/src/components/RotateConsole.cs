@@ -24,12 +24,15 @@ namespace Jam.Actions
 
         protected override void Execute()
         {
-            originalRotation = target.transform.rotation;
-            targetRotation = target.transform.rotation;
-            targetRotation *= Quaternion.Euler(up * amount);
-            elapsed = 0f;
-            if (duration <= 0f)
-            { duration = 0.1f; }
+            if (!action.active)
+            {
+                originalRotation = target.transform.rotation;
+                targetRotation = target.transform.rotation;
+                targetRotation *= Quaternion.Euler(up * amount);
+                elapsed = 0f;
+                if (duration <= 0f)
+                { duration = 0.1f; }
+            }
         }
 
         protected override void Step(float dt)
