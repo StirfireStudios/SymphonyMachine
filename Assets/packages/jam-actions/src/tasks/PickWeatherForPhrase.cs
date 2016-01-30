@@ -16,8 +16,15 @@ namespace Jam.Actions
         {
             // Find all the matches we can to various weathers
             var match = WeatherUtils.OrderedMatches(phrase);
-            Debug.Log("found " + match.Count + "matches...");
-            foreach (var m in match) { m.Debug(); }
+
+            // Debugging why we picked X
+            if (false)
+            {
+                Debug.Log("found " + match.Count + "matches...");
+                foreach (var m in match) { m.Debug(); }
+            }
+
+            // Select best match~
             var selected = match.Count > 0 ? match[0].weather.weather : WeatherId.FINE;
 
             // Update symbol phrase

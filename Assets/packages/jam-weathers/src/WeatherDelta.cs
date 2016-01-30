@@ -37,16 +37,13 @@ namespace Jam.Weathers
         {
             score = new SymbolBase();
             foreach (var sym in phrase.symbols)
-            {
-                UnityEngine.Debug.Log(string.Format("{0} + {1} ->", score.Debug(), sym.Debug()));
-                score.Add(sym);
-                UnityEngine.Debug.Log(score.Debug());
-            }
+            { score.Add(sym); }
         }
 
         /// Normalize
         private void Normalize() {
             normalized = new SymbolBase();
+            normalized.Add(score);
             normalized.Normalize();
         }
 
