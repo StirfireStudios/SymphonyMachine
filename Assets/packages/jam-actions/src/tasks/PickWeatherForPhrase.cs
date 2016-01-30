@@ -1,5 +1,6 @@
 using UnityEngine;
 using Jam.Symbols;
+using Jam.Weathers;
 
 namespace Jam.Actions
 {

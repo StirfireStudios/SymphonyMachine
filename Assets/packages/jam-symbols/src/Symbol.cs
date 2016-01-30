@@ -4,9 +4,9 @@ using Jam.Utils;
 
 namespace Jam.Symbols
 {
-    /// A single symbol input value
+    /// Base symbol type; used in various places
     [Serializable]
-    public class Symbol
+    public class SymbolBase
     {
         [Tooltip("Humidity in the range 0 to 1 for this symbol")]
         public float humidity;
@@ -17,9 +17,6 @@ namespace Jam.Symbols
         [Tooltip("Wind in the range 0 to 1 for this symbol")]
         public float wind;
 
-        [Tooltip("The symbol token for this symbol")]
-        public GameObject symbolPrefab;
-
         /// Randomize the value of this symbol
         public void Randomize()
         {
@@ -27,5 +24,13 @@ namespace Jam.Symbols
             humidity = Jam.Utils.Random.Between(0f, 1f);
             wind = Jam.Utils.Random.Between(0f, 1f);
         }
+    }
+
+    /// A single symbol input value
+    [Serializable]
+    public class Symbol : SymbolBase
+    {
+        [Tooltip("The symbol token for this symbol")]
+        public GameObject symbolPrefab;
     }
 }

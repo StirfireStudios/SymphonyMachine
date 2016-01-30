@@ -33,7 +33,6 @@ namespace Jam.Utils.Layout
         public LinearLayout(GameObject alignToTarget, float offset, float width, float height)
         {
             origin = alignToTarget.transform.position;
-            var renderer = alignToTarget.GetComponent<Renderer>();
             up = alignToTarget.transform.forward.normalized;
             upOffset = offset;
             left = -alignToTarget.transform.right.normalized;
