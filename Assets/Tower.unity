@@ -96,7 +96,7 @@ GameObject:
   - 4: {fileID: 3827111}
   - 33: {fileID: 3827110}
   - 23: {fileID: 3827108}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Slot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1788,7 +1788,7 @@ GameObject:
   - 4: {fileID: 118247859}
   - 33: {fileID: 118247858}
   - 23: {fileID: 118247856}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: History
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2211,6 +2211,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &240113828 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100012, guid: 92ed4f92faa14144090ebd10d15bac0f, type: 3}
+  m_PrefabInternal: {fileID: 452732643}
+--- !u!114 &240113832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 240113828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testTransitionDirection: 2
+--- !u!114 &240113833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 240113828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &240113834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 240113828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26075783, y: 0.09619415, z: 0.07173401}
+  m_Center: {x: 0, y: -0.000000018626451, z: 0.0043208916}
 --- !u!1001 &320503093
 Prefab:
   m_ObjectHideFlags: 0
@@ -4050,7 +4089,7 @@ Prefab:
     - target: {fileID: 2300004, guid: 92ed4f92faa14144090ebd10d15bac0f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 81fc5d9b17e50eb47856e9b212f014f6, type: 2}
+      objectReference: {fileID: 2100000, guid: d39b599eb4af23940a7b0651ae791aa5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92ed4f92faa14144090ebd10d15bac0f, type: 3}
   m_IsPrefabParent: 0
@@ -5955,7 +5994,7 @@ GameObject:
   - 4: {fileID: 1616238098}
   - 33: {fileID: 1616238097}
   - 23: {fileID: 1616238095}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Slot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6893,7 +6932,7 @@ GameObject:
   - 4: {fileID: 2142745822}
   - 33: {fileID: 2142745821}
   - 23: {fileID: 2142745819}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Slot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

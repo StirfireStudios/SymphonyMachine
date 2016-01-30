@@ -6,13 +6,12 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Symbol_5
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
-  m_LightmapFlags: 1
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_Name: ControlExecButton
+  m_Shader: {fileID: 4800000, guid: 3dbaaf34ff44e704bbf360a08e89ffd6, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -20,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 106a25f691ca34d248165d80f06e62ec, type: 3}
+          m_Texture: {fileID: 2800000, guid: e3fbeb41ef7a44541bd7ed82a3dff70c, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -79,19 +78,30 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _node_6290
+        second:
+          m_Texture: {fileID: 2800000, guid: afa3060a2d3a07f499c4ed004beebafc, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _SrcBlend
-        second: 5
+        second: 1
       data:
         first:
           name: _DstBlend
-        second: 10
+        second: 0
       data:
         first:
           name: _Cutoff
         second: 0.5
+      data:
+        first:
+          name: _Metallic
+        second: 0
       data:
         first:
           name: _Parallax
@@ -99,7 +109,7 @@ Material:
       data:
         first:
           name: _ZWrite
-        second: 0
+        second: 1
       data:
         first:
           name: _Glossiness
@@ -123,16 +133,16 @@ Material:
       data:
         first:
           name: _Mode
-        second: 2
+        second: 0
       data:
         first:
-          name: _Metallic
+          name: _GlowAmount
         second: 0
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0.80784315, g: 0.38431373, b: 0.19607843, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _Color
