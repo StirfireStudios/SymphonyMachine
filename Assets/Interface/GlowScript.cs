@@ -7,7 +7,9 @@ namespace Interface
     public class GlowScript : MonoBehaviour
     {
         // This should probably come from some sort of manager...
-        private static float glowTransitionTime = 1.0f;
+        public static float glowTransitionTime = 1.0f;
+
+        public Direction testTransitionDirection = Direction.none; 
 
         // Use this for initialization
         public void Start()
@@ -44,6 +46,12 @@ namespace Interface
             if (interactiveItem == null || itemMaterial == null)
             {
                 return;
+            }
+
+            if (testTransitionDirection != Direction.none)
+            {
+                transitionDirectionTo(testTransitionDirection);
+                testTransitionDirection = Direction.none;
             }
 
             if (transitionDirection == Direction.none)
@@ -108,7 +116,7 @@ namespace Interface
 
         }
 
-        private enum Direction { glow, fade, none };
+        public enum Direction { glow, fade, none };
         private Direction transitionDirection = Direction.none;
         private float normalizedTime;
         private float transitionEnd = -1.0f;
