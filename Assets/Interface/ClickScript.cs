@@ -7,6 +7,9 @@ public class ClickScript : MonoBehaviour {
     public bool testActivate;
     public Jam.Actions.ActionBase actionToExecute;
 
+    public AudioClip clickSound;
+    private AudioSource audio;
+
 	// Use this for initialization
 	public void Start () 
     {
@@ -25,6 +28,12 @@ public class ClickScript : MonoBehaviour {
 
         interactiveItem.OnClick += OnActivate;
         interactiveItem.OnUp += OnActivate;
+
+        if (clickSound)
+        {
+            audio = gameObject.AddComponent<AudioSource>();
+            audio.clip = clickSound;
+        }
 	
 	}
 
@@ -35,6 +44,11 @@ public class ClickScript : MonoBehaviour {
             return;
         }
         actionToExecute.action.execute = true;
+
+        if (clickSound)
+        {
+            audio.Play();
+        }
     }
 
     public void Update()

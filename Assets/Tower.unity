@@ -2022,6 +2022,8 @@ MonoBehaviour:
     execute: 0
     active: 0
   player: {fileID: 1384177151}
+  successSound: {fileID: 8300000, guid: bd5e42c810b17564893693f1e8f37c11, type: 3}
+  failureSound: {fileID: 8300000, guid: 3e1047c7d0572cc4f9cd84ae550aae06, type: 3}
 --- !u!114 &134575395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2035,6 +2037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 134575394}
+  clickSound: {fileID: 0}
 --- !u!114 &134575396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4032,6 +4035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 452732646}
+  clickSound: {fileID: 8300000, guid: 461058b454a096f4186f3a1645ff15e5, type: 3}
 --- !u!114 &452732646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4119,6 +4123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 478119213}
+  clickSound: {fileID: 8300000, guid: 461058b454a096f4186f3a1645ff15e5, type: 3}
 --- !u!114 &478119211
 MonoBehaviour:
   m_ObjectHideFlags: 0
