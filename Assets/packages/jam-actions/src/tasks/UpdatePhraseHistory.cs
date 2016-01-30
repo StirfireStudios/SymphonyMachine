@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
-using Jam.Symbols.Layout;
+using Jam.Utils.Layout;
+using Jam.Utils;
+using Jam.Symbols;
 
-namespace Jam.Symbols
+namespace Jam.Actions
 {
     public class UpdatePhraseHistory : ITask
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
-using Jam.Actions;
+using Jam.Symbols;
 
-namespace Jam.Symbols
+namespace Jam.Actions
 {
     public class PickWeatherForPhrase : ITask
     {
@@ -20,7 +20,7 @@ namespace Jam.Symbols
             phrase.weatherPrefab = WeatherUtils.WeatherPrefab(phrase.weather);
 
             Debug.Log(string.Format("Pick weather for phrase: {0}", selected));
-            
+
             // Done~
             if (callback != null)
             { callback(this); }

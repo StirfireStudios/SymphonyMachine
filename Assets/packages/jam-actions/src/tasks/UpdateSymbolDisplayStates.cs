@@ -1,7 +1,9 @@
 using UnityEngine;
 using Jam.Actions;
+using Jam.Utils;
+using Jam.Symbols;
 
-namespace Jam.Symbols
+namespace Jam.Actions
 {
     public class UpdateSymbolDisplayStates : ITask
     {

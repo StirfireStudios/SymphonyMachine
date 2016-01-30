@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Jam.Symbols
+namespace Jam.Utils
 {
     /// Global functions to modify the current scene
     public class Scene

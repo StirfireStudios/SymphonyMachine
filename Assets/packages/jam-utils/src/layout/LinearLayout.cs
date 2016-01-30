@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-namespace Jam.Symbols.Layout
+namespace Jam.Utils.Layout
 {
     public class LinearLayout : ILayout
     {

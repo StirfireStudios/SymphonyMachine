@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace Jam.Symbols
+namespace Jam.Actions
 {
     public class UpdateSymbolsReadyState : ITask
     {

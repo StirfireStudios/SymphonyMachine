@@ -1,7 +1,8 @@
 using UnityEngine;
 
-namespace Jam.Symbols
+namespace Jam.Actions
 {
+    [AddComponentMenu("")]
     public class HistoryMarker : MonoBehaviour
     {
     }

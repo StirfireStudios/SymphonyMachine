@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using Jam.Utils;
 
 namespace Jam.Symbols
 {

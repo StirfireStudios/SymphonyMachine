@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Jam.Symbols.Layout
+namespace Jam.Utils.Layout
 {
     /// A generic interface for generating a layout for a set of objects
     public interface ILayout

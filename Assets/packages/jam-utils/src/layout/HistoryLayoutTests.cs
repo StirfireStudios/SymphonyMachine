@@ -1,7 +1,7 @@
 using UnityEngine;
 using Jam.Actions;
 
-namespace Jam.Symbols
+namespace Jam.Utils
 {
     /// Test helper
     public class HistoryLayoutTests : MonoBehaviour

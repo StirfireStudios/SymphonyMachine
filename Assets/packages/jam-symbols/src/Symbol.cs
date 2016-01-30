@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Jam.Utils;
 
 namespace Jam.Symbols
 {
@@ -22,9 +23,9 @@ namespace Jam.Symbols
         /// Randomize the value of this symbol
         public void Randomize()
         {
-            temperature = Random.Between(-1f, 1f);
-            humidity = Random.Between(0f, 1f);
-            wind = Random.Between(0f, 1f);
+            temperature = Jam.Utils.Random.Between(-1f, 1f);
+            humidity = Jam.Utils.Random.Between(0f, 1f);
+            wind = Jam.Utils.Random.Between(0f, 1f);
         }
     }
 }
