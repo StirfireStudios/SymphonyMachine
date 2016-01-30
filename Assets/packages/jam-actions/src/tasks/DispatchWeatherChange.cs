@@ -18,7 +18,7 @@ namespace Jam.Actions
             if (weatherControl == null)
             { throw new Exception("No WeatherSystem found on scene; cannot perform weather transition"); }
             weatherControl.TransitionTo(phrase.weather);
-            Debug.Log("Execute weather change");
+            Debug.Log(string.Format("Execute weather change: {0}", phrase.weather));
 
             // Done~
             if (callback != null)
