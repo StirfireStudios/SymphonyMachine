@@ -113,7 +113,7 @@ ParticleSystemRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e02d1752aac74e74eb788e6824b27711, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -2591,7 +2591,7 @@ ParticleSystemRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f24cc5d3c4243ca45b4a048d73b51f4b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -6971,7 +6971,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   Priority: 128
@@ -7043,7 +7043,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!1 &2094048709
 GameObject:
   m_ObjectHideFlags: 0
@@ -7233,7 +7233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: 11aacc793d80646e0acea82516f9e46f, type: 2}
-  ambientSound: {fileID: 8300000, guid: 9aa0cae7a95ec495e9ff87059ca10281, type: 3}
+  ambientSound: {fileID: 8300000, guid: c7235d091a0084b01b3f35df69f847ca, type: 3}
   weatherId: 7
 --- !u!114 &2096138321
 MonoBehaviour:
@@ -7261,7 +7261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: c7dff7f0c95b84d3ea53b21ca4056baf, type: 2}
-  ambientSound: {fileID: 8300000, guid: 9aa0cae7a95ec495e9ff87059ca10281, type: 3}
+  ambientSound: {fileID: 8300000, guid: c7235d091a0084b01b3f35df69f847ca, type: 3}
   weatherId: 5
 --- !u!114 &2096138323
 MonoBehaviour:
@@ -7275,7 +7275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: 63002b5fa5f804d1cba82656081768a8, type: 2}
-  ambientSound: {fileID: 8300000, guid: 9aa0cae7a95ec495e9ff87059ca10281, type: 3}
+  ambientSound: {fileID: 8300000, guid: c7235d091a0084b01b3f35df69f847ca, type: 3}
   weatherId: 3
 --- !u!114 &2096138324
 MonoBehaviour:
@@ -7289,7 +7289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: a19a402d9d064424cb3f5efc53c8a722, type: 2}
-  ambientSound: {fileID: 8300000, guid: 9aa0cae7a95ec495e9ff87059ca10281, type: 3}
+  ambientSound: {fileID: 8300000, guid: c7235d091a0084b01b3f35df69f847ca, type: 3}
   weatherId: 2
 --- !u!114 &2096138325
 MonoBehaviour:
@@ -7362,7 +7362,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   Priority: 128
@@ -7434,4 +7434,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
