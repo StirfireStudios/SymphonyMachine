@@ -4,13 +4,10 @@ using Jam.Actions;
 
 namespace Jam.Symbols
 {
-    /// State of symbols selected by the player now and in the past
-    [AddComponentMenu("Jam/Symbols/Symbol State")]
-    public class PlayerSymbolState : MonoBehaviour
+    /// History state object
+    [System.Serializable]
+    public class PlayerHistory
     {
-        /// The current symbol phrase the player is using
-        public SymbolPhrase current = new SymbolPhrase();
-
         /// The set of past symbol states
         public List<SymbolPhrase> history = new List<SymbolPhrase>();
 
@@ -28,6 +25,34 @@ namespace Jam.Symbols
 
         [Tooltip("Plane that defines where to layout history items")]
         public GameObject historyDisplay;
+    }
+
+    /// Player selected state
+    [System.Serializable]
+    public class PlayerSelectSlots
+    {
+        [Tooltip("First selected symbol slot")]
+        public GameObject slot1;
+
+        [Tooltip("Second selected symbol slot")]
+        public GameObject slot2;
+
+        [Tooltip("Third selected symbol slot")]
+        public GameObject slot3;
+    }
+
+    /// State of symbols selected by the player now and in the past
+    [AddComponentMenu("Jam/Symbols/Symbol State")]
+    public class PlayerSymbolState : MonoBehaviour
+    {
+        /// The current symbol phrase the player is using
+        public SymbolPhrase current = new SymbolPhrase();
+
+        /// History state
+        public PlayerHistory history;
+
+        /// Slot state
+        public PlayerSelectSlots selectSlots;
 
         /// Push a symbol into the current symbol phrase
         public bool AddSymbol(Symbol symbol)
@@ -51,9 +76,9 @@ namespace Jam.Symbols
             {
                 ExecuteWeather(current);
 
-                history.Add(current);
-                if (history.Count > historySize)
-                { history.RemoveAt(0); }
+                history.history.Add(current);
+                if (history.history.Count > history.historySize)
+                { history.history.RemoveAt(0); }
                 UpdatePhraseHistory();
 
                 current = new SymbolPhrase();
@@ -75,7 +100,7 @@ namespace Jam.Symbols
 
         private void UpdateDisplayedSymbols(SymbolPhrase phrase)
         {
-            new UpdateSymbolDisplayStates(current).Execute(null);
+            new UpdateSymbolDisplayStates(current, this).Execute(null);
             SetSymbolsReadyState(current.Ready);
         }
 

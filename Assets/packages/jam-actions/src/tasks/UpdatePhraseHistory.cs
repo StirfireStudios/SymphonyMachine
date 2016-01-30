@@ -8,25 +8,10 @@ namespace Jam.Actions
 {
     public class UpdatePhraseHistory : ITask
     {
-        public List<SymbolPhrase> history;
-
-        public int historySize;
-
-        public GameObject historyContainer;
-
-        public float historyOffset;
-        public float historyWidth;
-        public float historyHeight;
+        public PlayerHistory history;
 
         public UpdatePhraseHistory(PlayerSymbolState player)
-        {
-            historySize = player.historySize;
-            history = player.history;
-            historyContainer = player.historyDisplay;
-            historyOffset = player.historyLineSpace;
-            historyWidth = player.historyWidth;
-            historyHeight = player.historyHeight;
-        }
+        { this.history = player.history; }
 
         public void Execute(TaskComplete callback)
         {
@@ -34,13 +19,13 @@ namespace Jam.Actions
             DeleteOldHistory();
             var offset = 0;
             var history = new List<SymbolPhrase>();
-            history.AddRange(this.history);
+            history.AddRange(this.history.history);
             history.Reverse();
             foreach (var historyItem in history)
             {
                 SpawnHistoryPrefabsAndLayout(historyItem, offset);
                 offset += 1;
-                if (offset >= historySize)
+                if (offset >= this.history.historySize)
                 {
                     break;
                 }
@@ -77,7 +62,11 @@ namespace Jam.Actions
             { gp.AddComponent<HistoryMarker>(); }
 
             // Apply layout
-            var layout = new LinearLayout(historyContainer, historyOffset * offset, historyWidth, historyHeight);
+            var layout = new LinearLayout(
+              history.historyDisplay,
+              history.historyLineSpace * offset,
+              history.historyWidth,
+              history.historyHeight);
             LayoutManager.ApplyLayout(layout, targets);
         }
     }
