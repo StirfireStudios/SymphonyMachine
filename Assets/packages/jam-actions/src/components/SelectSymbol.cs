@@ -13,9 +13,6 @@ namespace Jam.Actions
         [Tooltip("The player to update when this symbol is selected")]
         public PlayerSymbolState player;
 
-        [Tooltip("The GameObject to apply highlight to")]
-        public GameObject target;
-
         [Tooltip("Is this symbol current selected?")]
         public bool currentlyHighlighted = false;
         private bool highlightState = false;
@@ -25,7 +22,7 @@ namespace Jam.Actions
             UpdateActionBase();
             if (currentlyHighlighted != highlightState)
             {
-                SetHighlightState(target, currentlyHighlighted);
+                SetHighlightState(gameObject, currentlyHighlighted);
                 highlightState = currentlyHighlighted;
             }
         }
