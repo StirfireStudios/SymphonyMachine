@@ -1,5 +1,7 @@
 using UnityEngine;
 using Jam.Symbols;
+using Jam.Weathers;
+using Weather;
 
 namespace Jam.Actions
 {
@@ -12,8 +14,9 @@ namespace Jam.Actions
 
         public void Execute(TaskComplete callback)
         {
-            // TODO: Something smart here.
-            var selected = Jam.Symbols.Weather.Clear;
+            // Find all the matches we can to various weathers
+            var match = WeatherUtils.OrderedMatches(phrase);
+            var selected = match.Count > 0 ? match[0].weather.weather : WeatherId.FINE;
 
             // Update symbol phrase
             phrase.weather = selected;

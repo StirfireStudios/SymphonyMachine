@@ -1,6 +1,7 @@
 using UnityEngine;
 using Jam.Symbols;
 using Jam.Utils;
+using Jam.Weathers;
 
 namespace Jam.Actions
 {
@@ -22,13 +23,7 @@ namespace Jam.Actions
             Jam.Utils.Random.Shuffle(components);
 
             /// Default symbol states we always expect
-            /// In format: humidity, temperature, wind
-            var always = new float[][] {
-              new float[] { 0f, 1f, 0f },  // Hot, still
-              new float[] { 1f, -1f, 1f }, // Blizzard
-              new float[] { 1f, 0f, 0f },  // Rain
-              new float[] { 1f, 0f, 1f },  // Storm
-            };
+            var always = Scene.FindComponents<FixedSymbolBehaviour>();
 
             // Apply all then always that we can
             var offset = 0;
@@ -36,15 +31,15 @@ namespace Jam.Actions
             {
                 if (components.Count > offset)
                 {
-                    components[offset].symbol.humidity = required[0];
-                    components[offset].symbol.temperature = required[1];
-                    components[offset].symbol.wind = required[2];
+                    components[offset].symbol.humidity = required.detail.humidity;
+                    components[offset].symbol.temperature = required.detail.temperature;
+                    components[offset].symbol.wind = required.detail.wind;
                 }
                 offset += 1;
             }
 
             // Do the rest~
-            for (var i = always.Length; i < components.Count; ++i)
+            for (var i = always.Count; i < components.Count; ++i)
             { components[i].symbol.Randomize(); }
 
             // Done~

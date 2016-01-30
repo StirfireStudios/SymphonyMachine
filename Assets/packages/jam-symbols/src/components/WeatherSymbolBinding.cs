@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Weather;
 
 namespace Jam.Symbols
 {
@@ -11,6 +12,6 @@ namespace Jam.Symbols
         public GameObject weatherPrefab;
 
         [Tooltip("The weather id")]
-        public Weather weatherId;
+        public WeatherId weatherId;
     }
 }
