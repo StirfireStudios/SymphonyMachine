@@ -52,7 +52,8 @@ namespace Jam.Actions
         /// Spawn objects and create a layout for the given history item
         private void SpawnHistoryPrefabsAndLayout(SymbolPhrase phrase, int offset)
         {
-            var targets = new List<GameObject>();
+            // FIXME
+/*            var targets = new List<GameObject>();
             foreach (var symbol in phrase.symbols)
             { Scene.Spawn(symbol.symbolPrefab).Then((op) => targets.Add(op)); }
             Scene.Spawn(phrase.weatherPrefab).Then((op) => targets.Add(op));
@@ -67,7 +68,7 @@ namespace Jam.Actions
               history.historyLineSpace * offset,
               history.historyWidth,
               history.historyHeight);
-            LayoutManager.ApplyLayout(layout, targets);
+            LayoutManager.ApplyLayout(layout, targets);*/
         }
     }
 }

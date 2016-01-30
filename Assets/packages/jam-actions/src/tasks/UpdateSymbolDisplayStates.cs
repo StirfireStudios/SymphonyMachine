@@ -43,7 +43,8 @@ namespace Jam.Actions
                 }
                 if (parent != null)
                 {
-                    Scene.Spawn(symbol.symbolPrefab).Then((gp) =>
+                    // FIXME
+/*                    Scene.Spawn(symbol.symbolPrefab).Then((gp) =>
                     {
                         gp.transform.position = parent.transform.position;
 
@@ -52,7 +53,7 @@ namespace Jam.Actions
                         gp.transform.rotation = rotation;
 
                         gp.AddComponent<SlotMarker>();
-                    });
+                    });*/
                 }
                 offset += 1;
             }
