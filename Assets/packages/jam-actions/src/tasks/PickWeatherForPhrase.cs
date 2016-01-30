@@ -13,7 +13,7 @@ namespace Jam.Actions
         public void Execute(TaskComplete callback)
         {
             // TODO: Something smart here.
-            var selected = Weather.Clear;
+            var selected = Jam.Symbols.Weather.Clear;
 
             // Update symbol phrase
             phrase.weather = selected;
