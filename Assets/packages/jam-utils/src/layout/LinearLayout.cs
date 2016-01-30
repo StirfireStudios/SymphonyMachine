@@ -27,39 +27,52 @@ namespace Jam.Utils.Layout
         /// The height of the layout
         public float height;
 
-        /// The vertical offset
-        public float upOffset;
+        /// border size
+        public float borderSize;
 
-        public LinearLayout(GameObject alignToTarget, float offset, float width, float height)
+        // number of lines
+        public float lines;
+        public float positions;
+
+        public float line_offset = -2;
+
+        public LinearLayout(GameObject alignToTarget, float borderSize, float lines)
         {
+            Renderer renderer = alignToTarget.GetComponent<Renderer>();
+            if (renderer == null)
+            {
+                Debug.LogError("OH GOD, there's no renderer on your target component O_o");
+                return;
+            }
+
             origin = alignToTarget.transform.position;
-            up = alignToTarget.transform.forward.normalized;
-            upOffset = offset;
+            up = alignToTarget.transform.up;
             left = -alignToTarget.transform.right.normalized;
-            this.height = height;
-            this.width = width;
+            this.borderSize = borderSize;
+            this.height = renderer.bounds.extents.x;
+            this.width = renderer.bounds.size.z;
+            this.lines = lines;
+            this.positions = lines;
             forward = Vector3.Cross(up, left);
 
             // Align to plane
             // HAX! Screw the plane, align to this vector
             rotation = alignToTarget.transform.rotation;
-            rotation *= Quaternion.Euler(-left * 90f);
-            rotation *= Quaternion.Euler(up * 180f);
         }
 
         /// Yield a set of locations and orientations for each target
         public IEnumerable<LayoutObject> Layout(IEnumerable<GameObject> target)
         {
             var count = target.Count();
-            var offset_y = -height / 2f * up + upOffset * up;
-            var origin_x = -width / 2f * left;
-            var interval_x = width / (count - 1) * left;  // Number of gaps, not objects
-            var offset_z = forward * 0.1f;
-            var offset = 0;
+            var single_height = height / lines * up;
+            var single_width = width / positions * left;
+            var interval_x = 2f * borderSize * left;
+            var offset = -2;
             foreach (var gp in target)
             {
-                var pos_x = origin_x + offset * interval_x;
-                var pos = this.origin + pos_x + offset_y + offset_z;
+                var pos_x = offset * single_width + single_width / 2f;
+                var pos_y = line_offset * single_height + single_height / 2f;
+                var pos = origin + pos_x + pos_y;
                 offset += 1;
                 yield return new LayoutObject
                 {
