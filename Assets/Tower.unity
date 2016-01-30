@@ -2560,11 +2560,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.98249, y: -23.224731, z: 18.057335}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1359558550}
-  - {fileID: 2096138319}
-  - {fileID: 1719526162}
-  - {fileID: 1082069708}
+  m_Children: [{fileID: 1359558550}, {fileID: 2096138319}, {fileID: 1719526162}, {
+      fileID: 1082069708}]
   m_Father: {fileID: 0}
   m_RootOrder: 15
 --- !u!1 &438428605
@@ -5800,6 +5797,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1359004721}
   - 114: {fileID: 1359004720}
+  - 114: {fileID: 1359004722}
+  - 114: {fileID: 1359004723}
   m_Layer: 0
   m_Name: WeatherSystem
   m_TagString: Untagged
@@ -5822,7 +5821,7 @@ MonoBehaviour:
   skydome: {fileID: 732923586}
   rainParticles: {fileID: 438428607}
   snowParticles: {fileID: 57535939}
-  transitionTime: 10
+  transitionTime: 5
   currentWeather: 0
 --- !u!4 &1359004721
 Transform:
@@ -5836,6 +5835,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+--- !u!114 &1359004722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359004719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b0a3e0d83672b43b41af51f8ec66da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channel1: {fileID: 2025231903}
+  channel2: {fileID: 2119243629}
+  fadeDuration: 5
+--- !u!114 &1359004723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359004719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0302b8492e6d134b9790ae4c5cc0bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1359558549
 GameObject:
   m_ObjectHideFlags: 0
@@ -6918,6 +6942,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!1 &2025231902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2025231904}
+  - 82: {fileID: 2025231903}
+  m_Layer: 0
+  m_Name: Ambience1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2025231903
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025231902}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &2025231904
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025231902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
 --- !u!1 &2094048709
 GameObject:
   m_ObjectHideFlags: 0
@@ -7107,6 +7233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: 11aacc793d80646e0acea82516f9e46f, type: 2}
+  ambientSound: {fileID: 8300000, guid: 9aa0cae7a95ec495e9ff87059ca10281, type: 3}
   weatherId: 7
 --- !u!114 &2096138321
 MonoBehaviour:
@@ -7120,6 +7247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: c23d3f7c69ce64cd7883826c54f24c54, type: 2}
+  ambientSound: {fileID: 8300000, guid: 923f85dec58e94cb886ce62dfed4213e, type: 3}
   weatherId: 6
 --- !u!114 &2096138322
 MonoBehaviour:
@@ -7133,6 +7261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: c7dff7f0c95b84d3ea53b21ca4056baf, type: 2}
+  ambientSound: {fileID: 8300000, guid: 9aa0cae7a95ec495e9ff87059ca10281, type: 3}
   weatherId: 5
 --- !u!114 &2096138323
 MonoBehaviour:
@@ -7146,6 +7275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: 63002b5fa5f804d1cba82656081768a8, type: 2}
+  ambientSound: {fileID: 8300000, guid: 9aa0cae7a95ec495e9ff87059ca10281, type: 3}
   weatherId: 3
 --- !u!114 &2096138324
 MonoBehaviour:
@@ -7159,6 +7289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: a19a402d9d064424cb3f5efc53c8a722, type: 2}
+  ambientSound: {fileID: 8300000, guid: 9aa0cae7a95ec495e9ff87059ca10281, type: 3}
   weatherId: 2
 --- !u!114 &2096138325
 MonoBehaviour:
@@ -7172,6 +7303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: 35c8f62a25c784b358b49a1bd44b7ef0, type: 2}
+  ambientSound: {fileID: 8300000, guid: 923f85dec58e94cb886ce62dfed4213e, type: 3}
   weatherId: 1
 --- !u!114 &2096138326
 MonoBehaviour:
@@ -7185,6 +7317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: d69261b53290d47f48953b756efc1e88, type: 2}
+  ambientSound: {fileID: 8300000, guid: 923f85dec58e94cb886ce62dfed4213e, type: 3}
   weatherId: 0
 --- !u!114 &2096138327
 MonoBehaviour:
@@ -7198,4 +7331,107 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weatherPrefab: {fileID: 184228, guid: 7abd8a2832215467baadda7f23ec3a78, type: 2}
+  ambientSound: {fileID: 8300000, guid: 923f85dec58e94cb886ce62dfed4213e, type: 3}
   weatherId: 4
+--- !u!1 &2119243628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2119243630}
+  - 82: {fileID: 2119243629}
+  m_Layer: 0
+  m_Name: Ambience2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2119243629
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119243628}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &2119243630
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119243628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
