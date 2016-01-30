@@ -13,8 +13,14 @@ namespace Jam.Symbols
         public void Execute(TaskComplete callback)
         {
             // TODO: Something smart here.
-            Debug.Log("Pick weather for phrase");
+            var selected = Weather.Clear;
 
+            // Update symbol phrase
+            phrase.weather = selected;
+            phrase.weatherPrefab = WeatherUtils.WeatherPrefab(phrase.weather);
+
+            Debug.Log(string.Format("Pick weather for phrase: {0}", selected));
+            
             // Done~
             if (callback != null)
             { callback(this); }
