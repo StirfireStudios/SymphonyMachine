@@ -2129,6 +2129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 226012163}
+  clickSound: {fileID: 0}
 --- !u!114 &226012168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4052,7 +4053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 452732646}
-  clickSound: {fileID: 8300000, guid: 461058b454a096f4186f3a1645ff15e5, type: 3}
+  clickSound: {fileID: 8300000, guid: 1ecf8b6f66ac0ed4f86a4d41547117ac, type: 3}
 --- !u!114 &452732646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4140,7 +4141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 478119213}
-  clickSound: {fileID: 8300000, guid: 461058b454a096f4186f3a1645ff15e5, type: 3}
+  clickSound: {fileID: 8300000, guid: 1ecf8b6f66ac0ed4f86a4d41547117ac, type: 3}
 --- !u!114 &478119211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4305,6 +4306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 712495477}
+  clickSound: {fileID: 0}
 --- !u!114 &712495479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4643,6 +4645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 872419298}
+  clickSound: {fileID: 0}
 --- !u!114 &872419303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4784,6 +4787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 1015074926}
+  clickSound: {fileID: 0}
 --- !u!114 &1015074931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5070,6 +5074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 1128765042}
+  clickSound: {fileID: 0}
 --- !u!114 &1128765047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5405,6 +5410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 1298708613}
+  clickSound: {fileID: 0}
 --- !u!114 &1298708618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5546,6 +5552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 1310349805}
+  clickSound: {fileID: 0}
 --- !u!114 &1310349810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6072,6 +6079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 1426235995}
+  clickSound: {fileID: 0}
 --- !u!114 &1426236000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6275,6 +6283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 1650254296}
+  clickSound: {fileID: 0}
 --- !u!114 &1650254301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6416,6 +6425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 1670596149}
+  clickSound: {fileID: 0}
 --- !u!114 &1670596154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6660,6 +6670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 1935467435}
+  clickSound: {fileID: 0}
 --- !u!114 &1935467440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6871,6 +6882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testActivate: 0
   actionToExecute: {fileID: 2094048711}
+  clickSound: {fileID: 0}
 --- !u!114 &2094048716
 MonoBehaviour:
   m_ObjectHideFlags: 0
