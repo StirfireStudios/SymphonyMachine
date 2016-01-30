@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3372882}
   - 64: {fileID: 6412336}
   - 23: {fileID: 2362008}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Windy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,6 +86,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dc458dcc3ef144d2e8fa9b9ade686934, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184228}
