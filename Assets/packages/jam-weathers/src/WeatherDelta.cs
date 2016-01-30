@@ -48,5 +48,11 @@ namespace Jam.Weathers
         {
             match = weather.detail.Delta(normalized);
         }
+
+        /// Print the match value
+        private void Debug()
+        {
+            UnityEngine.Debug.Log(string.Format("", ));
+        }
     }
 }
