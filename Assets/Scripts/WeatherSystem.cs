@@ -1,77 +1,93 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Weather;
 
-/// <summary>
-/// Controls the world's weather based on inputs and "random" events?
-/// </summary>
-/// 
-
-public enum WeatherState
+namespace Weather
 {
-    FINE = 0,
-    HEATWAVE,
-    OVERCAST,
-    SHOWERS,
-    RAINY,
-    STORM,
-    SNOW,
-    BLIZZARD
+    public enum WeatherId
+    {
+        FINE = 0,
+        HEATWAVE,
+        OVERCAST,
+        SHOWERS,
+        RAINY,
+        STORM,
+        SNOW,
+        BLIZZARD
+    }
+
+    [System.Serializable]
+    public struct WeatherState
+    {
+        public int wid;
+        public int cloudDensity;
+        public int windSpeed;
+        public Color lightColour;
+        public Color cloudTint;
+        public Color fogColour;
+        public bool raining;
+        public bool snowing;
+    }
+
+    [System.Serializable]
+    public struct WeatherStateCollection
+    {
+        public WeatherState[] weatherStates;
+    }
 }
+
 
 public class WeatherSystem : MonoBehaviour {
 
+ 
+    public Light sun;
     public Skydome skydome;
     public ParticleSystem rainParticles;
     public ParticleSystem snowParticles;
 
     IEnumerator transition;
 
-    float[] cloudDensities = 
-    {
-        0,
-        0,
-        0.25f,
-        0.55f,
-        0.9f,
-        1,
-        0.8f,
-        1
-    };
+    bool snowing = false;
+    bool raining = false;
 
-    float[] windSpeeds =
-    {
-        0.003f,
-        0,
-        0.007f,
-        0.01f,
-        0.03f,
-        0.08f,
-        0.02f,
-        0.08f
-    };
-
-    WeatherState defaultWeather = WeatherState.FINE;
+    WeatherId defaultWeather = WeatherId.FINE;
+    WeatherStateCollection stateInfo;
+    
     float cloudDensity;
+    float windSpeed;
+    Color cloudColour;
+    Color sunColour;
+    Color fogColour;
     public float transitionTime = 10.0f; // seconds it takes from one state to another
     
-    public WeatherState currentWeather;
-
-    float windSpeed = 0.0f;
+    public WeatherId currentWeather;
 
     void Awake()
     {
         currentWeather = defaultWeather;
-        cloudDensity = cloudDensities[(int)currentWeather];
-        windSpeed = windSpeeds[(int)currentWeather];
     }
 
     void Start()
     {
-        skydome.SetCloudDensity(cloudDensity);
+        LoadWeatherData();
+
+        cloudDensity = stateInfo.weatherStates[(int)defaultWeather].cloudDensity;
+        cloudColour = stateInfo.weatherStates[(int)defaultWeather].cloudTint;
+        sunColour = stateInfo.weatherStates[(int)defaultWeather].lightColour;
+        fogColour = stateInfo.weatherStates[(int)defaultWeather].fogColour;
+        windSpeed = stateInfo.weatherStates[(int)defaultWeather].windSpeed;
+        skydome.SetCloudDensity((float)cloudDensity);
         skydome.SetWindSpeed(windSpeed);
+ 
     }
 
-    public void TransitionTo(WeatherState newState)
+    void LoadWeatherData()
+    {
+        string weatherData = Resources.Load<TextAsset>("weatherStates").text;
+        stateInfo = JsonUtility.FromJson<WeatherStateCollection>(weatherData);
+    }
+
+    public void TransitionTo(WeatherId newState)
     {
         if(transition != null)
             StopCoroutine(transition);
@@ -82,43 +98,66 @@ public class WeatherSystem : MonoBehaviour {
         currentWeather = newState;
     }
 
-    void StartRain()
+    void ToggleSnow(bool f)
     {
-        //temp
-        rainParticles.enableEmission = true;
+        snowing = f;
+        snowParticles.enableEmission = f;
     }
 
-    void StopRain()
+    void ToggleRain(bool f)
     {
-        //temp
-        rainParticles.enableEmission = false;
+        raining = f;
+        rainParticles.enableEmission = f;
     }
 
-    IEnumerator TransitionWeather(WeatherState newState, WeatherState oldState)
+    IEnumerator TransitionWeather(WeatherId newState, WeatherId oldState)
     {
         float t = 0;
         float startDensity = cloudDensity;
         float startWind = windSpeed;
+        Color startCloudColour = cloudColour;
+        Color startFogColour = fogColour;
+        Color startSunColour = sunColour;
+
+        WeatherState cState = stateInfo.weatherStates[(int)newState];
+
+        skydome.SetWindSpeed(cState.windSpeed);
+
+        ToggleSnow(cState.snowing);
+        ToggleRain(cState.raining);
 
         while (t < 1)
         {
-            cloudDensity = Mathf.Lerp(startDensity, cloudDensities[(int)newState], t);
+            cloudDensity = Mathf.Lerp(startDensity, cState.cloudDensity, t);
             skydome.SetCloudDensity(cloudDensity);
 
-            windSpeed = Mathf.Lerp(startWind, windSpeeds[(int)newState], t);
+            windSpeed = Mathf.Lerp(startWind, cState.windSpeed, t);
             skydome.SetWindSpeed(windSpeed);
+
+            cloudColour = Color.Lerp(startCloudColour, cState.cloudTint, t);
+            skydome.SetCloudColor(cloudColour);
+
+            fogColour = Color.Lerp(startFogColour, cState.fogColour, t);
+            RenderSettings.fogColor = fogColour;
+
+            //TODO fog density
+            
+            sunColour = Color.Lerp(startSunColour, cState.lightColour, t);
+            sun.color = sunColour;
+
+            if (raining)
+            {
+                rainParticles.startColor = new Color(1, 1, 1, t);
+                
+            }
+
+            if (snowing)
+            {
+                snowParticles.startColor = new Color(1, 1, 1, t);
+            }
 
             t += Time.deltaTime / transitionTime;
             yield return null;
-        }
-
-        if (currentWeather == WeatherState.RAINY || currentWeather == WeatherState.STORM)
-        {
-            StartRain();
-        }
-        else
-        {
-            StopRain();
         }
     }
 }
