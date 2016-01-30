@@ -38,7 +38,6 @@ namespace Interface
 
             interactiveItem.OnOver += OnGaze;
             interactiveItem.OnOut += OnGazeLeave;
-            //transitioner.currentValue = itemMaterial.GetFloat("_GlowAmount");
         }
 
         public void Update()
