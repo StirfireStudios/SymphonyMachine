@@ -13,6 +13,7 @@ namespace Jam.Actions
 
         public AudioClip successSound;
         public AudioClip failureSound;
+        AudioSource audio;
 
         protected override void Execute()
         {
@@ -20,7 +21,9 @@ namespace Jam.Actions
             
             bool success = player.ExecutePhrase();
 
-            AudioSource audio = gameObject.AddComponent<AudioSource>();
+            if(audio == null)
+                audio = gameObject.AddComponent<AudioSource>();
+
             audio.clip = success ? successSound : failureSound;
             audio.Play();
 
