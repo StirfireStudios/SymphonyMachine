@@ -29,6 +29,24 @@ namespace Jam.Weathers
             return rtn;
         }
 
+        /// Return the ambient sound for a weatherId this is set on the associated WeatherSymbolBinding
+        public static AudioClip AmbientSoundFor(WeatherId id)
+        {
+            AudioClip rtn = null;
+            foreach (var cp in Scene.FindComponents<WeatherSymbolBinding>())
+            {
+                if (cp.weatherId == id)
+                {
+                    rtn = cp.ambientSound;
+                }
+            }
+            if (rtn == null)
+            {
+                throw new Exception(string.Format("No WeatherSymbolBinding found for weather id {0}", id));
+            }
+            return rtn;
+        }
+
         /// Return a sorted by best-match list of WeatherDelta's
         public static List<WeatherDelta> OrderedMatches(SymbolPhrase phrase)
         {
