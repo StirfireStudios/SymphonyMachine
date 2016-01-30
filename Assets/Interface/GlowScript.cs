@@ -8,7 +8,7 @@ namespace Interface
     {
         // This should probably come from some sort of manager...
         public static float glowTransitionTime = 1.0f;
-
+        public enum Direction { glow, fade, none };
         public Direction testTransitionDirection = Direction.none; 
 
         // Use this for initialization
@@ -38,7 +38,8 @@ namespace Interface
 
             interactiveItem.OnOver += OnGaze;
             interactiveItem.OnOut += OnGazeLeave;
-            glowAmount = itemMaterial.GetFloat("_GlowAmount");
+            transitioner.currentValue = itemMaterial.GetFloat("_GlowAmount");
+            transitioner.transitionDirectionTo(StateTransitioner.Direction.stopped);
         }
 
         public void Update()
@@ -48,78 +49,59 @@ namespace Interface
                 return;
             }
 
+            transitioner.transitionTime = glowTransitionTime;
+
             if (testTransitionDirection != Direction.none)
             {
-                transitionDirectionTo(testTransitionDirection);
+                transitioner.transitionDirectionTo(mapDirections(testTransitionDirection));
                 testTransitionDirection = Direction.none;
             }
 
-            if (transitionDirection == Direction.none)
+            if (mapStateDirections(transitioner.CurrentDirection) == Direction.none)
             {
                 return;
             }
 
-            normalizedTime = (transitionEnd - Time.time) / glowTransitionTime;
-
-            if (transitionDirection == Direction.glow)
-            {
-                glowAmount = Mathf.Lerp(1.0f, 0.0f, normalizedTime);
-                if (glowAmount > 0.99f)
-                {
-                    transitionDirection = Direction.none;
-                }
-            }
-            else
-            {
-                glowAmount = Mathf.Lerp(0.0f, 1.0f, normalizedTime);
-                if (glowAmount < 0.01f)
-                {
-                    transitionDirection = Direction.none;
-                }
-            }
-
-            if (transitionDirection == Direction.none)
-            {
-                transitionEnd = -1.0f;
-            }
-
-            itemMaterial.SetFloat("_GlowAmount", glowAmount);
+            itemMaterial.SetFloat("_GlowAmount", transitioner.updateValue());
         }
 
         public void OnGaze()
         {
-            transitionDirectionTo(Direction.glow);
+            transitioner.transitionDirectionTo(mapDirections(Direction.glow));
         }
 
         public void OnGazeLeave()
         {
-            transitionDirectionTo(Direction.fade);
+            transitioner.transitionDirectionTo(mapDirections(Direction.fade));
         }
 
-        private void transitionDirectionTo(Direction newDirection)
+        private StateTransitioner.Direction mapDirections(Direction direction)
         {
-            if (transitionDirection != newDirection)
+            switch (direction)
             {
-                if (transitionEnd < 0.0f)
-                {
-                    transitionEnd = Time.time + glowTransitionTime;
-                }
-                else
-                {
-                    normalizedTime = (transitionEnd - Time.time) / glowTransitionTime;
-                    normalizedTime = 1.0f - normalizedTime;
-                    transitionEnd = Time.time + glowTransitionTime * normalizedTime;                    
-                }
-                transitionDirection = newDirection;
+                case Direction.glow:
+                    return StateTransitioner.Direction.forward;
+                case Direction.fade:
+                    return StateTransitioner.Direction.backward;
+                default:
+                    return StateTransitioner.Direction.stopped;
             }
-
         }
 
-        public enum Direction { glow, fade, none };
-        private Direction transitionDirection = Direction.none;
-        private float normalizedTime;
-        private float transitionEnd = -1.0f;
-        private float glowAmount;
+        private Direction mapStateDirections(StateTransitioner.Direction direction)
+        {
+            switch (direction)
+            {
+                case StateTransitioner.Direction.forward:
+                    return Direction.glow;
+                case StateTransitioner.Direction.backward:
+                    return Direction.fade;
+                default:
+                    return Direction.none;
+            }
+        }
+
+        private StateTransitioner transitioner = new StateTransitioner();
         private VRInteractiveItem interactiveItem;
         private Material itemMaterial;
     }
