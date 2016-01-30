@@ -52,10 +52,18 @@ namespace Jam.Actions
         /// Spawn objects and create a layout for the given history item
         private void SpawnHistoryPrefabsAndLayout(SymbolPhrase phrase, int offset)
         {
-            // FIXME
-/*            var targets = new List<GameObject>();
+            var targets = new List<GameObject>();
             foreach (var symbol in phrase.symbols)
-            { Scene.Spawn(symbol.symbolPrefab).Then((op) => targets.Add(op)); }
+            {
+                if (symbol.symbolPrefab == null)
+                {
+                    Debug.LogError(string.Format("Warning: Symbol {0} does not have a prefab assigned forward it's symbol", symbol));
+                }
+                else
+                {
+                    Scene.Spawn(symbol.symbolPrefab).Then((op) => targets.Add(op));
+                }
+            }
             Scene.Spawn(phrase.weatherPrefab).Then((op) => targets.Add(op));
 
             // assign parent
@@ -68,7 +76,7 @@ namespace Jam.Actions
               history.historyLineSpace * offset,
               history.historyWidth,
               history.historyHeight);
-            LayoutManager.ApplyLayout(layout, targets);*/
+            LayoutManager.ApplyLayout(layout, targets);
         }
     }
 }
