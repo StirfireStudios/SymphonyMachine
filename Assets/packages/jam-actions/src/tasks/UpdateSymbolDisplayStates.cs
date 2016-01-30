@@ -54,9 +54,8 @@ namespace Jam.Actions
                             gp.transform.position = parent.transform.position;
 
                             var rotation = parent.transform.rotation;
-                            rotation *= Quaternion.Euler(parent.transform.up * 180f);
-                            rotation *= Quaternion.Euler(parent.transform.right * 90f);
                             gp.transform.rotation = rotation;
+                            gp.transform.localScale = new Vector3(0.12f, 0.12f, 0.12f);
 
                             gp.AddComponent<SlotMarker>();
                         });

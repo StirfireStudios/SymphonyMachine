@@ -20,6 +20,11 @@ namespace Jam.Actions
         [Tooltip("Disable this...")]
         public bool disabled = false;
 
+        public void Start()
+        {
+            new RandomizeSymbolStates(player).Execute(null);
+        }
+
         public void Update()
         {
             if (!disabled)
