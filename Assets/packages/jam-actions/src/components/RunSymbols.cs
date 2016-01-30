@@ -21,8 +21,12 @@ namespace Jam.Actions
             
             bool success = player.ExecutePhrase();
 
-            if(audio == null)
+            if (audio == null)
+            {
                 audio = gameObject.AddComponent<AudioSource>();
+                audio.spatialBlend = 1; 
+            }
+                
 
             audio.clip = success ? successSound : failureSound;
             audio.Play();
