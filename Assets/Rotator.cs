@@ -47,7 +47,6 @@ public class Rotator : MonoBehaviour
     {
         if (currentDirection == Direction.none)
         {
-            Debug.Log("move!");
             currentDirection = direction;
             transitioner.currentValue = 0.0f;
             transitioner.transitionDirectionTo(StateTransitioner.Direction.forward);
@@ -57,14 +56,12 @@ public class Rotator : MonoBehaviour
 
         if (currentDirection != direction && transitioner.CurrentDirection == StateTransitioner.Direction.forward)
         {
-            Debug.Log("Reversal!");
             transitioner.transitionDirectionTo(StateTransitioner.Direction.backward);
             return;
         }
 
         if (currentDirection == direction && transitioner.CurrentDirection == StateTransitioner.Direction.backward)
         {
-            Debug.Log("Resume!");
             transitioner.transitionDirectionTo(StateTransitioner.Direction.backward);
             return;
         }
