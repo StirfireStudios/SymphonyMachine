@@ -14,6 +14,7 @@ public class VRSetup : MonoBehaviour {
     {
 #if UNITY_ANDROID
         removeObjectsInLayer("GearVR Disable");
+        disableBloom();
 #endif
 
     }
@@ -35,6 +36,12 @@ public class VRSetup : MonoBehaviour {
             vrSettingsDone = true;
         }
 	}
+
+    private void disableBloom()
+    {
+        UnityStandardAssets.ImageEffects.BloomOptimized bloomEffect = gameObject.GetComponent<UnityStandardAssets.ImageEffects.BloomOptimized>();
+        bloomEffect.enabled = false;
+    }
 
     private GameObject[] findObjectsInLayer(string layer)
     {
