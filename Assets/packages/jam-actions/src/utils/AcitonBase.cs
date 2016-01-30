@@ -33,9 +33,15 @@ namespace Jam.Actions
     {
         public ActionBaseParams action;
 
+        /// If you override update, callback UpdateActionBase in child classes.
+        public void Update()
+        {
+            UpdateActionBase();
+        }
+
         /// On update do nothing except check if we need to run some action and run it if so.
         /// Otherwise perform an animation update if required.
-        public void Update()
+        public void UpdateActionBase()
         {
             if (action.execute)
             {
