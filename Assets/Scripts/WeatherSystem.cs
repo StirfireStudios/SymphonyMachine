@@ -78,7 +78,7 @@ public class WeatherSystem : MonoBehaviour {
         windSpeed = stateInfo.weatherStates[(int)defaultWeather].windSpeed;
         skydome.SetCloudDensity((float)cloudDensity);
         skydome.SetWindSpeed(windSpeed);
- 
+        sun.color = sunColour;
     }
 
     void LoadWeatherData()
