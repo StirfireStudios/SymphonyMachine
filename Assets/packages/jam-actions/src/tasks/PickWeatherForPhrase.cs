@@ -18,7 +18,7 @@ namespace Jam.Actions
             var match = WeatherUtils.OrderedMatches(phrase);
 
             // Debugging why we picked X
-            if (false)
+            if (true)
             {
                 Debug.Log("found " + match.Count + "matches...");
                 foreach (var m in match) { m.Debug(); }

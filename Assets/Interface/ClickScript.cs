@@ -32,6 +32,7 @@ public class ClickScript : MonoBehaviour {
         if (clickSound)
         {
             audio = gameObject.AddComponent<AudioSource>();
+            audio.spatialBlend = 1; // FULLY 3D!!!!!!
             audio.clip = clickSound;
         }
 	
