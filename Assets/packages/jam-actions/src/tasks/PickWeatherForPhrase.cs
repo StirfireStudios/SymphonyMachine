@@ -13,8 +13,9 @@ namespace Jam.Actions
 
         public void Execute(TaskComplete callback)
         {
-            // TODO: Something smart here.
-            var selected = Weather.Clear;
+            // Find all the matches we can to various weathers
+            var match = WeatherUtils.OrderedMatches(phrase);
+            var selected = match.Count > 0 ? match[0].weather.weather : Weather.Clear;
 
             // Update symbol phrase
             phrase.weather = selected;

@@ -11,7 +11,7 @@ namespace Jam.Weathers
     ///   - 3) Randomize any left overs
     ///
     /// See `RandomizeSymbolStates`.
-    [AddComponentMenu("Jam/Weather/Fixed Symbol Behaviour")]
+    [AddComponentMenu("Jam/Weather/Fixed Weather Symbol Behaviour")]
     public class FixedSymbolBehaviour : MonoBehaviour
     {
         [Tooltip("Some description of this type")]
