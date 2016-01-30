@@ -31,7 +31,7 @@ Shader "Shader Forge/Symbol" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile_fog
-            #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 psp2 
+            #pragma exclude_renderers metal d3d11_9x xbox360 xboxone ps3 psp2 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform sampler2D _Symbol; uniform float4 _Symbol_ST;
@@ -105,7 +105,7 @@ Shader "Shader Forge/Symbol" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile_fog
-            #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 psp2 
+            #pragma exclude_renderers metal d3d11_9x xbox360 xboxone ps3 psp2 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform sampler2D _Symbol; uniform float4 _Symbol_ST;
@@ -175,7 +175,7 @@ Shader "Shader Forge/Symbol" {
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
             #pragma multi_compile_fog
-            #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 psp2 
+            #pragma exclude_renderers metal d3d11_9x xbox360 xboxone ps3 psp2 
             #pragma target 3.0
             uniform sampler2D _Symbol; uniform float4 _Symbol_ST;
             struct VertexInput {
