@@ -25,6 +25,31 @@ ModelImporter:
     100034: Plane002
     100036: Sphere001
     100038: Sphere002
+    100040: basePlatform
+    100042: glassHouse
+    100044: glassHouseFloor
+    100046: headPoint
+    100048: metalRims
+    100050: metalShell
+    100052: solarPanels
+    100054: stem
+    100056: stemSupport_01
+    100058: stemSupport_02
+    100060: stemSupport_03
+    100062: stemSupport_04
+    100064: stemSupport_04 1
+    100066: topThing_01
+    100068: topThing_02
+    100070: topThing_03
+    100072: topThing_04
+    100074: topThing_05
+    100076: topThing_06
+    100078: topThingBase
+    100080: Cylinder011
+    100082: Cylinder012
+    100084: Cylinder013
+    100086: Cylinder014
+    100088: Plane001
     400000: //RootNode
     400002: Cylinder001
     400004: Cylinder002
@@ -45,6 +70,31 @@ ModelImporter:
     400034: Plane002
     400036: Sphere001
     400038: Sphere002
+    400040: basePlatform
+    400042: glassHouse
+    400044: glassHouseFloor
+    400046: headPoint
+    400048: metalRims
+    400050: metalShell
+    400052: solarPanels
+    400054: stem
+    400056: stemSupport_01
+    400058: stemSupport_02
+    400060: stemSupport_03
+    400062: stemSupport_04
+    400064: stemSupport_04 1
+    400066: topThing_01
+    400068: topThing_02
+    400070: topThing_03
+    400072: topThing_04
+    400074: topThing_05
+    400076: topThing_06
+    400078: topThingBase
+    400080: Cylinder011
+    400082: Cylinder012
+    400084: Cylinder013
+    400086: Cylinder014
+    400088: Plane001
     2300000: Cylinder001
     2300002: Cylinder002
     2300004: Cylinder003
@@ -64,6 +114,30 @@ ModelImporter:
     2300032: Plane002
     2300034: Sphere001
     2300036: Sphere002
+    2300038: basePlatform
+    2300040: glassHouse
+    2300042: glassHouseFloor
+    2300044: metalRims
+    2300046: metalShell
+    2300048: solarPanels
+    2300050: stem
+    2300052: stemSupport_01
+    2300054: stemSupport_02
+    2300056: stemSupport_03
+    2300058: stemSupport_04
+    2300060: stemSupport_04 1
+    2300062: topThing_01
+    2300064: topThing_02
+    2300066: topThing_03
+    2300068: topThing_04
+    2300070: topThing_05
+    2300072: topThing_06
+    2300074: topThingBase
+    2300076: Cylinder011
+    2300078: Cylinder012
+    2300080: Cylinder013
+    2300082: Cylinder014
+    2300084: Plane001
     3300000: Cylinder001
     3300002: Cylinder002
     3300004: Cylinder003
@@ -83,6 +157,30 @@ ModelImporter:
     3300032: Plane002
     3300034: Sphere001
     3300036: Sphere002
+    3300038: basePlatform
+    3300040: glassHouse
+    3300042: glassHouseFloor
+    3300044: metalRims
+    3300046: metalShell
+    3300048: solarPanels
+    3300050: stem
+    3300052: stemSupport_01
+    3300054: stemSupport_02
+    3300056: stemSupport_03
+    3300058: stemSupport_04
+    3300060: stemSupport_04 1
+    3300062: topThing_01
+    3300064: topThing_02
+    3300066: topThing_03
+    3300068: topThing_04
+    3300070: topThing_05
+    3300072: topThing_06
+    3300074: topThingBase
+    3300076: Cylinder011
+    3300078: Cylinder012
+    3300080: Cylinder013
+    3300082: Cylinder014
+    3300084: Plane001
     4300000: Sphere001
     4300002: Cylinder001
     4300004: Object001
@@ -102,6 +200,30 @@ ModelImporter:
     4300032: Cylinder008
     4300034: Cylinder009
     4300036: Cylinder010
+    4300038: glassHouse
+    4300040: topThingBase
+    4300042: topThing_01
+    4300044: topThing_02
+    4300046: topThing_06
+    4300048: topThing_04
+    4300050: topThing_03
+    4300052: topThing_05
+    4300054: metalShell
+    4300056: basePlatform
+    4300058: stem
+    4300060: solarPanels
+    4300062: stemSupport_04
+    4300064: stemSupport_02
+    4300066: stemSupport_04
+    4300068: stemSupport_03
+    4300070: stemSupport_01
+    4300072: metalRims
+    4300074: glassHouseFloor
+    4300076: Cylinder011
+    4300078: Cylinder012
+    4300080: Cylinder013
+    4300082: Cylinder014
+    4300084: Plane001
     9500000: //RootNode
   materials:
     importMaterials: 1
