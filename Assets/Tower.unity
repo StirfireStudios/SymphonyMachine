@@ -337,7 +337,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 18394ea574e97094eaecff01958448b9, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -416,7 +416,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     execute: 0
     active: 0
-  amount: 90
+  amount: -90
   duration: 1
   target: {fileID: 1711373310}
   up: {x: 0, y: 1, z: 0}
@@ -808,7 +808,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     execute: 0
     active: 0
-  amount: -90
+  amount: 90
   duration: 1
   target: {fileID: 1711373310}
   up: {x: 0, y: 1, z: 0}
@@ -845,7 +845,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 18394ea574e97094eaecff01958448b9, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -907,7 +907,6 @@ GameObject:
   - 114: {fileID: 1227010855}
   - 114: {fileID: 1227010854}
   - 114: {fileID: 1227010856}
-  - 114: {fileID: 1227010857}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1027,25 +1026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4604b6c983031ec49b7423b46d5bd2e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GearVRRenderScale: 0.8
+  GearVRRenderScale: 0.9
   PCRenderScale: 1.5
---- !u!114 &1227010857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1227010848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4975a6e437fc3b149a8cd508ce5bdd69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  threshold: 0.25
-  intensity: 0.75
-  blurSize: 1
-  blurIterations: 1
-  blurType: 0
-  fastBloomShader: {fileID: 4800000, guid: 68a00c837b82e4c6d92e7da765dc5f1d, type: 3}
 --- !u!1 &1711373310 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8b438db874d5d2444bacfc3b7878dbac, type: 3}
