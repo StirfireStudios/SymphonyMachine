@@ -80,7 +80,6 @@ namespace Interface
 
             if (transitionDirection == Direction.none)
             {
-                Debug.Log("Transition Complete");
                 transitionEnd = -1.0f;
             }
 
