@@ -1,16 +1,13 @@
 // Shader created with Shader Forge v1.26 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:32806,y:32784,varname:node_2865,prsc:2|diff-6343-OUT,spec-358-OUT,gloss-1813-OUT,emission-2396-OUT;n:type:ShaderForge.SFN_Multiply,id:6343,x:32114,y:32712,varname:node_6343,prsc:2|A-7736-RGB,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:31921,y:32805,ptovrint:False,ptlb:Color,ptin:_Color,varname:_Color,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:0.7403651,c3:0.05882353,c4:1;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31921,y:32620,ptovrint:True,ptlb:Base Color,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Slider,id:358,x:32138,y:32928,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:_Metallic,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32168,y:33069,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Gloss,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8,max:1;n:type:ShaderForge.SFN_Slider,id:6874,x:31857,y:33214,ptovrint:False,ptlb:GlowAmount,ptin:_GlowAmount,varname:_GlowAmount,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:1,max:1;n:type:ShaderForge.SFN_Color,id:3056,x:31964,y:33368,ptovrint:False,ptlb:GlowColor,ptin:_GlowColor,varname:_GlowColor,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:0,c3:0,c4:1;n:type:ShaderForge.SFN_Multiply,id:2396,x:32453,y:33368,varname:node_2396,prsc:2|A-4953-OUT,B-3056-RGB;n:type:ShaderForge.SFN_Vector1,id:8180,x:32014,y:33132,varname:node_8180,prsc:2,v1:2;n:type:ShaderForge.SFN_Multiply,id:4953,x:32168,y:33214,varname:node_4953,prsc:2|A-8180-OUT,B-6874-OUT;proporder:6665-7736-358-1813-6874-3056;pass:END;sub:END;*/
+/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:32806,y:32784,varname:node_2865,prsc:2|diff-7736-RGB,spec-768-OUT,gloss-4333-OUT,emission-2396-OUT;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31921,y:32620,ptovrint:True,ptlb:Base Color,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:f70958a64207cb74faaa0fc4afdc8f35,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Slider,id:6874,x:31843,y:33214,ptovrint:False,ptlb:GlowAmount,ptin:_GlowAmount,varname:_GlowAmount,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Multiply,id:2396,x:32453,y:33368,varname:node_2396,prsc:2|A-4953-OUT,B-6290-RGB;n:type:ShaderForge.SFN_Vector1,id:8180,x:31939,y:33022,varname:node_8180,prsc:2,v1:2;n:type:ShaderForge.SFN_Multiply,id:4953,x:32247,y:33176,varname:node_4953,prsc:2|A-8180-OUT,B-6874-OUT;n:type:ShaderForge.SFN_Tex2d,id:6290,x:32051,y:33372,ptovrint:False,ptlb:node_6290,ptin:_node_6290,varname:_node_6290,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:aa2a3c3642879574aa5f5570aa6b39fe,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Vector1,id:768,x:32168,y:32756,varname:node_768,prsc:2,v1:0.3;n:type:ShaderForge.SFN_Vector1,id:4333,x:32187,y:32847,varname:node_4333,prsc:2,v1:0.18;proporder:7736-6874-6290;pass:END;sub:END;*/
 
 Shader "Shader Forge/ControlArrow" {
     Properties {
-        _Color ("Color", Color) = (1,0.7403651,0.05882353,1)
         _MainTex ("Base Color", 2D) = "white" {}
-        _Metallic ("Metallic", Range(0, 1)) = 0
-        _Gloss ("Gloss", Range(0, 1)) = 0.8
-        _GlowAmount ("GlowAmount", Range(0, 1)) = 1
-        _GlowColor ("GlowColor", Color) = (1,0,0,1)
+        _GlowAmount ("GlowAmount", Range(0, 1)) = 0
+        _node_6290 ("node_6290", 2D) = "white" {}
     }
     SubShader {
         Tags {
@@ -41,12 +38,9 @@ Shader "Shader Forge/ControlArrow" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _Color;
             uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
-            uniform float _Metallic;
-            uniform float _Gloss;
             uniform float _GlowAmount;
-            uniform float4 _GlowColor;
+            uniform sampler2D _node_6290; uniform float4 _node_6290_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -108,7 +102,7 @@ Shader "Shader Forge/ControlArrow" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float gloss = _Gloss;
+                float gloss = 0.18;
                 float specPow = exp2( gloss * 10.0+1.0);
 /////// GI Data:
                 UnityLight light;
@@ -150,10 +144,10 @@ Shader "Shader Forge/ControlArrow" {
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
                 float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
-                float3 diffuseColor = (_MainTex_var.rgb*_Color.rgb); // Need this for specular when using metallic
+                float3 diffuseColor = _MainTex_var.rgb; // Need this for specular when using metallic
                 float specularMonochrome;
                 float3 specularColor;
-                diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, _Metallic, specularColor, specularMonochrome );
+                diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, 0.3, specularColor, specularMonochrome );
                 specularMonochrome = 1-specularMonochrome;
                 float NdotV = max(0.0,dot( normalDirection, viewDirection ));
                 float NdotH = max(0.0,dot( normalDirection, halfDirection ));
@@ -174,7 +168,8 @@ Shader "Shader Forge/ControlArrow" {
                 indirectDiffuse += gi.indirect.diffuse;
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 ////// Emissive:
-                float3 emissive = ((2.0*_GlowAmount)*_GlowColor.rgb);
+                float4 _node_6290_var = tex2D(_node_6290,TRANSFORM_TEX(i.uv0, _node_6290));
+                float3 emissive = ((2.0*_GlowAmount)*_node_6290_var.rgb);
 /// Final Color:
                 float3 finalColor = diffuse + specular + emissive;
                 fixed4 finalRGBA = fixed4(finalColor,1);
@@ -209,12 +204,9 @@ Shader "Shader Forge/ControlArrow" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _Color;
             uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
-            uniform float _Metallic;
-            uniform float _Gloss;
             uniform float _GlowAmount;
-            uniform float4 _GlowColor;
+            uniform sampler2D _node_6290; uniform float4 _node_6290_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -264,16 +256,16 @@ Shader "Shader Forge/ControlArrow" {
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
 ///////// Gloss:
-                float gloss = _Gloss;
+                float gloss = 0.18;
                 float specPow = exp2( gloss * 10.0+1.0);
 ////// Specular:
                 float NdotL = max(0, dot( normalDirection, lightDirection ));
                 float LdotH = max(0.0,dot(lightDirection, halfDirection));
                 float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
-                float3 diffuseColor = (_MainTex_var.rgb*_Color.rgb); // Need this for specular when using metallic
+                float3 diffuseColor = _MainTex_var.rgb; // Need this for specular when using metallic
                 float specularMonochrome;
                 float3 specularColor;
-                diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, _Metallic, specularColor, specularMonochrome );
+                diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, 0.3, specularColor, specularMonochrome );
                 specularMonochrome = 1-specularMonochrome;
                 float NdotV = max(0.0,dot( normalDirection, viewDirection ));
                 float NdotH = max(0.0,dot( normalDirection, halfDirection ));
@@ -322,12 +314,9 @@ Shader "Shader Forge/ControlArrow" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _Color;
             uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
-            uniform float _Metallic;
-            uniform float _Gloss;
             uniform float _GlowAmount;
-            uniform float4 _GlowColor;
+            uniform sampler2D _node_6290; uniform float4 _node_6290_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float2 texcoord0 : TEXCOORD0;
@@ -355,14 +344,15 @@ Shader "Shader Forge/ControlArrow" {
                 UnityMetaInput o;
                 UNITY_INITIALIZE_OUTPUT( UnityMetaInput, o );
                 
-                o.Emission = ((2.0*_GlowAmount)*_GlowColor.rgb);
+                float4 _node_6290_var = tex2D(_node_6290,TRANSFORM_TEX(i.uv0, _node_6290));
+                o.Emission = ((2.0*_GlowAmount)*_node_6290_var.rgb);
                 
                 float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
-                float3 diffColor = (_MainTex_var.rgb*_Color.rgb);
+                float3 diffColor = _MainTex_var.rgb;
                 float specularMonochrome;
                 float3 specColor;
-                diffColor = DiffuseAndSpecularFromMetallic( diffColor, _Metallic, specColor, specularMonochrome );
-                float roughness = 1.0 - _Gloss;
+                diffColor = DiffuseAndSpecularFromMetallic( diffColor, 0.3, specColor, specularMonochrome );
+                float roughness = 1.0 - 0.18;
                 o.Albedo = diffColor + specColor * roughness * roughness * 0.5;
                 
                 return UnityMetaFragment( o );
