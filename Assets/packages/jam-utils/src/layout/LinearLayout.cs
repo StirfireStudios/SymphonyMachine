@@ -32,11 +32,10 @@ namespace Jam.Utils.Layout
 
         // number of lines
         public float lines;
-        public float positions;
 
-        public float line_offset = -2;
+        public float lineOffset;
 
-        public LinearLayout(GameObject alignToTarget, float borderSize, float lines)
+        public LinearLayout(GameObject alignToTarget, float borderSize, float lines, float lineOffset)
         {
             Renderer renderer = alignToTarget.GetComponent<Renderer>();
             if (renderer == null)
@@ -49,10 +48,10 @@ namespace Jam.Utils.Layout
             up = alignToTarget.transform.up;
             left = -alignToTarget.transform.right.normalized;
             this.borderSize = borderSize;
-            this.height = renderer.bounds.extents.x;
+            this.height = renderer.bounds.size.x;
             this.width = renderer.bounds.size.z;
             this.lines = lines;
-            this.positions = lines;
+            this.lineOffset = -2 + lineOffset;
             forward = Vector3.Cross(up, left);
 
             // Align to plane
@@ -65,13 +64,13 @@ namespace Jam.Utils.Layout
         {
             var count = target.Count();
             var single_height = height / lines * up;
-            var single_width = width / positions * left;
+            var single_width = width / count * left;
             var interval_x = 2f * borderSize * left;
             var offset = -2;
             foreach (var gp in target)
             {
                 var pos_x = offset * single_width + single_width / 2f;
-                var pos_y = line_offset * single_height + single_height / 2f;
+                var pos_y = lineOffset * single_height + single_height / 2f;
                 var pos = origin + pos_x + pos_y;
                 offset += 1;
                 yield return new LayoutObject
