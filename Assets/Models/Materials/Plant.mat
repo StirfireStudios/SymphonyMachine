@@ -141,7 +141,7 @@ Material:
       data:
         first:
           name: _Gloss
-        second: 0
+        second: 1
       data:
         first:
           name: _Speed

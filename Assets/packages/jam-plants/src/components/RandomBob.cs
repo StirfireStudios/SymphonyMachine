@@ -12,6 +12,7 @@ namespace Jam.Plants
 
         public float bobMin = 0f;
         public float bobMax = 1f;
+        public float bobOffset = 0f;
         private float bobAmount;
 
         public float duration = 2.5f;
@@ -21,7 +22,6 @@ namespace Jam.Plants
         public float baseBobInterval = 1f;
 
         private float timeSinceLastBob = 0f;
-        private Vector3 origin;
 
         public void Update()
         {
@@ -41,7 +41,6 @@ namespace Jam.Plants
         public void StartBob()
         {
             elapsed = 0f;
-            origin = gameObject.transform.position;
             bobAmount = Jam.Utils.Random.Between(bobMin, bobMax);
             inBob = true;
         }
@@ -52,8 +51,8 @@ namespace Jam.Plants
             var amount = elapsed / duration;
             var value = Mathf.Sin(amount * 2f * Mathf.PI);
             value = value * value * bobAmount;
-            var offset = bobDirection * value;
-            gameObject.transform.position = origin + offset;
+            var offset = bobDirection * bobOffset + bobDirection * value;
+            gameObject.transform.localPosition = offset;
             if (amount >= 1f)
             {
                 inBob = false;

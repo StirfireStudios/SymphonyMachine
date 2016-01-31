@@ -33,10 +33,14 @@ namespace Jam.Plants
         public void UpdateState(WeatherDelta newWeather)
         {
             // Update shader state
-            var wind = minWind + newWeather.weather.detail.wind * (maxWind - minWind);
+            var wind = minWind + newWeather.normalized.wind * (maxWind - minWind);
+            UpdateShaderState(wind);
 
             // Get a delta between current weather and targets weather
             var delta = targetWeather.Delta(newWeather.weather.detail);
+            Debug.Log("Request: " + targetWeather.Debug());
+            Debug.Log("Weather: " + newWeather.weather.detail.Debug());
+            Debug.Log("------> VALUE: " + delta + " vs THREASHOLD " + matchThreshold);
             if (delta < matchThreshold)
             {
                 UpdateAnimationState(true);
