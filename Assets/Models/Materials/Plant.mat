@@ -88,6 +88,10 @@ Material:
     m_Floats:
       data:
         first:
+          name: _Scale
+        second: 0.2
+      data:
+        first:
           name: _SrcBlend
         second: 1
       data:
@@ -141,7 +145,7 @@ Material:
       data:
         first:
           name: _Speed
-        second: 1
+        second: 0
       data:
         first:
           name: _Specular
