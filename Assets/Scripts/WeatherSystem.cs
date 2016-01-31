@@ -41,6 +41,7 @@ public class WeatherSystem : MonoBehaviour {
 
  
     public Light sun;
+    public Light lightning;
     public Skydome skydome;
     public ParticleSystem rainParticles;
     public ParticleSystem snowParticles;
@@ -49,6 +50,7 @@ public class WeatherSystem : MonoBehaviour {
 
     bool snowing = false;
     bool raining = false;
+    bool storming = false;
 
     WeatherId defaultWeather = WeatherId.FINE;
     WeatherStateCollection stateInfo;
@@ -110,6 +112,39 @@ public class WeatherSystem : MonoBehaviour {
         rainParticles.enableEmission = f;
     }
 
+    void ToggleLightning(bool f)
+    {
+        storming = f;
+
+        if (storming)
+            Invoke("LightningFlash", Random.Range(4, 12));
+        else
+            CancelInvoke("LightningFlash");
+    }
+
+    void LightningFlash()
+    {
+        StartCoroutine(FlashLightning());
+        Invoke("LightningFlash", Random.Range(4, 12));
+    }
+
+    IEnumerator FlashLightning()
+    {
+        lightning.intensity = 8;
+
+        yield return new WaitForSeconds(0.1f);
+
+        lightning.intensity = 0;
+
+        yield return new WaitForSeconds(0.1f);
+
+        lightning.intensity = 8;
+
+        yield return new WaitForSeconds(0.1f);
+
+        lightning.intensity = 0;
+    }
+
     IEnumerator TransitionWeather(WeatherId newState, WeatherId oldState)
     {
         float t = 0;
@@ -125,6 +160,11 @@ public class WeatherSystem : MonoBehaviour {
 
         ToggleSnow(cState.snowing);
         ToggleRain(cState.raining);
+
+        if (newState == WeatherId.STORM)
+            ToggleLightning(true);
+        else
+            ToggleLightning(false);
 
         while (t < 1)
         {
