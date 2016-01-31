@@ -40,7 +40,6 @@ GameObject:
   - 4: {fileID: 432492}
   - 95: {fileID: 9516132}
   - 114: {fileID: 11454618}
-  - 114: {fileID: 11469336}
   m_Layer: 0
   m_Name: PlantB
   m_TagString: Untagged
@@ -857,7 +856,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.665, y: 1.225, z: -0.545}
+  m_LocalPosition: {x: -0.61, y: 1.225, z: 0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 498802}
@@ -1042,8 +1041,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152368}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.01, y: 0, z: -0.35}
+  m_LocalRotation: {x: 0, y: 0.5387708, z: 0, w: 0.8424524}
+  m_LocalPosition: {x: -2.692, y: 0.52, z: 1.901}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 432492}
@@ -1396,7 +1395,7 @@ MonoBehaviour:
   bobDirection: {x: 0, y: 1, z: 0}
   inBob: 0
   bobMin: 0
-  bobMax: 1
+  bobMax: 0.1
   bobOffset: 0.84
   duration: 8
   bobIntervalVariation: 0
@@ -1427,19 +1426,6 @@ MonoBehaviour:
   debugHappy: 0
   debugSad: 0
   debugWind: -1
---- !u!114 &11469336
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 107352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25a88e37291e942c5a8adeb3828c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationAxis: {x: 0, y: 1, z: 0}
-  speed: 0
 --- !u!137 &13791958
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
