@@ -24,7 +24,7 @@ public class Skydome : MonoBehaviour {
     public void SetWindSpeed(float speed)
     {
         this.cloudSpeed = speed;
-        Debug.Log(cloudSpeed);
+        //Debug.Log(cloudSpeed);
     }
 
     public void SetCloudColor(Color nCol)

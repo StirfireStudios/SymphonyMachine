@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: glass_mat
-  m_Shader: {fileID: 4800000, guid: 15f648ca8896fd7499a7ae30ced7d76c, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: 3000
+  m_Name: PlantB
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 253c5e230ec4fa64a90abaacd7bbf324, type: 3}
+          m_Texture: {fileID: 2800000, guid: dd58eae6a5db4404cbbf795e961fa982, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -54,7 +54,7 @@ Material:
         first:
           name: _EmissionMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 5913a0869a6aa4f5690aff330b794bd0, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -94,11 +94,7 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 0
-      data:
-        first:
-          name: _Gloss
-        second: 0.942
+        second: 0.89
       data:
         first:
           name: _Parallax
@@ -110,7 +106,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: 0.5
+        second: 0.45
       data:
         first:
           name: _BumpScale
@@ -131,16 +127,12 @@ Material:
         first:
           name: _Mode
         second: 0
-      data:
-        first:
-          name: _OpacityLevel
-        second: 0.33
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0, g: 0, b: 0, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _Color
-        second: {r: 0.588, g: 0.588, b: 0.588, a: 1}
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}

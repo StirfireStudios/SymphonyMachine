@@ -95,6 +95,12 @@ namespace Jam.Symbols
         {
             new PickWeatherForPhrase(current).Execute((ip) =>
             {
+                var self = ip as PickWeatherForPhrase;
+                if ((self != null) && (self.selected != null))
+                {
+                    /// Push new state to weather.
+                    new UpdatePlantsWithNewWeather(self.selected).Execute(null);
+                }
                 new DispatchWeatherRequest(current).Execute(null);
             });
         }
