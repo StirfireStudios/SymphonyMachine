@@ -50,7 +50,8 @@ namespace Jam.Plants
         {
             elapsed += dt;
             var amount = elapsed / duration;
-            var value = Mathf.Sin(amount * 2f * Mathf.PI) * bobAmount;
+            var value = Mathf.Sin(amount * 2f * Mathf.PI);
+            value = value * value * bobAmount;
             var offset = bobDirection * value;
             gameObject.transform.position = origin + offset;
             if (amount >= 1f)
