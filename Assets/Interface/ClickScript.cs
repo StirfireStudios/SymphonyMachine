@@ -7,7 +7,6 @@ public class ClickScript : MonoBehaviour {
     public bool testActivate;
     public Jam.Actions.ActionBase actionToExecute;
 
-    public AudioClip clickSound;
     private AudioSource audio;
 
 	// Use this for initialization
@@ -29,13 +28,7 @@ public class ClickScript : MonoBehaviour {
         interactiveItem.OnClick += OnActivate;
         interactiveItem.OnUp += OnActivate;
 
-        if (clickSound)
-        {
-            audio = gameObject.AddComponent<AudioSource>();
-            audio.spatialBlend = 1; // FULLY 3D!!!!!!
-            audio.clip = clickSound;
-        }
-	
+        audio = gameObject.GetComponent<AudioSource>();
 	}
 
     public void OnActivate()
@@ -46,7 +39,7 @@ public class ClickScript : MonoBehaviour {
         }
         actionToExecute.action.execute = true;
 
-        if (clickSound)
+        if (audio != null)
         {
             audio.Play();
         }
