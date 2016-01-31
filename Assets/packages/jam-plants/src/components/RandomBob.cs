@@ -52,7 +52,9 @@ namespace Jam.Plants
             var value = Mathf.Sin(amount * 2f * Mathf.PI);
             value = value * value * bobAmount;
             var offset = bobDirection * bobOffset + bobDirection * value;
-            gameObject.transform.localPosition = offset;
+            var temp = gameObject.transform.localPosition;
+            temp.y = offset.y;
+            gameObject.transform.localPosition = temp;
             if (amount >= 1f)
             {
                 inBob = false;
