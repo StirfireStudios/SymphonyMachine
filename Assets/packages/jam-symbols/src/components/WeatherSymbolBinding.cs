@@ -11,6 +11,9 @@ namespace Jam.Symbols
         [Tooltip("The prefab associate with this weather id")]
         public GameObject weatherPrefab;
 
+        [Tooltip("Ambient audio for this weather condition, if any")]
+        public AudioClip ambientSound;
+
         [Tooltip("The weather id")]
         public WeatherId weatherId;
     }

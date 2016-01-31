@@ -22,9 +22,19 @@ namespace Jam.Weathers
                     rtn = cp.weatherPrefab;
                 }
             }
-            if (rtn == null)
+            return rtn;
+        }
+
+        /// Return the ambient sound for a weatherId this is set on the associated WeatherSymbolBinding
+        public static AudioClip AmbientSoundFor(WeatherId id)
+        {
+            AudioClip rtn = null;
+            foreach (var cp in Scene.FindComponents<WeatherSymbolBinding>())
             {
-                throw new Exception(string.Format("No WeatherSymbolBinding found for weather id {0}", id));
+                if (cp.weatherId == id)
+                {
+                    rtn = cp.ambientSound;
+                }
             }
             return rtn;
         }
