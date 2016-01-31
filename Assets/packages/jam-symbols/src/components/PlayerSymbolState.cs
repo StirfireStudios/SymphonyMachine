@@ -72,22 +72,23 @@ namespace Jam.Symbols
         /// Execute a symbol stream
         public bool ExecutePhrase()
         {
-            if (current.Ready)
+            if (!current.Ready)
             {
-                ExecuteWeather(current);
-
-                history.history.Add(current);
-                if (history.history.Count > history.historySize)
-                { history.history.RemoveAt(0); }
-                UpdatePhraseHistory();
-
-                current = new SymbolPhrase();
-                UpdateDisplayedSymbols(current);
-
-                return true;
+                Debug.Log("Player tried to run an incomplete symbol, doing nothing");
+                return false;
             }
-            Debug.Log("Player tried to run an incomplete symbol, doing nothing");
-            return false;
+
+            ExecuteWeather(current);
+
+            history.history.Add(current);
+            if (history.history.Count > history.historySize)
+                { history.history.RemoveAt(0); }
+            UpdatePhraseHistory();
+                
+            current = new SymbolPhrase();
+            UpdateDisplayedSymbols(current);
+
+            return true;
         }
 
         private void ExecuteWeather(SymbolPhrase phrase)
