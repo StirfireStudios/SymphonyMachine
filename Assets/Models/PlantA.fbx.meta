@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: ff0a2e860207f49c6936d6c07d8eab50
+timeCreated: 1454206729
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: group
+    100002: joint12
+    100004: joint15
+    100006: joint18
+    100008: joint21
+    100010: LeafA1
+    100012: LeafA2
+    100014: LeafB1
+    100016: LeafB2
+    100018: LeafC1
+    100020: LeafC2
+    100022: pasted__pCube1
+    100024: persp1
+    100026: //RootNode
+    100028: Root
+    100030: Tip
+    100032: Trunk1
+    100034: Trunk2
+    100036: Trunk3
+    100038: Trunk4
+    100040: Trunk5
+    100042: Trunk6
+    100044: Trunk7
+    100046: Trunk8
+    100048: Trunk9
+    400000: group
+    400002: joint12
+    400004: joint15
+    400006: joint18
+    400008: joint21
+    400010: LeafA1
+    400012: LeafA2
+    400014: LeafB1
+    400016: LeafB2
+    400018: LeafC1
+    400020: LeafC2
+    400022: pasted__pCube1
+    400024: persp1
+    400026: //RootNode
+    400028: Root
+    400030: Tip
+    400032: Trunk1
+    400034: Trunk2
+    400036: Trunk3
+    400038: Trunk4
+    400040: Trunk5
+    400042: Trunk6
+    400044: Trunk7
+    400046: Trunk8
+    400048: Trunk9
+    4300000: pasted__pCube1
+    7400000: Take 001
+    7400002: Happiness0
+    7400004: Happiness1
+    7400006: Happiness2
+    7400008: Happiness3
+    7400010: Happiness4
+    7400012: Happiness5
+    7400014: Happiness6
+    9500000: //RootNode
+    13700000: pasted__pCube1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Happiness1
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__pCube1
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Trunk1
+        weight: 1
+      - path: Root/Trunk1/Trunk2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2/joint15
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2/joint18
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2/joint21
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip/joint12
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Happiness2
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__pCube1
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Trunk1
+        weight: 1
+      - path: Root/Trunk1/Trunk2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2/joint15
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2/joint18
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2/joint21
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip/joint12
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Happiness3
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__pCube1
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Trunk1
+        weight: 1
+      - path: Root/Trunk1/Trunk2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2/joint15
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2/joint18
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2/joint21
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip/joint12
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Happiness4
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__pCube1
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Trunk1
+        weight: 1
+      - path: Root/Trunk1/Trunk2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2/joint15
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2/joint18
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2/joint21
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip/joint12
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Happiness5
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__pCube1
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Trunk1
+        weight: 1
+      - path: Root/Trunk1/Trunk2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2/joint15
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2/joint18
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2/joint21
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip/joint12
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Happiness6
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 239
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__pCube1
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Trunk1
+        weight: 1
+      - path: Root/Trunk1/Trunk2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/LeafA1/LeafA2/joint15
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/LeafB1/LeafB2/joint18
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/LeafC1/LeafC2/joint21
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip
+        weight: 1
+      - path: Root/Trunk1/Trunk2/Trunk3/Trunk4/Trunk5/Trunk6/Trunk7/Trunk8/Trunk9/Tip/joint12
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
