@@ -6,6 +6,7 @@ public class ClickScript : MonoBehaviour {
 
     public bool testActivate;
     public Jam.Actions.ActionBase actionToExecute;
+    public bool playAudio = true;
 
     private AudioSource audio;
 
