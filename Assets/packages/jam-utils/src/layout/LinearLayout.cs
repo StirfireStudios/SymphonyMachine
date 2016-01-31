@@ -37,19 +37,12 @@ namespace Jam.Utils.Layout
 
         public LinearLayout(GameObject alignToTarget, float borderSize, float lines, float lineOffset)
         {
-            Renderer renderer = alignToTarget.GetComponent<Renderer>();
-            if (renderer == null)
-            {
-                Debug.LogError("OH GOD, there's no renderer on your target component O_o");
-                return;
-            }
-
             origin = alignToTarget.transform.position;
             up = alignToTarget.transform.up;
             left = -alignToTarget.transform.right.normalized;
             this.borderSize = borderSize;
-            this.height = renderer.bounds.size.x;
-            this.width = renderer.bounds.size.z;
+            this.height = alignToTarget.transform.lossyScale.y;
+            this.width = alignToTarget.transform.lossyScale.x;
             this.lines = lines;
             this.lineOffset = -2 + lineOffset;
             forward = Vector3.Cross(up, left);
