@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ff0a2e860207f49c6936d6c07d8eab50
-timeCreated: 1454206729
+guid: 856c2fa5db1134fd3869c17d12048466
+timeCreated: 1454210925
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -17,19 +17,18 @@ ModelImporter:
     100018: LeafC1
     100020: LeafC2
     100022: pasted__pCube1
-    100024: persp1
-    100026: //RootNode
-    100028: Root
-    100030: Tip
-    100032: Trunk1
-    100034: Trunk2
-    100036: Trunk3
-    100038: Trunk4
-    100040: Trunk5
-    100042: Trunk6
-    100044: Trunk7
-    100046: Trunk8
-    100048: Trunk9
+    100024: //RootNode
+    100026: Root
+    100028: Tip
+    100030: Trunk1
+    100032: Trunk2
+    100034: Trunk3
+    100036: Trunk4
+    100038: Trunk5
+    100040: Trunk6
+    100042: Trunk7
+    100044: Trunk8
+    100046: Trunk9
     400000: group
     400002: joint12
     400004: joint15
@@ -42,28 +41,25 @@ ModelImporter:
     400018: LeafC1
     400020: LeafC2
     400022: pasted__pCube1
-    400024: persp1
-    400026: //RootNode
-    400028: Root
-    400030: Tip
-    400032: Trunk1
-    400034: Trunk2
-    400036: Trunk3
-    400038: Trunk4
-    400040: Trunk5
-    400042: Trunk6
-    400044: Trunk7
-    400046: Trunk8
-    400048: Trunk9
+    400024: //RootNode
+    400026: Root
+    400028: Tip
+    400030: Trunk1
+    400032: Trunk2
+    400034: Trunk3
+    400036: Trunk4
+    400038: Trunk5
+    400040: Trunk6
+    400042: Trunk7
+    400044: Trunk8
+    400046: Trunk9
     4300000: pasted__pCube1
-    7400000: Take 001
-    7400002: Happiness0
-    7400004: Happiness1
-    7400006: Happiness2
-    7400008: Happiness3
-    7400010: Happiness4
-    7400012: Happiness5
-    7400014: Happiness6
+    7400000: Happiness1
+    7400002: Happiness2
+    7400004: Happiness3
+    7400006: Happiness4
+    7400008: Happiness5
+    7400010: Happiness6
     9500000: //RootNode
     13700000: pasted__pCube1
   materials:
@@ -117,8 +113,6 @@ ModelImporter:
       - path: group
         weight: 1
       - path: group/pasted__pCube1
-        weight: 1
-      - path: persp1
         weight: 1
       - path: Root
         weight: 1
@@ -196,8 +190,6 @@ ModelImporter:
         weight: 1
       - path: group/pasted__pCube1
         weight: 1
-      - path: persp1
-        weight: 1
       - path: Root
         weight: 1
       - path: Root/Trunk1
@@ -273,8 +265,6 @@ ModelImporter:
       - path: group
         weight: 1
       - path: group/pasted__pCube1
-        weight: 1
-      - path: persp1
         weight: 1
       - path: Root
         weight: 1
@@ -352,8 +342,6 @@ ModelImporter:
         weight: 1
       - path: group/pasted__pCube1
         weight: 1
-      - path: persp1
-        weight: 1
       - path: Root
         weight: 1
       - path: Root/Trunk1
@@ -430,8 +418,6 @@ ModelImporter:
         weight: 1
       - path: group/pasted__pCube1
         weight: 1
-      - path: persp1
-        weight: 1
       - path: Root
         weight: 1
       - path: Root/Trunk1
@@ -480,7 +466,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Happiness6
       takeName: Take 001
-      firstFrame: 200
+      firstFrame: 160
       lastFrame: 239
       wrapMode: 0
       orientationOffsetY: 0
@@ -507,8 +493,6 @@ ModelImporter:
       - path: group
         weight: 1
       - path: group/pasted__pCube1
-        weight: 1
-      - path: persp1
         weight: 1
       - path: Root
         weight: 1
