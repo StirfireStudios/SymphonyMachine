@@ -8301,7 +8301,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 0.85
   m_Text: "Credits\n\nProgramming\n\nBrendan Ragan\nNick Haslam \nDouglas Linder\n\nArt\n\nLisa
-    Rye\nDavid Keep\n\nSound\n\nChris Head\nRicharo Gaynor\nStefan Pugliese\n\n"
+    Rye\nDavid Keep\n\nAudio Design\n\nChris Head\nRicharo Gaynor\nStefan Pugliese\n\n"
 --- !u!222 &2031756003
 CanvasRenderer:
   m_ObjectHideFlags: 0
