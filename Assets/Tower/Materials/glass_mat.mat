@@ -97,6 +97,10 @@ Material:
         second: 0
       data:
         first:
+          name: _Gloss
+        second: 0.942
+      data:
+        first:
           name: _Parallax
         second: 0.02
       data:
@@ -129,12 +133,8 @@ Material:
         second: 0
       data:
         first:
-          name: _Gloss
-        second: 0.942
-      data:
-        first:
           name: _OpacityLevel
-        second: 0.591
+        second: 0.33
     m_Colors:
       data:
         first:
