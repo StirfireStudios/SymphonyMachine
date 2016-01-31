@@ -144,7 +144,7 @@ Material:
       data:
         first:
           name: _CloudSpeed
-        second: 0.3
+        second: 0.18
       data:
         first:
           name: _Density
@@ -157,6 +157,10 @@ Material:
         first:
           name: _MaskSpeed
         second: -0.01
+      data:
+        first:
+          name: _time
+        second: 0
     m_Colors:
       data:
         first:
