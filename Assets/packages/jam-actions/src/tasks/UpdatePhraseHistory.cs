@@ -71,11 +71,7 @@ namespace Jam.Actions
             { gp.AddComponent<HistoryMarker>(); }
 
             // Apply layout
-            var layout = new LinearLayout(
-              history.historyDisplay,
-              history.historyLineSpace * offset,
-              history.historyWidth,
-              history.historyHeight);
+            var layout = new LinearLayout(history.historyDisplay, history.historyBorderSize, history.historySize, offset);
             LayoutManager.ApplyLayout(layout, targets);
         }
     }

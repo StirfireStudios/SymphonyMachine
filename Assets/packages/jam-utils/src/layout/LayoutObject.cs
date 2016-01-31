@@ -15,5 +15,8 @@ namespace Jam.Utils.Layout
 
         /// The desired rotation
         public Quaternion rotation;
+
+        // The desired scale
+        public Vector3 scale;
     }
 }

@@ -21,6 +21,7 @@ namespace Jam.Utils.Layout
         {
             layoutRequest.gameObject.transform.position = layoutRequest.position;
             layoutRequest.gameObject.transform.rotation = layoutRequest.rotation;
+            layoutRequest.gameObject.transform.localScale = layoutRequest.scale;
         }
     }
 }
