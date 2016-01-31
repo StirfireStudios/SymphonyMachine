@@ -1,0 +1,766 @@
+fileFormatVersion: 2
+guid: 3ab6f7f0f19de4092b72d5748513d73e
+timeCreated: 1454220808
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: pasted__joint23
+    100002: pasted__joint24
+    100004: pasted__joint25
+    100006: pasted__joint26
+    100008: pasted__joint27
+    100010: pasted__joint28
+    100012: pasted__joint29
+    100014: pasted__joint30
+    100016: pasted__joint31
+    100018: pasted__joint32
+    100020: pasted__joint33
+    100022: pasted__joint34
+    100024: pasted__joint35
+    100026: pasted__joint36
+    100028: pasted__joint37
+    100030: pasted__joint38
+    100032: pasted__joint39
+    100034: pasted__joint40
+    100036: pasted__joint41
+    100038: pasted__joint42
+    100040: pasted__joint43
+    100042: pasted__joint44
+    100044: pasted__joint45
+    100046: pasted__joint46
+    100048: pasted__joint47
+    100050: pasted__joint48
+    100052: pasted__joint49
+    100054: pasted__joint50
+    100056: pasted__joint51
+    100058: pasted__joint52
+    100060: pasted__joint53
+    100062: pasted__joint54
+    100064: pasted__joint55
+    100066: pasted__joint56
+    100068: pasted__PlantB
+    100070: pasted__Root1
+    100072: //RootNode
+    400000: pasted__joint23
+    400002: pasted__joint24
+    400004: pasted__joint25
+    400006: pasted__joint26
+    400008: pasted__joint27
+    400010: pasted__joint28
+    400012: pasted__joint29
+    400014: pasted__joint30
+    400016: pasted__joint31
+    400018: pasted__joint32
+    400020: pasted__joint33
+    400022: pasted__joint34
+    400024: pasted__joint35
+    400026: pasted__joint36
+    400028: pasted__joint37
+    400030: pasted__joint38
+    400032: pasted__joint39
+    400034: pasted__joint40
+    400036: pasted__joint41
+    400038: pasted__joint42
+    400040: pasted__joint43
+    400042: pasted__joint44
+    400044: pasted__joint45
+    400046: pasted__joint46
+    400048: pasted__joint47
+    400050: pasted__joint48
+    400052: pasted__joint49
+    400054: pasted__joint50
+    400056: pasted__joint51
+    400058: pasted__joint52
+    400060: pasted__joint53
+    400062: pasted__joint54
+    400064: pasted__joint55
+    400066: pasted__joint56
+    400068: pasted__PlantB
+    400070: pasted__Root1
+    400072: //RootNode
+    4300000: pasted__PlantB
+    7400000: PlantBHappy1
+    7400002: PlantBHappy2
+    7400004: PlantBHappy3
+    7400006: PlantBHappy4
+    7400008: PlantBHappy5
+    7400010: PlantBHappy6
+    9500000: //RootNode
+    13700000: pasted__PlantB
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: PlantBHappy1
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pasted__PlantB
+        weight: 1
+      - path: pasted__Root1
+        weight: 1
+      - path: pasted__Root1/pasted__joint23
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49/pasted__joint50
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51/pasted__joint52
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53/pasted__joint54
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55/pasted__joint56
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35/pasted__joint36
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39/pasted__joint40
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43/pasted__joint44
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47/pasted__joint48
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PlantBHappy2
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pasted__PlantB
+        weight: 1
+      - path: pasted__Root1
+        weight: 1
+      - path: pasted__Root1/pasted__joint23
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49/pasted__joint50
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51/pasted__joint52
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53/pasted__joint54
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55/pasted__joint56
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35/pasted__joint36
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39/pasted__joint40
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43/pasted__joint44
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47/pasted__joint48
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PlantBHappy3
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pasted__PlantB
+        weight: 1
+      - path: pasted__Root1
+        weight: 1
+      - path: pasted__Root1/pasted__joint23
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49/pasted__joint50
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51/pasted__joint52
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53/pasted__joint54
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55/pasted__joint56
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35/pasted__joint36
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39/pasted__joint40
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43/pasted__joint44
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47/pasted__joint48
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PlantBHappy4
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pasted__PlantB
+        weight: 1
+      - path: pasted__Root1
+        weight: 1
+      - path: pasted__Root1/pasted__joint23
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49/pasted__joint50
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51/pasted__joint52
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53/pasted__joint54
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55/pasted__joint56
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35/pasted__joint36
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39/pasted__joint40
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43/pasted__joint44
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47/pasted__joint48
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PlantBHappy5
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pasted__PlantB
+        weight: 1
+      - path: pasted__Root1
+        weight: 1
+      - path: pasted__Root1/pasted__joint23
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49/pasted__joint50
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51/pasted__joint52
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53/pasted__joint54
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55/pasted__joint56
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35/pasted__joint36
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39/pasted__joint40
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43/pasted__joint44
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47/pasted__joint48
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: PlantBHappy6
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pasted__PlantB
+        weight: 1
+      - path: pasted__Root1
+        weight: 1
+      - path: pasted__Root1/pasted__joint23
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint49/pasted__joint50
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint51/pasted__joint52
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint53/pasted__joint54
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint24/pasted__joint25/pasted__joint26/pasted__joint27/pasted__joint28/pasted__joint29/pasted__joint30/pasted__joint31/pasted__joint32/pasted__joint55/pasted__joint56
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint33/pasted__joint34/pasted__joint35/pasted__joint36
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint37/pasted__joint38/pasted__joint39/pasted__joint40
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint41/pasted__joint42/pasted__joint43/pasted__joint44
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47
+        weight: 1
+      - path: pasted__Root1/pasted__joint23/pasted__joint45/pasted__joint46/pasted__joint47/pasted__joint48
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
