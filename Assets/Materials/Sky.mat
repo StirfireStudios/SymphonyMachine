@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: metal
-  m_Shader: {fileID: 4800000, guid: 8b4c03f36c54a4b4b9759e13106feb61, type: 3}
-  m_ShaderKeywords: 
+  m_Name: Sky
+  m_Shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _SUNDISK_HIGH_QUALITY
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 1000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -93,12 +93,24 @@ Material:
         second: 0.5
       data:
         first:
-          name: _Metallic
-        second: 0
+          name: _Exposure
+        second: 5.58
       data:
         first:
-          name: _Gloss
-        second: 0.3333333
+          name: _SunDisk
+        second: 2
+      data:
+        first:
+          name: _SunSize
+        second: 0.04
+      data:
+        first:
+          name: _AtmosphereThickness
+        second: 0.68
+      data:
+        first:
+          name: _Metallic
+        second: 0
       data:
         first:
           name: _Parallax
@@ -139,4 +151,12 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.27652127, g: 0.97794116, b: 0, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SkyTint
+        second: {r: 0.25735295, g: 0.9385397, b: 1, a: 1}
+      data:
+        first:
+          name: _GroundColor
+        second: {r: 0.27450982, g: 0.29411766, b: 0.15686275, a: 1}

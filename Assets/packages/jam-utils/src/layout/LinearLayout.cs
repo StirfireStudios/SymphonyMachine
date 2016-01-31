@@ -38,8 +38,8 @@ namespace Jam.Utils.Layout
         public LinearLayout(GameObject alignToTarget, float borderSize, float lines, float lineOffset)
         {
             origin = alignToTarget.transform.position;
-            up = alignToTarget.transform.up;
-            left = -alignToTarget.transform.right.normalized;
+            up = -alignToTarget.transform.up;
+            left = alignToTarget.transform.right.normalized;
             this.borderSize = borderSize;
             this.height = alignToTarget.transform.lossyScale.y;
             this.width = alignToTarget.transform.lossyScale.x;
