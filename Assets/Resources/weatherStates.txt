@@ -27,7 +27,7 @@
 	{
 		"wid" : 2,
 		"name" : "Overcast",
-		"cloudDensity" : 25,
+		"cloudDensity" : 50,
 		"lightColour" : {"r":0.67,"g":0.7,"b":0.76,"a":1},
 		"cloudTint" : {"r":1,"g":1,"b":1,"a":1},
 		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
@@ -63,7 +63,7 @@
 	{
 		"wid" : 5,
 		"name" : "Storm",
-		"cloudDensity" : 75,
+		"cloudDensity" : 90,
 		"lightColour" : {"r":0.28,"g":0.26,"b":0.5,"a":1},
 		"cloudTint" : {"r":0.3,"g":0.3,"b":0.3,"a":1},
 		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
@@ -75,7 +75,7 @@
 	{
 		"wid" : 6,
 		"name" : "Snow",
-		"cloudDensity" :50,
+		"cloudDensity" :60,
 		"lightColour" : {"r":0.72,"g":0.78,"b":0.82,"a":1},
 		"cloudTint" : {"r":0.7,"g":0.7,"b":0.7,"a":1},
 		"fogColour" : {"r":1,"g":1,"b":1,"a":1},

@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Clouds2
-  m_Shader: {fileID: 4800000, guid: b6468858b535ae44f8257b9600583ba0, type: 3}
+  m_Name: TestLeaves
+  m_Shader: {fileID: 4800000, guid: 80c6ec661599ef54bb13cd4895bb3fd2, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -78,20 +78,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _MainClouds
-        second:
-          m_Texture: {fileID: 2800000, guid: 44207acab53034a45967ff7c563ae831, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _CloudMask1
-        second:
-          m_Texture: {fileID: 2800000, guid: 534b6dfa8427b6642bdb45dd81cc428f, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -141,26 +127,6 @@ Material:
         first:
           name: _Mode
         second: 0
-      data:
-        first:
-          name: _CloudSpeed
-        second: 0.18
-      data:
-        first:
-          name: _Density
-        second: 0.336
-      data:
-        first:
-          name: _MaskDensity
-        second: 0.056
-      data:
-        first:
-          name: _MaskSpeed
-        second: -0.01
-      data:
-        first:
-          name: _time
-        second: 0
     m_Colors:
       data:
         first:
@@ -170,7 +136,3 @@ Material:
         first:
           name: _Color
         second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _CloudColour
-        second: {r: 0.44117647, g: 0.44117647, b: 0.44117647, a: 1}

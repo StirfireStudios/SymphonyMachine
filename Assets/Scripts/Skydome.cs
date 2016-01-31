@@ -5,6 +5,7 @@ public class Skydome : MonoBehaviour {
 
     public Transform player;
     Renderer thisRend;
+    float cloudSpeed = 1;
 
     void Awake()
     {
@@ -22,11 +23,19 @@ public class Skydome : MonoBehaviour {
 
     public void SetWindSpeed(float speed)
     {
-        thisRend.material.SetFloat("_CloudSpeed", speed / 1000);
+        this.cloudSpeed = speed;
+        Debug.Log(cloudSpeed);
     }
 
     public void SetCloudColor(Color nCol)
     {
         thisRend.material.SetColor("_CloudColour", nCol);
+    }
+
+    void Update()
+    {
+        var shaderTime = thisRend.material.GetFloat("_time");
+        shaderTime += Time.deltaTime * (cloudSpeed / 1000);
+        thisRend.material.SetFloat("_time", shaderTime);
     }
 }
