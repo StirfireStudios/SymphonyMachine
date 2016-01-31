@@ -61,6 +61,9 @@ public class WeatherSystem : MonoBehaviour {
     Color sunColour;
     Color fogColour;
     public float transitionTime = 10.0f; // seconds it takes from one state to another
+
+    [Tooltip("Length of lightning flashes")]
+    public float flashDuration = 0.1f;
     
     public WeatherId currentWeather;
 
@@ -132,15 +135,15 @@ public class WeatherSystem : MonoBehaviour {
     {
         lightning.intensity = 8;
 
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(flashDuration);
 
         lightning.intensity = 0;
 
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(flashDuration);
 
         lightning.intensity = 8;
 
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(flashDuration);
 
         lightning.intensity = 0;
     }
