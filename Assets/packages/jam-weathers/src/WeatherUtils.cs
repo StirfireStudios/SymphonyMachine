@@ -53,5 +53,10 @@ namespace Jam.Weathers
             return rtn;
         }
 
+        /// Find all the weather that we can from the current scene
+        public static List<KnownWeatherPattern> KnownWeather()
+        {
+            return Scene.FindComponents<KnownWeatherPattern>();
+        }
     }
 }

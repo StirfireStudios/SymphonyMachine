@@ -9,6 +9,8 @@ namespace Jam.Actions
     {
         public SymbolPhrase phrase;
 
+        public WeatherDelta selected;
+
         public PickWeatherForPhrase(SymbolPhrase phrase)
         { this.phrase = phrase; }
 
@@ -25,10 +27,11 @@ namespace Jam.Actions
             }
 
             // Select best match~
-            var selected = match.Count > 0 ? match[0].weather.weather : WeatherId.FINE;
+            selected = match.Count > 0 ? match[0] : null;
+            var selectedId = match.Count > 0 ? match[0].weather.weather : WeatherId.FINE;
 
             // Update symbol phrase
-            phrase.weather = selected;
+            phrase.weather = selectedId;
             phrase.weatherPrefab = WeatherUtils.WeatherPrefab(phrase.weather);
 
             Debug.Log(string.Format("Pick weather for phrase: {0}", selected));

@@ -52,11 +52,10 @@ namespace Jam.Symbols
         /// 1f = all totally different
         public float Delta(SymbolBase other)
         {
-            var diff = 0f;
-            diff += Math.Abs(other.humidity - this.humidity);
-            diff += Math.Abs(other.temperature - this.temperature);
-            diff += Math.Abs(other.wind - this.wind);
-            return diff / 3f;
+            var hd = other.humidity - this.humidity;
+            var td = Math.Abs(other.temperature - this.temperature) / 2f;
+            var wd = other.wind - this.wind;
+            return Mathf.Sqrt(hd * hd + td * td + wd * wd);
         }
 
         /// Return self as vector
