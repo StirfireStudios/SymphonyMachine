@@ -66,6 +66,7 @@ namespace Jam.Utils.Layout
             var single_height = height / lines * up;
             var single_width = width / count * left;
             var interval_x = 2f * borderSize * left;
+            var size = new Vector3(width / count - borderSize / 2.0f, height / lines - borderSize / 2.0f, 1.0f);
             var offset = -2;
             foreach (var gp in target)
             {
@@ -77,9 +78,31 @@ namespace Jam.Utils.Layout
                 {
                     gameObject = gp,
                     rotation = rotation,
-                    position = pos
+                    position = pos,
+                    scale = size
                 };
             }
+        }
+
+        private Vector3 getObjectSize(GameObject target)
+        {
+            Renderer renderer = target.GetComponent<Renderer>();
+            if (renderer == null)
+            {
+                return new Vector3();
+            }
+            return Vector3.Scale(renderer.bounds.size, target.transform.lossyScale);
+        }
+
+        private Vector3 calculateScaleFactor(GameObject target, Vector3 size)
+        {
+            var targetSize = getObjectSize(target);
+            var scaleFactor = new Vector3();
+            scaleFactor.x = 0.2f;
+            scaleFactor.y = 0.2f;
+            scaleFactor.z = 0.2f;
+
+            return scaleFactor;
         }
     }
 }
