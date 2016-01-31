@@ -4454,15 +4454,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.83
+      value: -2.066
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.063
+      value: 1.819
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.92
+      value: 4.075
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4470,7 +4470,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.38387793
+      value: 0.46821508
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4478,7 +4478,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9233839
+      value: 0.88361454
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_RootOrder
@@ -4486,7 +4486,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09a141e7756df694693573c33f01676a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.0272248
+      value: 1.8377281
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09a141e7756df694693573c33f01676a, type: 3}
@@ -7149,15 +7149,15 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2031756000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.09314214, z: 0, w: 0.99565285}
+  m_LocalPosition: {x: 0, y: 0, z: 196.1762}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070665330}
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: -19}
+  m_AnchoredPosition: {x: 967.66785, y: -301}
   m_SizeDelta: {x: 689.8, y: 1430.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031756002
@@ -7180,20 +7180,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 71
+    m_Font: {fileID: 12800000, guid: 5fb784c533f3648a39d9c367d24ba12a, type: 3}
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 103
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 0.85
   m_Text: "Credits\n\nProgramming\n\nBrendan Ragan\nNick Haslam \nDouglas Linder\n\nArt\n\nLisa
-    Rye\nDavid Keep\n\nSound\n\nChris Head\n\n"
+    Rye\nDavid Keep\n\nSound\n\nChris Head\nRicharo Gaynor\nStefan Pugliese\n\n"
 --- !u!222 &2031756003
 CanvasRenderer:
   m_ObjectHideFlags: 0
