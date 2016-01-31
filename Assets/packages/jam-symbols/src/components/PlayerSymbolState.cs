@@ -14,8 +14,8 @@ namespace Jam.Symbols
         [Tooltip("Number of history items to display")]
         public int historySize = 4;
 
-        [Tooltip("The vertical space between each line of history")]
-        public float historyLineSpace = 1f;
+        [Tooltip("The border around each history item")]
+        public float historyBorderSize = 1f;
 
         [Tooltip("Width of the history panel")]
         public float historyWidth = 5f;
