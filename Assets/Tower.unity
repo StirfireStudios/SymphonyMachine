@@ -2377,6 +2377,68 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14e627ad1bba69f4c86444143f2c4180, type: 3}
   m_IsPrefabParent: 0
+--- !u!1001 &325828842
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 463124, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.652
+      objectReference: {fileID: 0}
+    - target: {fileID: 463124, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 463124, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 463124, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463124, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.5387708
+      objectReference: {fileID: 0}
+    - target: {fileID: 463124, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463124, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8424524
+      objectReference: {fileID: 0}
+    - target: {fileID: 463124, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454618, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: bobOffset
+      value: 1.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 496604, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.577
+      objectReference: {fileID: 0}
+    - target: {fileID: 496604, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.551
+      objectReference: {fileID: 0}
+    - target: {fileID: 457452, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.199
+      objectReference: {fileID: 0}
+    - target: {fileID: 457452, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.09
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4c490d57954ae4a98b8f2e2b3b2063d4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &376029317
 GameObject:
   m_ObjectHideFlags: 0
@@ -6470,6 +6532,7 @@ MonoBehaviour:
   rainParticles: {fileID: 438428607}
   snowParticles: {fileID: 57535939}
   transitionTime: 5
+  flashDuration: 0.1
   currentWeather: 0
 --- !u!4 &1359004721
 Transform:

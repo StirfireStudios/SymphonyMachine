@@ -23,6 +23,11 @@ namespace Jam.Plants
 
         private float timeSinceLastBob = 0f;
 
+        public void Start()
+        {
+            inBob = true;
+        }
+        
         public void Update()
         {
             if (inBob)
