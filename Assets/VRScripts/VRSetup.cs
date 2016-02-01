@@ -19,7 +19,7 @@ public class VRSetup : MonoBehaviour {
         Camera camera = gameObject.GetComponent<Camera>();
         camera.clearFlags = CameraClearFlags.Depth;
     }
-	
+
 	// Update is called once per frame
 	public void Update ()
     {

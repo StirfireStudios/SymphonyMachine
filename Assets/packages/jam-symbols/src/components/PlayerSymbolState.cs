@@ -41,6 +41,14 @@ namespace Jam.Symbols
         public GameObject slot3;
     }
 
+    /// Player debugging stuff
+    [System.Serializable]
+    public class PlayerDebugState
+    {
+        [Tooltip("Enable console log messages to debug weather choice")]
+        public bool weatherChoices;
+    }
+
     /// State of symbols selected by the player now and in the past
     [AddComponentMenu("Jam/Symbols/Symbol State")]
     public class PlayerSymbolState : MonoBehaviour
@@ -53,6 +61,9 @@ namespace Jam.Symbols
 
         /// Slot state
         public PlayerSelectSlots selectSlots;
+
+        /// Debugging...
+        public PlayerDebugState debug;
 
         /// Push a symbol into the current symbol phrase
         public bool AddSymbol(Symbol symbol)
@@ -84,7 +95,7 @@ namespace Jam.Symbols
             if (history.history.Count > history.historySize)
                 { history.history.RemoveAt(0); }
             UpdatePhraseHistory();
-                
+
             current = new SymbolPhrase();
             UpdateDisplayedSymbols(current);
 
@@ -93,7 +104,7 @@ namespace Jam.Symbols
 
         private void ExecuteWeather(SymbolPhrase phrase)
         {
-            new PickWeatherForPhrase(current).Execute((ip) =>
+            new PickWeatherForPhrase(current, debug.weatherChoices).Execute((ip) =>
             {
                 var self = ip as PickWeatherForPhrase;
                 if ((self != null) && (self.selected != null))
