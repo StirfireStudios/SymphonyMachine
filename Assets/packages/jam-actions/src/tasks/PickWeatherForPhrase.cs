@@ -11,8 +11,13 @@ namespace Jam.Actions
 
         public WeatherDelta selected;
 
-        public PickWeatherForPhrase(SymbolPhrase phrase)
-        { this.phrase = phrase; }
+        public bool debug;
+
+        public PickWeatherForPhrase(SymbolPhrase phrase, bool debug)
+        {
+            this.phrase = phrase;
+            this.debug = debug;
+        }
 
         public void Execute(TaskComplete callback)
         {
@@ -20,9 +25,11 @@ namespace Jam.Actions
             var match = WeatherUtils.OrderedMatches(phrase);
 
             // Debugging why we picked X
-            if (false)
+            if (debug)
             {
-                Debug.Log("found " + match.Count + "matches...");
+                Debug.Log("");
+                Debug.Log("------ WEATHER CHOICE DEBUG ------");
+                Debug.Log("found " + match.Count + " possible weather matches...");
                 foreach (var m in match) { m.Debug(); }
             }
 
@@ -34,7 +41,11 @@ namespace Jam.Actions
             phrase.weather = selectedId;
             phrase.weatherPrefab = WeatherUtils.WeatherPrefab(phrase.weather);
 
-            Debug.Log(string.Format("Pick weather for phrase: {0}", selected));
+            if (debug)
+            {
+                Debug.Log(string.Format("Pick weather for phrase: {0}", selected));
+                Debug.Log("");
+            }
 
             // Done~
             if (callback != null)
