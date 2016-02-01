@@ -1,0 +1,98 @@
+{ "weatherStates": [
+	
+	{
+		"wid" : 0,
+		"name" : "Fine",
+		"cloudDensity" : 1,
+		"lightColour" : {"r":1,"g":0.95,"b":0.7,"a":1},
+		"cloudTint" : {"r":1,"g":1,"b":1,"a":1},
+		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
+		"windSpeed" : 3,
+		"raining" : false,
+		"snowing" : false
+	},
+
+	{
+		"wid" : 1,
+		"name" : "Heatwave",
+		"cloudDensity" : 0,
+		"lightColour" : {"r":1,"g":0.79,"b":0.5,"a":1},
+		"cloudTint" : {"r":1,"g":1,"b":1,"a":1},
+		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
+		"windSpeed" : 0,
+		"raining" : false,
+		"snowing" : false
+	},
+
+	{
+		"wid" : 2,
+		"name" : "Overcast",
+		"cloudDensity" : 50,
+		"lightColour" : {"r":0.67,"g":0.7,"b":0.76,"a":1},
+		"cloudTint" : {"r":1,"g":1,"b":1,"a":1},
+		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
+		"windSpeed" : 7,
+		"raining" : false,
+		"snowing" : false
+	},
+
+	{
+		"wid" : 3,
+		"name" : "Showers",
+		"cloudDensity" : 75,
+		"lightColour" : {"r":0.42,"g":0.54,"b":0.63,"a":1},
+		"cloudTint" : {"r":0.7,"g":0.7,"b":0.7,"a":1},
+		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
+		"windSpeed" : 7,
+		"raining" : true,
+		"snowing" : false
+	},
+
+	{
+		"wid" : 4,
+		"name" : "Raining",
+		"cloudDensity" : 100,
+		"lightColour" : {"r":0.42,"g":0.54,"b":0.63,"a":1},
+		"cloudTint" : {"r":0.4,"g":0.4,"b":0.4,"a":1},
+		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
+		"windSpeed" : 30,
+		"raining" : true,
+		"snowing" : false
+	},
+
+	{
+		"wid" : 5,
+		"name" : "Storm",
+		"cloudDensity" : 90,
+		"lightColour" : {"r":0.28,"g":0.26,"b":0.5,"a":1},
+		"cloudTint" : {"r":0.3,"g":0.3,"b":0.3,"a":1},
+		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
+		"windSpeed" : 5,
+		"raining" : true,
+		"snowing" : false
+	},
+
+	{
+		"wid" : 6,
+		"name" : "Snow",
+		"cloudDensity" :60,
+		"lightColour" : {"r":0.72,"g":0.78,"b":0.82,"a":1},
+		"cloudTint" : {"r":0.7,"g":0.7,"b":0.7,"a":1},
+		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
+		"windSpeed" : 5,
+		"raining" : false,
+		"snowing" : true
+	},
+	
+	{
+		"wid" : 7,
+		"name" : "Blizzard",
+		"cloudDensity" : 100,
+		"lightColour" : {"r":0.39,"g":0.41,"b":0.43,"a":1},
+		"cloudTint" : {"r":0.4,"g":0.4,"b":0.4,"a":1},
+		"fogColour" : {"r":1,"g":1,"b":1,"a":1},
+		"windSpeed" : 30,
+		"raining" : false,
+		"snowing" : true
+	}
+] }
