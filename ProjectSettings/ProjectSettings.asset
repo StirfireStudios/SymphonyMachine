@@ -417,19 +417,53 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
   - Android::ScriptingBackend
+  - Metro::ScriptingBackend
+  - PS4::ScriptingBackend
   - Standalone::ScriptingBackend
   - WebGL::ScriptingBackend
   - WebGL::audioCompressionFormat
   - WebGL::exceptionSupport
   - WebGL::memorySize
   - WebPlayer::ScriptingBackend
+  - XboxOne::CERO (Japan)
+  - XboxOne::COB-AU (Australia)
+  - XboxOne::CSRR (Taiwan)
+  - XboxOne::DJCTQ (Brazil)
+  - XboxOne::ESRB (US)
+  - XboxOne::FPB (South Africa)
+  - XboxOne::GRB (South Korea)
+  - XboxOne::MDA (Singapore)
+  - XboxOne::Microsoft
+  - XboxOne::OFLC-NZ (New Zealand)
+  - XboxOne::PCBP (Russia)
+  - XboxOne::PEGI (Europe)
+  - XboxOne::PEGI (Portugal)
+  - XboxOne::ScriptingBackend
+  - XboxOne::USK (Germany)
   Android::ScriptingBackend: 0
+  Metro::ScriptingBackend: 2
+  PS4::ScriptingBackend: 0
   Standalone::ScriptingBackend: 0
   WebGL::ScriptingBackend: 1
   WebGL::audioCompressionFormat: 4
   WebGL::exceptionSupport: 1
   WebGL::memorySize: 256
   WebPlayer::ScriptingBackend: 0
+  XboxOne::CERO (Japan): 0
+  XboxOne::COB-AU (Australia): 0
+  XboxOne::CSRR (Taiwan): 0
+  XboxOne::DJCTQ (Brazil): 0
+  XboxOne::ESRB (US): 0
+  XboxOne::FPB (South Africa): 0
+  XboxOne::GRB (South Korea): 0
+  XboxOne::MDA (Singapore): 0
+  XboxOne::Microsoft: 0
+  XboxOne::OFLC-NZ (New Zealand): 0
+  XboxOne::PCBP (Russia): 0
+  XboxOne::PEGI (Europe): 0
+  XboxOne::PEGI (Portugal): 0
+  XboxOne::ScriptingBackend: 0
+  XboxOne::USK (Germany): 0
   boolPropertyNames:
   - WebGL::analyzeBuildSize
   - WebGL::dataCaching
