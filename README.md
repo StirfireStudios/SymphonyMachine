@@ -3,7 +3,7 @@
 ![screenshot](https://raw.github.com/StirfireStudios/ggj2016/master/media/screenshot.png)
 
 Symphony of the Machine is our 2016 entry into the Global Game Jam,
-you can read more about it here:
+you can read more about it and find a binary build of the project here:
 
 http://globalgamejam.org/2016/games/symphony-machine
 
