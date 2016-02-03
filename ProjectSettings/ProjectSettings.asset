@@ -280,7 +280,18 @@ PlayerSettings:
   ps4attribMoveSupport: 0
   ps4attrib3DSupport: 0
   ps4attribShareSupport: 0
-  ps4IncludedModules: []
+  ps4IncludedModules:
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libc.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceAudioLatencyEstimation.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceFace.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceFaceTracker.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceFios2.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceHand.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceHandTracker.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceHeadTracker.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceNpToolkit.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceS3DConversion.prx
+  - C:\Program Files (x86)\SCE\ORBIS SDKs\3.000\target\sce_module\libSceSmart.prx
   monoEnv: 
   psp2Splashimage: {fileID: 0}
   psp2NPTrophyPackPath: 
@@ -480,11 +491,121 @@ PlayerSettings:
   - WebGL::analyzeBuildSize
   - WebGL::dataCaching
   - WebGL::useEmbeddedResources
+  - XboxOne::ContentRestrictions
+  - XboxOne::DocumentsLibrary
+  - XboxOne::InternetClientServer
+  - XboxOne::KinectAudio
+  - XboxOne::KinectExpressions
+  - XboxOne::KinectFace
+  - XboxOne::KinectGamechat
+  - XboxOne::KinectRequired
+  - XboxOne::KinectVision
+  - XboxOne::PrivateNetworkClientServer
+  - XboxOne::dadk
+  - XboxOne::deat
+  - XboxOne::dech
+  - XboxOne::dede
+  - XboxOne::enae
+  - XboxOne::enau
+  - XboxOne::enca
+  - XboxOne::encz
+  - XboxOne::engb
+  - XboxOne::engr
+  - XboxOne::enhk
+  - XboxOne::enhu
+  - XboxOne::enie
+  - XboxOne::enil
+  - XboxOne::enin
+  - XboxOne::ennz
+  - XboxOne::ensa
+  - XboxOne::ensg
+  - XboxOne::ensk
   - XboxOne::enus
+  - XboxOne::enza
+  - XboxOne::escl
+  - XboxOne::esco
+  - XboxOne::eses
+  - XboxOne::esmx
+  - XboxOne::fifi
+  - XboxOne::frbe
+  - XboxOne::frca
+  - XboxOne::frch
+  - XboxOne::frfr
+  - XboxOne::itit
+  - XboxOne::jajp
+  - XboxOne::kokr
+  - XboxOne::nbno
+  - XboxOne::nlbe
+  - XboxOne::nlnl
+  - XboxOne::plpl
+  - XboxOne::ptbr
+  - XboxOne::ptpt
+  - XboxOne::ruru
+  - XboxOne::svse
+  - XboxOne::trtr
+  - XboxOne::zhcn
+  - XboxOne::zhhk
+  - XboxOne::zhsg
+  - XboxOne::zhtw
   WebGL::analyzeBuildSize: 0
   WebGL::dataCaching: 0
   WebGL::useEmbeddedResources: 0
+  XboxOne::ContentRestrictions: 0
+  XboxOne::DocumentsLibrary: 0
+  XboxOne::InternetClientServer: 0
+  XboxOne::KinectAudio: 0
+  XboxOne::KinectExpressions: 0
+  XboxOne::KinectFace: 0
+  XboxOne::KinectGamechat: 0
+  XboxOne::KinectRequired: 0
+  XboxOne::KinectVision: 0
+  XboxOne::PrivateNetworkClientServer: 0
+  XboxOne::dadk: 0
+  XboxOne::deat: 0
+  XboxOne::dech: 0
+  XboxOne::dede: 0
+  XboxOne::enae: 0
+  XboxOne::enau: 0
+  XboxOne::enca: 0
+  XboxOne::encz: 0
+  XboxOne::engb: 0
+  XboxOne::engr: 0
+  XboxOne::enhk: 0
+  XboxOne::enhu: 0
+  XboxOne::enie: 0
+  XboxOne::enil: 0
+  XboxOne::enin: 0
+  XboxOne::ennz: 0
+  XboxOne::ensa: 0
+  XboxOne::ensg: 0
+  XboxOne::ensk: 0
   XboxOne::enus: 1
+  XboxOne::enza: 0
+  XboxOne::escl: 0
+  XboxOne::esco: 0
+  XboxOne::eses: 0
+  XboxOne::esmx: 0
+  XboxOne::fifi: 0
+  XboxOne::frbe: 0
+  XboxOne::frca: 0
+  XboxOne::frch: 0
+  XboxOne::frfr: 0
+  XboxOne::itit: 0
+  XboxOne::jajp: 0
+  XboxOne::kokr: 0
+  XboxOne::nbno: 0
+  XboxOne::nlbe: 0
+  XboxOne::nlnl: 0
+  XboxOne::plpl: 0
+  XboxOne::ptbr: 0
+  XboxOne::ptpt: 0
+  XboxOne::ruru: 0
+  XboxOne::svse: 0
+  XboxOne::trtr: 0
+  XboxOne::zhcn: 0
+  XboxOne::zhhk: 0
+  XboxOne::zhsg: 0
+  XboxOne::zhtw: 0
   stringPropertyNames:
   - WebGL::emscriptenArgs
   - WebGL::template

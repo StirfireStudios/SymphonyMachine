@@ -2595,7 +2595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpatialization: 1
   gain: 0
-  useInvSqr: 0
+  useInvSqr: 1
   near: 1.5
   far: 20
   disableRfl: 0
@@ -12529,7 +12529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpatialization: 1
   gain: 0
-  useInvSqr: 0
+  useInvSqr: 1
   near: 1.5
   far: 20
   disableRfl: 0
