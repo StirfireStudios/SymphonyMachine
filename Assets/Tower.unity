@@ -7343,7 +7343,7 @@ AudioSource:
   Loop: 1
   Mute: 0
   Spatialize: 1
-  Priority: 128
+  Priority: 156
   DopplerLevel: 1
   MinDistance: 3
   MaxDistance: 500
@@ -7933,6 +7933,7 @@ GameObject:
   - 114: {fileID: 1266628485}
   - 114: {fileID: 1266628487}
   - 114: {fileID: 1266628490}
+  - 114: {fileID: 1266628484}
   m_Layer: 0
   m_Name: pasted__Arrow
   m_TagString: Untagged
@@ -7977,6 +7978,18 @@ MonoBehaviour:
   duration: 1
   target: {fileID: 1084551357}
   up: {x: 0, y: 1, z: 0}
+--- !u!114 &1266628484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266628481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testTransitionDirection: 2
 --- !u!114 &1266628485
 MonoBehaviour:
   m_ObjectHideFlags: 0
