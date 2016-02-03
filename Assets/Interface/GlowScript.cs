@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using VRStandardAssets.Utils;
 
 namespace Interface
@@ -21,20 +21,31 @@ namespace Interface
                 return;
             }
 
-            Renderer renderer = gameObject.GetComponent<Renderer>();
+            Renderer[] renderers = gameObject.GetComponentsInChildren<Renderer>();
 
-            if (renderer == null)
+            if (renderers.Length == 0)
             {
-                Debug.LogError("Could not find Renderer for this item?");
+                Debug.LogError("Could not find Renderer for this item or it's children?");
                 return;
             }
 
-            itemMaterial = renderer.material;
-            if (itemMaterial == null)
+            List<Material> materials = new List<Material>();
+
+            for (int i = 0; i < renderers.Length; i++)
             {
-                Debug.LogError("Could not find Material for this item?");
+                if (renderers[i].material != null)
+                {
+                    materials.Add(renderers[i].material);
+                }
+            }
+
+            if (materials.Count == 0)
+            {
+                Debug.LogError("Could not find Materials for this item or it's children?");
                 return;
             }
+
+            itemMaterials = materials.ToArray();
 
             interactiveItem.OnOver += OnGaze;
             interactiveItem.OnOut += OnGazeLeave;
@@ -42,7 +53,7 @@ namespace Interface
 
         public void Update()
         {
-            if (interactiveItem == null || itemMaterial == null)
+            if (interactiveItem == null || itemMaterials.Length == 0)
             {
                 return;
             }
@@ -60,7 +71,10 @@ namespace Interface
                 return;
             }
 
-            itemMaterial.SetFloat("_GlowAmount", transitioner.updateValue());
+            for (int i = 0; i < itemMaterials.Length; i++)
+            {
+                itemMaterials[i].SetFloat("_GlowAmount", transitioner.updateValue());
+            }
         }
 
         public void OnGaze()
@@ -101,6 +115,6 @@ namespace Interface
 
         private StateTransitioner transitioner = new StateTransitioner();
         private VRInteractiveItem interactiveItem;
-        private Material itemMaterial;
+        private Material[] itemMaterials = new Material[0];
     }
 }

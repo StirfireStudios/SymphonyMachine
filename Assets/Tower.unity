@@ -1665,6 +1665,7 @@ GameObject:
   - 4: {fileID: 95776442}
   - 33: {fileID: 95776444}
   - 23: {fileID: 95776443}
+  - 114: {fileID: 95776445}
   m_Layer: 0
   m_Name: pasted__Arrow(Clone)
   m_TagString: Untagged
@@ -1717,6 +1718,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 95776441}
   m_Mesh: {fileID: 4300008, guid: 7d8281a1db9a7d9439a9ac251fbaaccc, type: 3}
+--- !u!114 &95776445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95776441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &115251469
 GameObject:
   m_ObjectHideFlags: 0
@@ -7918,7 +7930,6 @@ GameObject:
   - 65: {fileID: 1266628486}
   - 82: {fileID: 1266628488}
   - 114: {fileID: 1266628483}
-  - 114: {fileID: 1266628484}
   - 114: {fileID: 1266628485}
   - 114: {fileID: 1266628487}
   - 114: {fileID: 1266628490}
@@ -7966,18 +7977,6 @@ MonoBehaviour:
   duration: 1
   target: {fileID: 1084551357}
   up: {x: 0, y: 1, z: 0}
---- !u!114 &1266628484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1266628481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testTransitionDirection: 2
 --- !u!114 &1266628485
 MonoBehaviour:
   m_ObjectHideFlags: 0
