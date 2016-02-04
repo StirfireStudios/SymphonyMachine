@@ -1,6 +1,6 @@
 # Symphony of the Machine
 
-![screenshot](https://raw.github.com/StirfireStudios/ggj2016/master/media/screenshot.png)
+![screenshot](https://media.githubusercontent.com/media/StirfireStudios/SymphonyMachine/master/media/screenshot.png)
 
 Symphony of the Machine is our 2016 entry into the Global Game Jam,
 you can read more about it and find a binary build of the project here:
@@ -13,7 +13,7 @@ has an option to enable mouse look so you can play with out it.
 To enable the mouse hit 'M' on the keyboard; otherwise, plugin in your VR
 headset and go wild. :)
 
-![gameplay](https://raw.github.com/StirfireStudios/ggj2016/master/media/play.gif)
+![gameplay](https://media.githubusercontent.com/media/StirfireStudios/SymphonyMachine/develop/media/play.gif)
 
 ## Gameplay
 
