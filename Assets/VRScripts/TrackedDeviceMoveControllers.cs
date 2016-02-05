@@ -17,6 +17,10 @@ public class TrackedDeviceMoveControllers : MonoBehaviour {
 	private Vector3 secondaryPosition = Vector3.zero;
 	private Quaternion secondaryOrientation = Quaternion.identity;
 
+    public enum Button { BACK = 0, MIDDLE, START, TRIANGLE, CIRCLE, CROSS, SQUARE, NONE};
+    private static readonly int[] BitmaskPosition = { 2, 4, 8, 16, 32, 64, 128, 0 };
+    private bool[,] buttonIsDown = new bool[2,7];
+
 	IEnumerator Start()
 	{
 		if(!primaryController || !secondaryController || !primaryController.gameObject.activeSelf || !secondaryController.gameObject.activeSelf)
@@ -41,12 +45,68 @@ public class TrackedDeviceMoveControllers : MonoBehaviour {
 		}
 	}
 
-	void Update()
+    private bool currentButtonState(int controller, int bitmask, Button button)
+    {
+        var buttonIndex = (int)button;
+        return (bitmask & BitmaskPosition[buttonIndex]) != 0;
+    }
+
+    private void checkButtonState(int controller, int newBitmask, Button button) 
+    {
+        var buttonIndex = (int)button;
+        var newState = (newBitmask & BitmaskPosition[buttonIndex]) != 0;
+        var currentState = buttonIsDown[controller,buttonIndex];
+        var outputState = currentState;
+        if (currentState && !newState)
+        {
+            UnityEngine.Debug.Log(button + " released");
+            outputState = false;
+        } else if (!currentState && newState)
+        {
+            UnityEngine.Debug.Log(button + " pressed");
+            outputState = true;
+        }
+
+        buttonIsDown[controller,buttonIndex] = outputState;
+    }
+
+    public void Update()
 	{
         if (UnityEngine.VR.VRDevice.isPresent && VRSettings.loadedDevice == VRDeviceType.Morpheus)
 		{
-			// Reset the controller using the 'Start' button
-			if(Input.GetKeyDown(KeyCode.JoystickButton7))
+            var primaryTrigger = UnityEngine.PS4.PS4Input.MoveGetAnalogButton(0, 0);
+            var secondaryTrigger = UnityEngine.PS4.PS4Input.MoveGetAnalogButton(0, 1);
+            var primaryButtons = UnityEngine.PS4.PS4Input.MoveGetButtons(0, 0);
+            var secondaryButtons = UnityEngine.PS4.PS4Input.MoveGetButtons(0, 1);
+
+/*            checkButtonState(0, primaryButtons, Button.BACK);
+            checkButtonState(0, primaryButtons, Button.MIDDLE);
+            checkButtonState(0, primaryButtons, Button.START);
+            checkButtonState(0, primaryButtons, Button.TRIANGLE);
+            checkButtonState(0, primaryButtons, Button.CIRCLE);
+            checkButtonState(0, primaryButtons, Button.CROSS);
+            checkButtonState(0, primaryButtons, Button.SQUARE);
+
+            checkButtonState(1, secondaryButtons, Button.BACK);
+            checkButtonState(1, secondaryButtons, Button.MIDDLE);
+            checkButtonState(1, secondaryButtons, Button.START);
+            checkButtonState(1, secondaryButtons, Button.TRIANGLE);
+            checkButtonState(1, secondaryButtons, Button.CIRCLE);
+            checkButtonState(1, secondaryButtons, Button.CROSS);
+            checkButtonState(1, secondaryButtons, Button.SQUARE);*/
+
+
+//            UnityEngine.Debug.Log("Primary Move: " + primaryTrigger + " ButtonMask: " + primaryButtons);
+//            UnityEngine.Debug.Log("Secondary Move: " + secondaryTrigger + " ButtonMask: " + secondaryButtons);
+
+//            UnityEngine.PS4.PS4Input.MoveSetVibration(0, 0, primaryTrigger);
+//            UnityEngine.PS4.PS4Input.MoveSetVibration(0, 1, secondaryTrigger);
+
+			// if both middle buttons are pressed, reset
+            var middleController1 = currentButtonState(0, primaryButtons, Button.MIDDLE);
+            var middleController2 = currentButtonState(1, primaryButtons, Button.MIDDLE);
+
+			if(middleController1 && middleController2)
 			{
 				ResetControllerTracking();
 			}
