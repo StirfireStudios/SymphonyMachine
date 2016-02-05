@@ -18,6 +18,7 @@ public class VRSetup : MonoBehaviour {
 #endif
         Camera camera = gameObject.GetComponent<Camera>();
         camera.clearFlags = CameraClearFlags.Depth;
+        removeObjectsInLayer("PS4 Only");
     }
 
 	// Update is called once per frame
@@ -32,11 +33,20 @@ public class VRSetup : MonoBehaviour {
 #endif
 
 #if UNITY_PS4 && !UNITY_EDITOR
+            VRSettings.renderScale = 1.4f;
 		    VRSettings.loadedDevice = VRDeviceType.Morpheus;
 #endif
             vrSettingsDone = true;
         }
 	}
+
+#if UNITY_PS4 && !UNITY_EDITOR
+    void OnSystemServiceEvent(UnityEngine.PS4.Utility.sceSystemServiceEventType eventType)
+    {
+        if(eventType == UnityEngine.PS4.Utility.sceSystemServiceEventType.RESET_VR_POSITION)
+            InputTracking.Recenter();
+    }
+#endif
 
     private void disableBloom()
     {
