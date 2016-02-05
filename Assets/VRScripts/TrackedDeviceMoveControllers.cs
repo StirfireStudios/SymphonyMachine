@@ -108,7 +108,7 @@ public class TrackedDeviceMoveControllers : MonoBehaviour {
 
 			if(middleController1 && middleController2)
 			{
-				ResetControllerTracking();
+                InputTracking.Recenter();
 			}
 
 			// Perform tracking for the primary controller, if we've got a handle
