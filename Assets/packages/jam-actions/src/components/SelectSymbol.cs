@@ -22,7 +22,7 @@ namespace Jam.Actions
             UpdateActionBase();
             if (currentlyHighlighted != highlightState)
             {
-                SetHighlightState(gameObject, currentlyHighlighted);
+                symbol.SetHighlightState(gameObject, currentlyHighlighted, player);
                 highlightState = currentlyHighlighted;
             }
         }
@@ -41,13 +41,5 @@ namespace Jam.Actions
 
         protected override void Step(float dt)
         { Complete(); }
-
-        /// change the visual state of the symbol object to be highlighted somehow
-        private void SetHighlightState(GameObject target, bool active)
-        {
-            // TODO
-            Debug.Log(string.Format("Set highlighted state to {0}", active));
-        }
-
     }
 }
