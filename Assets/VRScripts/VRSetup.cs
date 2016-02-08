@@ -8,6 +8,10 @@ public class VRSetup : MonoBehaviour {
     private float GearVRRenderScale = 1.0f;
     [SerializeField]
     private float PCRenderScale = 1.5f;
+    [SerializeField]
+    private GameObject MotionControlRoot = null;
+    [SerializeField]
+    private GameObject PlayerRoot = null;
 
 	// Use this for initialization
 	public void Start ()
@@ -19,6 +23,24 @@ public class VRSetup : MonoBehaviour {
         Camera camera = gameObject.GetComponent<Camera>();
         camera.clearFlags = CameraClearFlags.Depth;
         removeObjectsInLayer("PS4 Only");
+
+        var motionControlActive = false;
+
+#if UNITY_PS4 && !UNITY_EDITOR
+        motionControlActive = true;
+
+#endif
+
+        if ((MotionControlRoot != null) && (PlayerRoot != null) && motionControlActive)
+        {
+            UnityEngine.Debug.Log("Translating player to motion control root");
+            PlayerRoot.transform.localPosition = MotionControlRoot.transform.localPosition;
+            VRStandardAssets.Utils.VREyeRaycaster raycaster = PlayerRoot.GetComponentInChildren<VRStandardAssets.Utils.VREyeRaycaster>();
+            if (raycaster != null)
+            {
+                raycaster.enabled = false;
+            }
+        }
     }
 
 	// Update is called once per frame

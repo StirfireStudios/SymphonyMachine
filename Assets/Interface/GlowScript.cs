@@ -47,8 +47,10 @@ namespace Interface
 
             itemMaterials = materials.ToArray();
 
-            interactiveItem.OnOver += OnGaze;
-            interactiveItem.OnOut += OnGazeLeave;
+            interactiveItem.OnOver += GlowStart;
+            interactiveItem.OnOut += GlowStop;
+            interactiveItem.OnTouch += GlowStart;
+            interactiveItem.OnUntouch += GlowStop;
         }
 
         public void Update()
@@ -77,12 +79,12 @@ namespace Interface
             }
         }
 
-        public void OnGaze()
+        public void GlowStart()
         {
             transitioner.transitionDirectionTo(mapDirections(Direction.glow));
         }
 
-        public void OnGazeLeave()
+        public void GlowStop()
         {
             transitioner.transitionDirectionTo(mapDirections(Direction.fade));
         }

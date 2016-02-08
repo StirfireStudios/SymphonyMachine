@@ -15,7 +15,9 @@ namespace VRStandardAssets.Utils
         public event Action OnDoubleClick;      // Called when double click input is detected whilst the gaze is over this object.
         public event Action OnUp;               // Called when Fire1 is released whilst the gaze is over this object.
         public event Action OnDown;             // Called when Fire1 is pressed whilst the gaze is over this object.
-
+        public event Action OnTouch;            // Called when a VRMotionInteractive item touches this object.
+        public event Action OnUntouch;          // Called when a VRMotionInteractive item stops touching this object.
+        public event Action OnTouchTrigger;     // Called when a VRMotionInteractive item triggers this object.
 
         protected bool m_IsOver;
 
@@ -71,6 +73,18 @@ namespace VRStandardAssets.Utils
         {
             if (OnDown != null)
                 OnDown();
+        }
+
+        public void Touch()
+        {
+            if (OnTouch != null)
+                OnTouch();
+        }
+
+        public void Untouch()
+        {
+            if (OnUntouch != null)
+                OnUntouch();
         }
     }
 }
