@@ -12,10 +12,13 @@ namespace Jam.Actions
 
         public PlayerSelectSlots slots;
 
+        public PlayerSymbolState player;
+
         public UpdateSymbolDisplayStates(SymbolPhrase phrase, PlayerSymbolState player)
         {
             this.phrase = phrase;
             this.slots = player.selectSlots;
+            this.player = player;
         }
 
         public void Execute(TaskComplete callback)
@@ -58,6 +61,7 @@ namespace Jam.Actions
                             gp.transform.localScale = new Vector3(0.12f, 0.12f, 0.12f);
 
                             gp.AddComponent<SlotMarker>();
+                            symbol.SetHighlightState(gp, true, player);
                         });
                     }
                 }
@@ -69,6 +73,7 @@ namespace Jam.Actions
             {
                 var item = target as SelectSymbol;
                 item.currentlyHighlighted = phrase.Has(item.symbol);
+                item.symbol.SetGlowColor(target.gameObject, player.GetSymbolColorFor(item.symbol));
             }
 
             // Done~
