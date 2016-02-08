@@ -2857,7 +2857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100148, guid: 14e627ad1bba69f4c86444143f2c4180, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100146, guid: 14e627ad1bba69f4c86444143f2c4180, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2934,6 +2934,14 @@ Prefab:
     - target: {fileID: 100106, guid: 14e627ad1bba69f4c86444143f2c4180, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 14e627ad1bba69f4c86444143f2c4180, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b02517c8c9799a042a5587fc6d81e17d, type: 2}
+    - target: {fileID: 2300144, guid: 14e627ad1bba69f4c86444143f2c4180, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14e627ad1bba69f4c86444143f2c4180, type: 3}
@@ -10417,6 +10425,7 @@ MonoBehaviour:
   skydome: {fileID: 732923586}
   rainParticles: {fileID: 438428607}
   snowParticles: {fileID: 57535939}
+  towerAnimation: {fileID: 1742940494}
   transitionTime: 5
   flashDuration: 0.1
   currentWeather: 0
@@ -12529,6 +12538,11 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &1742940494 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 14e627ad1bba69f4c86444143f2c4180,
+    type: 3}
+  m_PrefabInternal: {fileID: 320503093}
 --- !u!1 &1769655480
 GameObject:
   m_ObjectHideFlags: 0

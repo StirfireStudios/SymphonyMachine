@@ -45,6 +45,7 @@ public class WeatherSystem : MonoBehaviour {
     public Skydome skydome;
     public ParticleSystem rainParticles;
     public ParticleSystem snowParticles;
+    public Animator towerAnimation;
 
     IEnumerator transition;
 
@@ -107,12 +108,14 @@ public class WeatherSystem : MonoBehaviour {
     {
         snowing = f;
         snowParticles.enableEmission = f;
+        towerAnimation.SetBool("Open", !f);
     }
 
     void ToggleRain(bool f)
     {
         raining = f;
         rainParticles.enableEmission = f;
+        towerAnimation.SetBool("Open", !f);
     }
 
     void ToggleLightning(bool f)
