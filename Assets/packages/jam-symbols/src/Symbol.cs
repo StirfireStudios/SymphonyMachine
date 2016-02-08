@@ -63,6 +63,27 @@ namespace Jam.Symbols
         {
             return string.Format("H: {0}, T: {1}, W: {2}", humidity, temperature, wind);
         }
+
+        /// Set the glow state
+        public void SetGlowColor(GameObject gameObject, Color c)
+        {
+            var renderer = gameObject.GetComponent<Renderer>();
+            renderer.material.SetColor("_GlowColor", c);
+        }
+
+        /// change the visual state of the symbol object to be highlighted somehow
+        public void SetHighlightState(GameObject gameObject, bool active, PlayerSymbolState player)
+        {
+            var renderer = gameObject.GetComponent<Renderer>();
+            if (active)
+            {
+                renderer.material.SetColor("_BaseColor", player.symbolConfig.selectedColor);
+            }
+            else
+            {
+                renderer.material.SetColor("_BaseColor", player.symbolConfig.idleColor);
+            }
+        }
     }
 
     /// A single symbol input value
@@ -71,5 +92,27 @@ namespace Jam.Symbols
     {
         [Tooltip("The symbol token for this symbol")]
         public GameObject symbolPrefab;
+
+        /// Ouch, messy.
+        /// If we ever come back to this code make sure we never assign an
+        /// audio clip directly to an audio source, and that we have a master
+        /// assignable reference on the symbol config to specify items audio
+        /// config.
+        public Option<AudioClip> AudioClip()
+        {
+            if (symbolPrefab != null)
+            {
+                var audioSource = symbolPrefab.GetComponent<AudioSource>();
+                if (audioSource != null)
+                {
+                    var clip = audioSource.clip;
+                    if (clip != null)
+                    {
+                        return Option.Some(clip);
+                    }
+                }
+            }
+            return Option.None<AudioClip>();
+        }
     }
 }
