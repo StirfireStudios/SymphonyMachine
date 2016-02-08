@@ -86,5 +86,11 @@ namespace VRStandardAssets.Utils
             if (OnUntouch != null)
                 OnUntouch();
         }
+
+        public void TouchTrigger()
+        {
+            if (OnTouchTrigger != null)
+                OnTouchTrigger();
+        }
     }
 }

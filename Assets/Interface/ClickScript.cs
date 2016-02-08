@@ -28,6 +28,7 @@ public class ClickScript : MonoBehaviour {
 
         interactiveItem.OnClick += OnActivate;
         interactiveItem.OnUp += OnActivate;
+        interactiveItem.OnTouchTrigger += OnActivate;
 
         audio = gameObject.GetComponent<AudioSource>();
 	}
