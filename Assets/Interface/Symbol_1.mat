@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Symbol_1
-  m_Shader: {fileID: 4800000, guid: 37c971acfcd194f439d375fd6b776898, type: 3}
+  m_Shader: {fileID: 4800000, guid: ea0f7c77939f94328b0e373a9229f441, type: 3}
   m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
   m_LightmapFlags: 1
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: 2000
   stringTagMap:
     RenderType: Transparent
   m_SavedProperties:
@@ -20,8 +20,8 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 332c6a28e3dbf4ba3a2cfa68667ef287, type: 3}
-          m_Scale: {x: 1, y: 1}
+          m_Texture: {fileID: 2800000, guid: 71e08e6418e594d0ba66ff6f9b8ea96e, type: 3}
+          m_Scale: {x: 2, y: 2}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -35,6 +35,13 @@ Material:
           name: _DetailNormalMap
         second:
           m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Symbol
+        second:
+          m_Texture: {fileID: 2800000, guid: 332c6a28e3dbf4ba3a2cfa68667ef287, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -79,13 +86,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Symbol
-        second:
-          m_Texture: {fileID: 2800000, guid: 332c6a28e3dbf4ba3a2cfa68667ef287, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -103,6 +103,10 @@ Material:
         first:
           name: _Metallic
         second: 0
+      data:
+        first:
+          name: _GlowAmount
+        second: 0.42
       data:
         first:
           name: _Parallax
@@ -135,10 +139,6 @@ Material:
         first:
           name: _Mode
         second: 2
-      data:
-        first:
-          name: _GlowAmount
-        second: 0
     m_Colors:
       data:
         first:
@@ -150,9 +150,9 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _GlowColor
-        second: {r: 0.8620691, g: 1, b: 0, a: 1}
-      data:
-        first:
           name: _BaseColor
         second: {r: 0.862069, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _GlowColor
+        second: {r: 0.8620691, g: 1, b: 0, a: 1}

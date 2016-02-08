@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections.Generic;
+using Jam.Symbols;
 
 namespace Jam.Actions
 {
@@ -7,14 +7,20 @@ namespace Jam.Actions
     {
         public bool ready;
 
-        public UpdateSymbolsReadyState(bool ready)
-        { this.ready = ready; }
+        public ParticleSystem emitter;
+
+        public UpdateSymbolsReadyState(bool ready, PlayerSymbolState player)
+        {
+            this.ready = ready;
+            this.emitter = player.symbolConfig.readyNotice;
+        }
 
         public void Execute(TaskComplete callback)
         {
-            // somehow update the display here?
-            // TODO
-            Debug.Log(string.Format("Update ready state for action to: {0}", ready));
+            if (emitter != null)
+            {
+                emitter.enableEmission = ready;
+            }
 
             // Done~
             if (callback != null)

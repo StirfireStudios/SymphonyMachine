@@ -49,6 +49,26 @@ namespace Jam.Symbols
         public bool weatherChoices;
     }
 
+    /// Player symbols config stuff
+    [System.Serializable]
+    public class PlayerSymbolConfigState
+    {
+        [Tooltip("The base color for currently selected symbols")]
+        public Color selectedColor;
+
+        [Tooltip("The base color for currently not selected symbols")]
+        public Color idleColor;
+
+        [Tooltip("The 'ready' button particle emitter")]
+        public ParticleSystem readyNotice;
+
+        [Tooltip("The 'active' particle emitter")]
+        public ParticleSystem activeNotice;
+
+        // TODO: Remove this and use dynamic colors
+        public Color glowColor;
+    }
+
     /// State of symbols selected by the player now and in the past
     [AddComponentMenu("Jam/Symbols/Symbol State")]
     public class PlayerSymbolState : MonoBehaviour
@@ -62,6 +82,9 @@ namespace Jam.Symbols
         /// Slot state
         public PlayerSelectSlots selectSlots;
 
+        /// Symbols on the tower
+        public PlayerSymbolConfigState symbolConfig;
+
         /// Debugging...
         public PlayerDebugState debug;
 
@@ -71,6 +94,13 @@ namespace Jam.Symbols
             var rtn = current.Add(symbol);
             UpdateDisplayedSymbols(current);
             return rtn;
+        }
+
+        /// Get the player defined color to glow with
+        public Color GetSymbolColorFor(Symbol symbol)
+        {
+            // TODO: replace with dynamic colors
+            return symbolConfig.glowColor;
         }
 
         /// Clear selected symbols in the current phrase
@@ -93,7 +123,7 @@ namespace Jam.Symbols
 
             history.history.Add(current);
             if (history.history.Count > history.historySize)
-                { history.history.RemoveAt(0); }
+            { history.history.RemoveAt(0); }
             UpdatePhraseHistory();
 
             current = new SymbolPhrase();
@@ -106,6 +136,7 @@ namespace Jam.Symbols
         {
             new PickWeatherForPhrase(current, debug.weatherChoices).Execute((ip) =>
             {
+                SetActiveState(true);
                 var self = ip as PickWeatherForPhrase;
                 if ((self != null) && (self.selected != null))
                 {
@@ -130,7 +161,31 @@ namespace Jam.Symbols
         /// change the visual state to indicate that the right number of symbols is selected, or not
         private void SetSymbolsReadyState(bool ready)
         {
-            new UpdateSymbolsReadyState(ready).Execute(null);
+            new UpdateSymbolsReadyState(ready, this).Execute(null);
+        }
+
+        /// Set the 'active' state of the central thingo
+        private void SetActiveState(bool active)
+        {
+            if (symbolConfig.activeNotice != null)
+            {
+                var emitter = symbolConfig.activeNotice.emission;
+                emitter.enabled = false;
+                if (active)
+                {
+                    emitter.enabled = true;
+                    symbolConfig.activeNotice.Stop();
+                    symbolConfig.activeNotice.Clear();
+                    symbolConfig.activeNotice.Play();
+                }
+            }
+        }
+
+        /// Go~
+        public void Start()
+        {
+            UpdateDisplayedSymbols(current);
+            SetActiveState(false);
         }
     }
 }
