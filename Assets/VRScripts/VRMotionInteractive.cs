@@ -46,7 +46,10 @@ namespace VRStandardAssets.Utils
             {
                 return;
             }
-            currentInteractible = null;
+            if (currentInteractible == interactible)
+            {
+                currentInteractible = null;
+            }
             interactible.Untouch();
         }
     }
