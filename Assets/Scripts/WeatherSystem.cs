@@ -108,14 +108,12 @@ public class WeatherSystem : MonoBehaviour {
     {
         snowing = f;
         snowParticles.enableEmission = f;
-        towerAnimation.SetBool("Open", !f);
     }
 
     void ToggleRain(bool f)
     {
         raining = f;
         rainParticles.enableEmission = f;
-        towerAnimation.SetBool("Open", !f);
     }
 
     void ToggleLightning(bool f)
@@ -166,6 +164,7 @@ public class WeatherSystem : MonoBehaviour {
 
         ToggleSnow(cState.snowing);
         ToggleRain(cState.raining);
+        towerAnimation.SetBool("Open", (!cState.snowing) && (!cState.raining));
 
         if (newState == WeatherId.STORM)
             ToggleLightning(true);
