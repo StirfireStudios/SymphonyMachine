@@ -25,28 +25,25 @@ namespace Interface
                 return;
             }
 
-//            interactiveItem.OnOver += AddTouch;
-//            interactiveItem.OnOut += SubTouch;
-            interactiveItem.OnTouchTrigger += AddTouch;
-            interactiveItem.OnTouchTriggerStop += SubTouch;        
+            interactiveItem.OnTouchTrigger += Animate;
+            interactiveItem.OnTouchTriggerStop += StopAnimating;        
         }
 
-        public void AddTouch()
+        public void Animate()
         {
             if (animator == null)
                 return;
-            animator.SetBool(animation, ++touches > 0);
+            animator.SetBool(animation, true);
         }
 
-        public void SubTouch()
+        public void StopAnimating()
         {
             if (animator == null)
                 return;
-            animator.SetBool(animation, --touches > 0);
+            animator.SetBool(animation, false);
         }
 
         private VRInteractiveItem interactiveItem;
         private Animator animator;
-        private int touches = 0;
     }
 }

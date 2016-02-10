@@ -19,7 +19,7 @@ namespace VRStandardAssets.Utils
 
         public void Update()
         {
-            if (currentInteractible == null && triggered)
+            if (currentInteractible == null)
             {
                 return;
             }

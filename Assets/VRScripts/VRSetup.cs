@@ -31,8 +31,7 @@ public class VRSetup : MonoBehaviour {
 
 #endif
 
-        //if ((MotionControlRoot != null) && (PlayerRoot != null) && motionControlActive)
-        if (true)
+        if ((MotionControlRoot != null) && (PlayerRoot != null) && motionControlActive)
         {
             UnityEngine.Debug.Log("Translating player to motion control root");
             PlayerRoot.transform.localPosition = MotionControlRoot.transform.localPosition;
