@@ -49,7 +49,7 @@ public class TrackedDeviceMoveControllers : MonoBehaviour {
             var middleController1 = PS4Util.Move.currentButtonStates(0, 0).digitalButtons[PS4Util.Move.Button.MIDDLE];
             var middleController2 = PS4Util.Move.currentButtonStates(0, 1).digitalButtons[PS4Util.Move.Button.MIDDLE];
 
-			if(middleController1 && middleController2)
+			if (middleController1 && middleController2)
 			{
                 InputTracking.Recenter();
 			}

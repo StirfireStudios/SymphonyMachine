@@ -1,0 +1,500 @@
+fileFormatVersion: 2
+guid: cc5f6725f7e03b745a08d2f643ae1dd4
+timeCreated: 1455008071
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group
+    100004: group1
+    100006: pasted__group
+    100008: pasted__group 1
+    100010: pasted__Hand
+    100012: pasted__pasted__Forefinger1
+    100014: pasted__pasted__Forefinger2
+    100016: pasted__pasted__Forefinger3
+    100018: pasted__pasted__group1
+    100020: pasted__pasted__joint11
+    100022: pasted__pasted__joint15
+    100024: pasted__pasted__joint19
+    100026: pasted__pasted__joint23
+    100028: pasted__pasted__joint5
+    100030: pasted__pasted__Middlefinger1
+    100032: pasted__pasted__Middlefinger2
+    100034: pasted__pasted__Middlefinger3
+    100036: pasted__pasted__Palm
+    100038: pasted__pasted__PalmTop
+    100040: pasted__pasted__pCube2
+    100042: pasted__pasted__Pink1
+    100044: pasted__pasted__Pinky2
+    100046: pasted__pasted__Pinky3
+    100048: pasted__pasted__Ringfing1
+    100050: pasted__pasted__Ringfing2
+    100052: pasted__pasted__Ringfinger3
+    100054: pasted__pasted__Root
+    100056: pasted__pasted__Thumb1
+    100058: pasted__pasted__Thumb2
+    100060: pasted__pasted__Thumb3
+    400000: //RootNode
+    400002: group
+    400004: group1
+    400006: pasted__group
+    400008: pasted__group 1
+    400010: pasted__Hand
+    400012: pasted__pasted__Forefinger1
+    400014: pasted__pasted__Forefinger2
+    400016: pasted__pasted__Forefinger3
+    400018: pasted__pasted__group1
+    400020: pasted__pasted__joint11
+    400022: pasted__pasted__joint15
+    400024: pasted__pasted__joint19
+    400026: pasted__pasted__joint23
+    400028: pasted__pasted__joint5
+    400030: pasted__pasted__Middlefinger1
+    400032: pasted__pasted__Middlefinger2
+    400034: pasted__pasted__Middlefinger3
+    400036: pasted__pasted__Palm
+    400038: pasted__pasted__PalmTop
+    400040: pasted__pasted__pCube2
+    400042: pasted__pasted__Pink1
+    400044: pasted__pasted__Pinky2
+    400046: pasted__pasted__Pinky3
+    400048: pasted__pasted__Ringfing1
+    400050: pasted__pasted__Ringfing2
+    400052: pasted__pasted__Ringfinger3
+    400054: pasted__pasted__Root
+    400056: pasted__pasted__Thumb1
+    400058: pasted__pasted__Thumb2
+    400060: pasted__pasted__Thumb3
+    4300000: pasted__pasted__pCube2
+    7400000: Idle
+    7400002: Opening
+    7400004: Closing
+    7400006: Open Idle
+    9500000: //RootNode
+    13700000: pasted__pasted__pCube2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 83
+      lastFrame: 126
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__group
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2/pasted__pasted__Forefinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2/pasted__pasted__Forefinger3/pasted__pasted__joint11
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2/pasted__pasted__Middlefinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2/pasted__pasted__Middlefinger3/pasted__pasted__joint15
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2/pasted__pasted__Pinky3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2/pasted__pasted__Pinky3/pasted__pasted__joint23
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2/pasted__pasted__Ringfinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2/pasted__pasted__Ringfinger3/pasted__pasted__joint19
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2/pasted__pasted__Thumb3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2/pasted__pasted__Thumb3/pasted__pasted__joint5
+        weight: 1
+      - path: group/pasted__Hand
+        weight: 1
+      - path: group/pasted__Hand/pasted__pasted__pCube2
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/pasted__group 1
+        weight: 1
+      - path: group1/pasted__group 1/pasted__pasted__group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Closing
+      takeName: Take 001
+      firstFrame: 65
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__group
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2/pasted__pasted__Forefinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2/pasted__pasted__Forefinger3/pasted__pasted__joint11
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2/pasted__pasted__Middlefinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2/pasted__pasted__Middlefinger3/pasted__pasted__joint15
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2/pasted__pasted__Pinky3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2/pasted__pasted__Pinky3/pasted__pasted__joint23
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2/pasted__pasted__Ringfinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2/pasted__pasted__Ringfinger3/pasted__pasted__joint19
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2/pasted__pasted__Thumb3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2/pasted__pasted__Thumb3/pasted__pasted__joint5
+        weight: 1
+      - path: group/pasted__Hand
+        weight: 1
+      - path: group/pasted__Hand/pasted__pasted__pCube2
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/pasted__group 1
+        weight: 1
+      - path: group1/pasted__group 1/pasted__pasted__group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Opening
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__group
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2/pasted__pasted__Forefinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2/pasted__pasted__Forefinger3/pasted__pasted__joint11
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2/pasted__pasted__Middlefinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2/pasted__pasted__Middlefinger3/pasted__pasted__joint15
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2/pasted__pasted__Pinky3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2/pasted__pasted__Pinky3/pasted__pasted__joint23
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2/pasted__pasted__Ringfinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2/pasted__pasted__Ringfinger3/pasted__pasted__joint19
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2/pasted__pasted__Thumb3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2/pasted__pasted__Thumb3/pasted__pasted__joint5
+        weight: 1
+      - path: group/pasted__Hand
+        weight: 1
+      - path: group/pasted__Hand/pasted__pasted__pCube2
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/pasted__group 1
+        weight: 1
+      - path: group1/pasted__group 1/pasted__pasted__group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Open Idle
+      takeName: Take 001
+      firstFrame: 21
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group
+        weight: 1
+      - path: group/pasted__group
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2/pasted__pasted__Forefinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Forefinger1/pasted__pasted__Forefinger2/pasted__pasted__Forefinger3/pasted__pasted__joint11
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2/pasted__pasted__Middlefinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Middlefinger1/pasted__pasted__Middlefinger2/pasted__pasted__Middlefinger3/pasted__pasted__joint15
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2/pasted__pasted__Pinky3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Pink1/pasted__pasted__Pinky2/pasted__pasted__Pinky3/pasted__pasted__joint23
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2/pasted__pasted__Ringfinger3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Palm/pasted__pasted__PalmTop/pasted__pasted__Ringfing1/pasted__pasted__Ringfing2/pasted__pasted__Ringfinger3/pasted__pasted__joint19
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2/pasted__pasted__Thumb3
+        weight: 1
+      - path: group/pasted__group/pasted__pasted__Root/pasted__pasted__Thumb1/pasted__pasted__Thumb2/pasted__pasted__Thumb3/pasted__pasted__joint5
+        weight: 1
+      - path: group/pasted__Hand
+        weight: 1
+      - path: group/pasted__Hand/pasted__pasted__pCube2
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/pasted__group 1
+        weight: 1
+      - path: group1/pasted__group 1/pasted__pasted__group1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

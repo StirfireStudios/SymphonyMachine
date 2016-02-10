@@ -18,6 +18,7 @@ namespace VRStandardAssets.Utils
         public event Action OnTouch;            // Called when a VRMotionInteractive item touches this object.
         public event Action OnUntouch;          // Called when a VRMotionInteractive item stops touching this object.
         public event Action OnTouchTrigger;     // Called when a VRMotionInteractive item triggers this object.
+        public event Action OnTouchTriggerStop; // Called when a VRMotionInteractive item stops triggering this object.
 
         protected bool m_IsOver;
 
@@ -92,5 +93,12 @@ namespace VRStandardAssets.Utils
             if (OnTouchTrigger != null)
                 OnTouchTrigger();
         }
+
+        public void TouchTriggerStop()
+        {
+            if (OnTouchTriggerStop != null)
+                OnTouchTriggerStop();
+        }
+
     }
 }

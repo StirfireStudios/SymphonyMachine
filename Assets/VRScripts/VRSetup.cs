@@ -31,7 +31,8 @@ public class VRSetup : MonoBehaviour {
 
 #endif
 
-        if ((MotionControlRoot != null) && (PlayerRoot != null) && motionControlActive)
+        //if ((MotionControlRoot != null) && (PlayerRoot != null) && motionControlActive)
+        if (true)
         {
             UnityEngine.Debug.Log("Translating player to motion control root");
             PlayerRoot.transform.localPosition = MotionControlRoot.transform.localPosition;
@@ -60,7 +61,13 @@ public class VRSetup : MonoBehaviour {
 #endif
             vrSettingsDone = true;
         }
-	}
+
+        if (Input.GetButtonUp("Fire2"))
+        {
+            Debug.Log("RECENTER!");
+            InputTracking.Recenter();
+        }
+    }
 
 #if UNITY_PS4 && !UNITY_EDITOR
     void OnSystemServiceEvent(UnityEngine.PS4.Utility.sceSystemServiceEventType eventType)

@@ -13,8 +13,9 @@ PlayerSettings:
   productName: Symphony of the Machine
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_ShowUnitySplashScreen: 1
-  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_ShowUnitySplashScreen: 0
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: eea44cc3b1f5a4bd68cd4d42deafcc3f,
+    type: 3}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
@@ -176,6 +177,12 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 128
       m_Height: 128
+  - m_BuildTarget: PS4
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 82ff6911e1ff2447da15eb80fc595e7c, type: 3}
+      m_Width: 512
+      m_Height: 512
   m_BuildTargetBatching:
   - m_BuildTarget: PS4
     m_StaticBatching: 1
