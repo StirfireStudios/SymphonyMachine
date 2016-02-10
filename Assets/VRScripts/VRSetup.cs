@@ -61,10 +61,9 @@ public class VRSetup : MonoBehaviour {
             vrSettingsDone = true;
         }
 
-        if (Input.GetButtonUp("Fire2"))
+        if (Input.GetButtonUp("Fire3"))
         {
-            Debug.Log("RECENTER!");
-            InputTracking.Recenter();
+            VRSettings.showDeviceView = !VRSettings.showDeviceView;
         }
     }
 

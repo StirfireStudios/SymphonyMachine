@@ -50,7 +50,7 @@ PlayerSettings:
   forceSingleInstance: 0
   resizableWindow: 0
   useMacAppStoreValidation: 0
-  gpuSkinning: 0
+  gpuSkinning: 1
   xboxPIXTextureCapture: 0
   xboxEnableAvatar: 0
   xboxEnableKinect: 0
@@ -280,7 +280,7 @@ PlayerSettings:
   playerPrefsSupport: 0
   ps4ReprojectionSupport: 1
   ps4UseAudio3dBackend: 1
-  ps4SocialScreenEnabled: 0
+  ps4SocialScreenEnabled: 1
   ps4Audio3dVirtualSpeakerCount: 12
   ps4attribCpuUsage: 0
   ps4PatchPkgPath: 

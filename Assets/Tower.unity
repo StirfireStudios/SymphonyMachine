@@ -2348,7 +2348,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 241262529}
   - 82: {fileID: 241262530}
-  - 114: {fileID: 241262531}
   m_Layer: 0
   m_Name: Soprano - Main
   m_TagString: Untagged
@@ -2443,23 +2442,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &241262531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 241262528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableSpatialization: 1
-  gain: 0
-  useInvSqr: 1
-  near: 1.5
-  far: 20
-  disableRfl: 0
 --- !u!1 &243204091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,7 +2451,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 243204092}
   - 82: {fileID: 243204093}
-  - 114: {fileID: 243204094}
   m_Layer: 0
   m_Name: Soprano - Supplementary 1
   m_TagString: Untagged
@@ -2564,23 +2545,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &243204094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243204091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableSpatialization: 1
-  gain: 0
-  useInvSqr: 1
-  near: 1.5
-  far: 20
-  disableRfl: 0
 --- !u!1001 &243623862
 Prefab:
   m_ObjectHideFlags: 0
@@ -4888,7 +4852,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 463816921}
   - 82: {fileID: 463816922}
-  - 114: {fileID: 463816923}
   m_Layer: 0
   m_Name: Soprano - Supplamentary 2
   m_TagString: Untagged
@@ -4983,23 +4946,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &463816923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 463816920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableSpatialization: 1
-  gain: 0
-  useInvSqr: 1
-  near: 1.5
-  far: 20
-  disableRfl: 0
 --- !u!1 &470511456
 GameObject:
   m_ObjectHideFlags: 0
@@ -6598,6 +6544,80 @@ Transform:
   - {fileID: 404088999}
   m_Father: {fileID: 390006283}
   m_RootOrder: 0
+--- !u!1 &524324363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 524324368}
+  - 20: {fileID: 524324367}
+  - 114: {fileID: 524324364}
+  m_Layer: 0
+  m_Name: Social Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &524324364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524324363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a336f4eb1b74e46b9b9e53a211c2c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!20 &524324367
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524324363}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &524324368
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524324363}
+  m_LocalRotation: {x: 0.070875674, y: -0.9008888, z: 0.33153906, w: 0.27103132}
+  m_LocalPosition: {x: 1.5396, y: 3.1209, z: 3.6879}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
 --- !u!1 &538413355
 GameObject:
   m_ObjectHideFlags: 0
@@ -8231,7 +8251,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1068709213}
   - 82: {fileID: 1068709214}
-  - 114: {fileID: 1068709215}
   m_Layer: 0
   m_Name: Alto
   m_TagString: Untagged
@@ -8326,23 +8345,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &1068709215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1068709212}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableSpatialization: 1
-  gain: 0
-  useInvSqr: 1
-  near: 1.5
-  far: 20
-  disableRfl: 0
 --- !u!1 &1077322027
 GameObject:
   m_ObjectHideFlags: 0
@@ -9011,7 +9013,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1179358327}
   - 82: {fileID: 1179358328}
-  - 114: {fileID: 1179358329}
   m_Layer: 0
   m_Name: BassVoice
   m_TagString: Untagged
@@ -9106,23 +9107,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &1179358329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1179358326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableSpatialization: 1
-  gain: 0
-  useInvSqr: 1
-  near: 1.5
-  far: 20
-  disableRfl: 0
 --- !u!1 &1185050291
 GameObject:
   m_ObjectHideFlags: 0
@@ -15006,7 +14990,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1969751586}
   - 218: {fileID: 1969751585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15787,7 +15771,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2119093526}
   - 82: {fileID: 2119093527}
-  - 114: {fileID: 2119093528}
   m_Layer: 0
   m_Name: Tenor
   m_TagString: Untagged
@@ -15882,23 +15865,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &2119093528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2119093525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableSpatialization: 1
-  gain: 0
-  useInvSqr: 1
-  near: 1.5
-  far: 20
-  disableRfl: 0
 --- !u!1 &2119243628
 GameObject:
   m_ObjectHideFlags: 0
