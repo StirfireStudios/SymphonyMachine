@@ -3199,6 +3199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerId: 0
   controllerId: 0
+  viveTracker: {fileID: 558636033}
 --- !u!114 &435380104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6731,7 +6732,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 558636031}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
@@ -7191,7 +7192,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 716353028}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 0, y: 0.05, z: 2.827}
+  m_LocalPosition: {x: -0, y: 0.05, z: 2.376}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1311837376}
@@ -8489,6 +8490,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1114334404}
   - 20: {fileID: 1114334408}
+  - 114: {fileID: 1114334406}
+  - 114: {fileID: 1114334405}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -8508,6 +8511,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1114334405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114334403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 0}
+  wireframe: 0
+  flip: {fileID: 1114334406}
+--- !u!114 &1114334406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114334403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5be45115742b07478e21c85fcc233ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &1114334408
 Camera:
   m_ObjectHideFlags: 0
@@ -12609,7 +12637,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741979571}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
@@ -14316,6 +14344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerId: 0
   controllerId: 1
+  viveTracker: {fileID: 1741979573}
 --- !u!54 &1776374491
 Rigidbody:
   m_ObjectHideFlags: 0
