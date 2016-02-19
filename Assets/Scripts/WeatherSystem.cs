@@ -67,10 +67,12 @@ public class WeatherSystem : MonoBehaviour {
     public float flashDuration = 0.1f;
     
     public WeatherId currentWeather;
+    public WeatherId transitionToWeather;
 
     void Awake()
     {
         currentWeather = defaultWeather;
+        transitionToWeather = currentWeather;
     }
 
     void Start()
@@ -85,6 +87,14 @@ public class WeatherSystem : MonoBehaviour {
         skydome.SetCloudDensity((float)cloudDensity);
         skydome.SetWindSpeed(windSpeed);
         sun.color = sunColour;
+    }
+
+    public void Update()
+    {
+        if (transitionToWeather != currentWeather)
+        {
+            TransitionTo(transitionToWeather);
+        }
     }
 
     void LoadWeatherData()
@@ -102,6 +112,7 @@ public class WeatherSystem : MonoBehaviour {
         StartCoroutine(transition);
 
         currentWeather = newState;
+        transitionToWeather = newState;
     }
 
     void ToggleSnow(bool f)
