@@ -16,6 +16,7 @@ namespace PS4Util
 
         public static ButtonState currentButtonStates(int player, int controller)
         {
+#if UNITY_PS4
             var state = new ButtonState();
             state.backButtonLevel = UnityEngine.PS4.PS4Input.MoveGetAnalogButton(player, controller);
             var bitmask = UnityEngine.PS4.PS4Input.MoveGetButtons(player, controller);
@@ -25,6 +26,9 @@ namespace PS4Util
                 state.digitalButtons[(Button)i] = (bitmask & BitmaskPosition[i]) != 0;
             }
             return state;
+#else
+            return new ButtonState();
+#endif
         }
     }
 }
