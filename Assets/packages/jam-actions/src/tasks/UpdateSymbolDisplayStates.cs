@@ -14,11 +14,14 @@ namespace Jam.Actions
 
         public PlayerSymbolState player;
 
-        public UpdateSymbolDisplayStates(SymbolPhrase phrase, PlayerSymbolState player)
+        public bool setInitState = false;
+
+        public UpdateSymbolDisplayStates(SymbolPhrase phrase, PlayerSymbolState player, bool init = false)
         {
             this.phrase = phrase;
             this.slots = player.selectSlots;
             this.player = player;
+            this.setInitState = init;
         }
 
         public void Execute(TaskComplete callback)
@@ -74,6 +77,10 @@ namespace Jam.Actions
                 var item = target as SelectSymbol;
                 item.currentlyHighlighted = phrase.Has(item.symbol);
                 item.symbol.SetGlowColor(target.gameObject, player.GetSymbolColorFor(item.symbol));
+                if (setInitState)
+                {
+                    item.symbol.SetHighlightState(target.gameObject, false, player);
+                }
             }
 
             // Done~

@@ -12,7 +12,7 @@ namespace Jam.Symbols
         public List<SymbolPhrase> history = new List<SymbolPhrase>();
 
         [Tooltip("Number of history items to display")]
-        public int historySize = 4;
+        public int historySize = 8;
 
         [Tooltip("The border around each history item")]
         public float historyBorderSize = 1f;
@@ -121,7 +121,15 @@ namespace Jam.Symbols
 
             ExecuteWeather(current);
 
-            history.history.Add(current);
+            if (!history.history.Contains(current))
+            {
+                history.history.Add(current);
+            }
+            else
+            {
+                Debug.Log("NOT REPLACING HISTORY - IT EXISTS!");
+            }
+
             if (history.history.Count > history.historySize)
             { history.history.RemoveAt(0); }
             UpdatePhraseHistory();
@@ -147,9 +155,9 @@ namespace Jam.Symbols
             });
         }
 
-        private void UpdateDisplayedSymbols(SymbolPhrase phrase)
+        private void UpdateDisplayedSymbols(SymbolPhrase phras0, bool init = false)
         {
-            new UpdateSymbolDisplayStates(current, this).Execute(null);
+            new UpdateSymbolDisplayStates(current, this, init).Execute(null);
             SetSymbolsReadyState(current.Ready);
         }
 
@@ -184,7 +192,7 @@ namespace Jam.Symbols
         /// Go~
         public void Start()
         {
-            UpdateDisplayedSymbols(current);
+            UpdateDisplayedSymbols(current, true);
             SetActiveState(false);
         }
     }

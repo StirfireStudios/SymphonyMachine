@@ -11,6 +11,10 @@ GameObject:
   - 33: {fileID: 3372882}
   - 23: {fileID: 2362008}
   - 82: {fileID: 8202926}
+  - 114: {fileID: 11419400}
+  - 114: {fileID: 11464798}
+  - 114: {fileID: 11489076}
+  - 114: {fileID: 11432208}
   m_Layer: 2
   m_Name: Symbol1
   m_TagString: Untagged
@@ -138,6 +142,70 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &11419400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11432208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9fc6613f0c74ce5b0e70f803200af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    completeHandler:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jam.Actions.ActionBaseParams+ActionCompleteEvent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    execute: 0
+    active: 0
+  symbol:
+    humidity: 0
+    temperature: 0
+    wind: 0
+    symbolPrefab: {fileID: 184228}
+  player: {fileID: 0}
+  currentlyHighlighted: 0
+--- !u!114 &11464798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
+  testTransitionDirection: 2
+--- !u!114 &11489076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a8c684a32e69e4b9680a5ae249ab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testActivate: 0
+  actionToExecute: {fileID: 0}
+  playAudio: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -245,6 +313,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: glowTransitionTime
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

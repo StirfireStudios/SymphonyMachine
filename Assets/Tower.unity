@@ -103,7 +103,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488010, guid: a781813e1118747138390b61ea9bcd5d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.537
+      value: -0.837
       objectReference: {fileID: 0}
     - target: {fileID: 488010, guid: a781813e1118747138390b61ea9bcd5d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1842,35 +1842,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.852
+      value: 0.811
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.058
+      value: 1.053
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.416
+      value: 1.454
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.04645167
+      value: 0.048995953
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.1388807
+      value: -0.29653627
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.019548874
+      value: 0.0118031
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.98902595
+      value: 0.95369095
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_LocalScale.x
@@ -1886,11 +1886,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2ccedd88b35742c9b677eecfc3cf198, type: 3}
@@ -2005,15 +2005,15 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118247855}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!4 &118247859
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118247855}
-  m_LocalRotation: {x: 0.0060082534, y: -0.842362, z: -0.0014010628, w: -0.5388769}
-  m_LocalPosition: {x: 1.816, y: 1.839, z: 1.527}
+  m_LocalRotation: {x: 0.005481827, y: -0.68465126, z: -0.002830485, w: -0.72884476}
+  m_LocalPosition: {x: 1.5011736, y: 1.8380327, z: 2.1754901}
   m_LocalScale: {x: 0.78527844, y: 1.5849752, z: 0.78527844}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2525,6 +2525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &226012169
 MonoBehaviour:
@@ -5462,6 +5463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!54 &435380106
 Rigidbody:
@@ -5559,6 +5561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &435894475
 MonoBehaviour:
@@ -9183,6 +9186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!82 &507707089
 AudioSource:
@@ -9426,6 +9430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &533245291
 MonoBehaviour:
@@ -9672,6 +9677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &540465573
 MonoBehaviour:
@@ -11565,6 +11571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &594178932
 MonoBehaviour:
@@ -11677,15 +11684,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.65
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.65
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.65
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
       propertyPath: m_Name
@@ -11979,6 +11986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &712495480
 MonoBehaviour:
@@ -12532,8 +12540,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 869341023}
-  m_LocalRotation: {x: 0.0010349819, y: -0.9395357, z: 0.002791813, w: -0.3424381}
-  m_LocalPosition: {x: 0.91, y: 1.565, z: 1.348}
+  m_LocalRotation: {x: -0.015371116, y: -0.8723444, z: -0.00011774701, w: -0.48865023}
+  m_LocalPosition: {x: 0.9, y: 1.558, z: 1.418}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12669,6 +12677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &872419304
 MonoBehaviour:
@@ -12833,6 +12842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!65 &889908256
 BoxCollider:
@@ -13085,6 +13095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &970412316
 MonoBehaviour:
@@ -13439,6 +13450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &1015074932
 MonoBehaviour:
@@ -13669,6 +13681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1052077836
 MonoBehaviour:
@@ -15852,6 +15865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &1128765048
 MonoBehaviour:
@@ -16008,6 +16022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1132823843
 MonoBehaviour:
@@ -16649,7 +16664,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 1, g: 0.71323526, b: 0.96835697, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -16804,6 +16819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!65 &1231541050
 BoxCollider:
@@ -16952,6 +16968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1266628485
 MonoBehaviour:
@@ -17294,6 +17311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1288381705
 MonoBehaviour:
@@ -17496,6 +17514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &1298708619
 MonoBehaviour:
@@ -17714,6 +17733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &1310349811
 MonoBehaviour:
@@ -18204,6 +18224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1365247391
 MonoBehaviour:
@@ -18321,8 +18342,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1371803152}
-  m_LocalRotation: {x: 0.0010349819, y: -0.9395357, z: 0.002791813, w: -0.3424381}
-  m_LocalPosition: {x: 0.907, y: 1.388, z: 1.349}
+  m_LocalRotation: {x: -0.015371116, y: -0.8723444, z: -0.00011774701, w: -0.48865023}
+  m_LocalPosition: {x: 0.892, y: 1.382, z: 1.414}
   m_LocalScale: {x: 0.19999996, y: 0.20693986, z: 0.20693983}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18432,11 +18453,11 @@ MonoBehaviour:
     slot2: {fileID: 869341023}
     slot3: {fileID: 1371803152}
   symbolConfig:
-    selectedColor: {r: 0.32585424, g: 0.7597724, b: 0.9044118, a: 0}
-    idleColor: {r: 0, g: 0, b: 0, a: 0}
+    selectedColor: {r: 1, g: 1, b: 1, a: 0}
+    idleColor: {r: 0.004487461, g: 0.2334912, b: 0.6102941, a: 1}
     readyNotice: {fileID: 1111672113}
     activeNotice: {fileID: 1769655483}
-    glowColor: {r: 0.9338235, g: 0.86942196, b: 0, a: 0}
+    glowColor: {r: 1, g: 0.9724138, b: 0, a: 0}
   debug:
     weatherChoices: 0
 --- !u!4 &1384177152
@@ -18644,6 +18665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &1426236001
 MonoBehaviour:
@@ -18829,11 +18851,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b89daedf8cf8f9b4a83b8649c56872da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.296
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b89daedf8cf8f9b4a83b8649c56872da, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b89daedf8cf8f9b4a83b8649c56872da, type: 3}
       propertyPath: m_LocalRotation.x
@@ -18853,7 +18875,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b89daedf8cf8f9b4a83b8649c56872da, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b89daedf8cf8f9b4a83b8649c56872da, type: 3}
       propertyPath: m_IsActive
@@ -19254,6 +19276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1506838866
 MonoBehaviour:
@@ -19548,31 +19571,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: c1edd348a24064d738ae214a0d7b5f2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.098
+      value: 3.4821684
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c1edd348a24064d738ae214a0d7b5f2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.10099995
+      value: -0.080278754
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c1edd348a24064d738ae214a0d7b5f2c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.107
+      value: -0.898926
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c1edd348a24064d738ae214a0d7b5f2c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.0029468827
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c1edd348a24064d738ae214a0d7b5f2c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.53556037
+      value: -0.72613627
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c1edd348a24064d738ae214a0d7b5f2c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.000674944
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c1edd348a24064d738ae214a0d7b5f2c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.844497
+      value: 0.68754417
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c1edd348a24064d738ae214a0d7b5f2c, type: 3}
       propertyPath: m_RootOrder
@@ -19755,6 +19778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1607603342
 MonoBehaviour:
@@ -19882,8 +19906,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1616238094}
-  m_LocalRotation: {x: 0.0010349819, y: -0.9395357, z: 0.002791813, w: -0.3424381}
-  m_LocalPosition: {x: 0.907, y: 1.727, z: 1.345}
+  m_LocalRotation: {x: -0.015371116, y: -0.8723444, z: -0.00011774701, w: -0.48865023}
+  m_LocalPosition: {x: 0.902, y: 1.72, z: 1.418}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -20080,6 +20104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &1650254302
 MonoBehaviour:
@@ -20360,6 +20385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &1670596155
 MonoBehaviour:
@@ -20726,6 +20752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1728512384
 MonoBehaviour:
@@ -20972,6 +20999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1735550579
 MonoBehaviour:
@@ -22764,6 +22792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1774419716
 MonoBehaviour:
@@ -22876,15 +22905,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.65
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.65
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.65
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
       propertyPath: m_Name
@@ -22939,6 +22968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1776374488
 MonoBehaviour:
@@ -23168,6 +23198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1817396709
 MonoBehaviour:
@@ -23448,6 +23479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1875464951
 MonoBehaviour:
@@ -23650,6 +23682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &1935467441
 MonoBehaviour:
@@ -23893,6 +23926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &1959477422
 MonoBehaviour:
@@ -24429,6 +24463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &2032502385
 MonoBehaviour:
@@ -24738,6 +24773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 1
   testTransitionDirection: 2
 --- !u!114 &2071133303
 MonoBehaviour:
@@ -24940,6 +24976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
   testTransitionDirection: 2
 --- !u!114 &2094048717
 MonoBehaviour:

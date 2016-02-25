@@ -54,5 +54,25 @@ namespace Jam.Symbols
             }
         }
 
+        public override bool Equals(System.Object other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+
+            SymbolPhrase otherPhrase = other as SymbolPhrase;
+            if ((System.Object)otherPhrase == null)
+            {
+                return false;
+            }
+
+            return this.Equals(otherPhrase);
+        }
+
+        public bool Equals(SymbolPhrase other)
+        {
+            return this.weather == other.weather;
+        }
     }
 }

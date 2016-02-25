@@ -7,7 +7,7 @@ namespace Interface
     public class GlowScript : MonoBehaviour
     {
         // This should probably come from some sort of manager...
-        public static float glowTransitionTime = 1.0f;
+        public float glowTransitionTime = 1.0f;
         public enum Direction { glow, fade, none };
         public Direction testTransitionDirection = Direction.none; 
 
