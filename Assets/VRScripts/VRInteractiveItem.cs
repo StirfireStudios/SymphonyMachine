@@ -113,10 +113,9 @@ namespace VRStandardAssets.Utils
         public void Update()
         {
             if (eventToTest == Event.none) return;
-            if (eventToTest == Event.On_touchtrigger)
-            {
-                TouchTrigger();
-            }
+            if (eventToTest == Event.On_touch) Touch();    
+            if (eventToTest == Event.On_untouch) Untouch();    
+            if (eventToTest == Event.On_touchtrigger) TouchTrigger();
 
             eventToTest = Event.none;
         }

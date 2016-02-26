@@ -1700,7 +1700,7 @@ Transform:
   m_LocalScale: {x: 3.7057602, y: 4.7138114, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
 --- !u!1001 &85620051
 Prefab:
   m_ObjectHideFlags: 0
@@ -2538,6 +2538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &226012170
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3825,7 +3826,7 @@ Transform:
   - {fileID: 243204092}
   - {fileID: 463816921}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 38
 --- !u!1 &435380101 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: cc5f6725f7e03b745a08d2f643ae1dd4, type: 3}
@@ -3895,6 +3896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!135 &435380108
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3978,6 +3980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &435894476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5693,7 +5696,7 @@ Transform:
   m_LocalScale: {x: 3.4856493, y: 5.17671, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
 --- !u!1001 &441705007
 Prefab:
   m_ObjectHideFlags: 0
@@ -7553,7 +7556,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     execute: 0
     active: 0
-  player: {fileID: 1447602258}
+  player: {fileID: 0}
   successSound: {fileID: 8300000, guid: 42e67fc7d3c0335458feca0bc1d6b53c, type: 3}
   failureSound: {fileID: 8300000, guid: 31a7cc734390eba4799a11fcdd93ae00, type: 3}
 --- !u!114 &507707087
@@ -7567,6 +7570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &507707088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9734,6 +9738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &712495482
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9837,7 +9842,7 @@ Transform:
   - {fileID: 1227010853}
   - {fileID: 1311837376}
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 45
 --- !u!1 &728002739
 GameObject:
   m_ObjectHideFlags: 0
@@ -10280,7 +10285,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 42
 --- !u!1 &872419296
 GameObject:
   m_ObjectHideFlags: 0
@@ -10425,6 +10430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &872419305
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10566,6 +10572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &889908255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10940,6 +10947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1015074933
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11054,7 +11062,7 @@ Transform:
   m_LocalScale: {x: 14.50281, y: 14.5028, z: 14.5028}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
 --- !u!1 &1033965278
 GameObject:
   m_ObjectHideFlags: 0
@@ -11116,7 +11124,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 37
 --- !u!1 &1052077829 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 3a91fc5c13e9647ada944680bd7d7a0b, type: 3}
@@ -11160,6 +11168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &1052077835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13135,7 +13144,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 36
 --- !u!1 &1128765040
 GameObject:
   m_ObjectHideFlags: 0
@@ -13280,6 +13289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1128765049
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13411,7 +13421,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     execute: 0
     active: 0
-  player: {fileID: 1447602258}
+  player: {fileID: 0}
   notice: {fileID: 8300000, guid: 31a7cc734390eba4799a11fcdd93ae00, type: 3}
 --- !u!114 &1132823842
 MonoBehaviour:
@@ -13437,6 +13447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &1132823844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14042,6 +14053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1231541052
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14205,6 +14217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1266628488
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14506,6 +14519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1298708620
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14725,6 +14739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1310349812
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14995,7 +15010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
 --- !u!114 &1359004722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15216,6 +15231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &1365247392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15302,7 +15318,7 @@ Transform:
   m_LocalScale: {x: 0.19999996, y: 0.20693986, z: 0.20693983}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 43
 --- !u!1 &1382275336
 GameObject:
   m_ObjectHideFlags: 0
@@ -15364,7 +15380,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 35
 --- !u!1 &1384177150
 GameObject:
   m_ObjectHideFlags: 0
@@ -15376,7 +15392,7 @@ GameObject:
   - 114: {fileID: 1384177151}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: PlayerState
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15633,6 +15649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1426236002
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15839,68 +15856,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b89daedf8cf8f9b4a83b8649c56872da, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &1447602257
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1447602259}
-  - 114: {fileID: 1447602258}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1447602258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1447602257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2777440f634c1431f9d5a4694ca01a2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  current:
-    symbols: []
-    weather: 0
-    weatherPrefab: {fileID: 0}
-  history:
-    history: []
-    historySize: 4
-    historyBorderSize: 0.1
-    historyWidth: 1.58354
-    historyHeight: 1.38
-    historyDisplay: {fileID: 1541327136}
-  selectSlots:
-    slot1: {fileID: 1382275336}
-    slot2: {fileID: 1033965278}
-    slot3: {fileID: 1839409303}
-  symbolConfig:
-    selectedColor: {r: 0.32585424, g: 0.7597724, b: 0.9044118, a: 0}
-    idleColor: {r: 0, g: 0, b: 0, a: 0}
-    readyNotice: {fileID: 580802949}
-    activeNotice: {fileID: 0}
-    glowColor: {r: 0.9338235, g: 0.86942196, b: 0, a: 0}
-  debug:
-    weatherChoices: 0
---- !u!4 &1447602259
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1447602257}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.98249, y: -23.224731, z: 18.057335}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
 --- !u!1 &1455381455
 GameObject:
   m_ObjectHideFlags: 0
@@ -16428,7 +16383,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 41
 --- !u!1 &1633439818
 GameObject:
   m_ObjectHideFlags: 0
@@ -16634,6 +16589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1650254303
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16915,6 +16871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1670596156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17282,6 +17239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!65 &1728512385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17529,6 +17487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &1735550580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19255,6 +19214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &1776374487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19410,7 +19370,7 @@ Transform:
   m_LocalScale: {x: 0.19999996, y: 0.20693986, z: 0.20693983}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 39
 --- !u!1 &1935467433
 GameObject:
   m_ObjectHideFlags: 0
@@ -19555,6 +19515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &1935467443
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19775,6 +19736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!114 &1959477421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19901,7 +19863,7 @@ Transform:
   - {fileID: 679001848}
   - {fileID: 1732361561}
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 40
 --- !u!1 &1969751583
 GameObject:
   m_ObjectHideFlags: 0
@@ -20101,7 +20063,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
 --- !u!1 &2031756000
 GameObject:
   m_ObjectHideFlags: 0
@@ -20261,7 +20223,7 @@ RectTransform:
   m_Children:
   - {fileID: 2031756001}
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 44
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -2.73, y: 2.348}
@@ -20411,6 +20373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventToTest: 0
 --- !u!82 &2094048718
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20899,4 +20862,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30

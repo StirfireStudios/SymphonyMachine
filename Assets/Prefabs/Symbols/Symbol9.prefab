@@ -11,6 +11,12 @@ GameObject:
   - 33: {fileID: 3372882}
   - 23: {fileID: 2362008}
   - 82: {fileID: 8219430}
+  - 114: {fileID: 11431428}
+  - 114: {fileID: 11450702}
+  - 114: {fileID: 11454556}
+  - 114: {fileID: 11408320}
+  - 135: {fileID: 13535468}
+  - 54: {fileID: 5450722}
   m_Layer: 2
   m_Name: Symbol9
   m_TagString: Untagged
@@ -63,6 +69,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184228}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5450722
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!82 &8219430
 AudioSource:
   m_ObjectHideFlags: 1
@@ -138,6 +159,83 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &11408320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9fc6613f0c74ce5b0e70f803200af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    completeHandler:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jam.Actions.ActionBaseParams+ActionCompleteEvent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    execute: 0
+    active: 0
+  symbol:
+    humidity: 0
+    temperature: 0
+    wind: 0
+    symbolPrefab: {fileID: 184228}
+  player: {fileID: 0}
+  currentlyHighlighted: 0
+--- !u!114 &11431428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f206087ee957b0544963df852e16155e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTest: 0
+--- !u!114 &11450702
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3309d619e269c1b42b4aeb0605fd9a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowTransitionTime: 0.5
+  testTransitionDirection: 2
+--- !u!114 &11454556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a8c684a32e69e4b9680a5ae249ab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testActivate: 0
+  actionToExecute: {fileID: 0}
+  playAudio: 1
+--- !u!135 &13535468
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -208,6 +306,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: symbol.symbolPrefab
+      value: 
+      objectReference: {fileID: 184228}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

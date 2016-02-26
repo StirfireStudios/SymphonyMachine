@@ -17,6 +17,18 @@ namespace Jam.Actions
         public bool currentlyHighlighted = false;
         private bool highlightState = false;
 
+        public void Start()
+        {
+            if (player == null)
+            {
+                var playerObject = GameObject.FindWithTag("PlayerState");
+                if (playerObject)
+                {
+                    player = playerObject.GetComponent<PlayerSymbolState>();
+                }   
+            }
+        }
+
         public new void Update()
         {
             UpdateActionBase();

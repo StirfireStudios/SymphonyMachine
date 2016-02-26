@@ -39,7 +39,6 @@ public class StateTransitioner {
         {
             transitionEnd = -1.0f;
         }
-
         return currentValue;
     }
 

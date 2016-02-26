@@ -20,6 +20,8 @@ public class ClickScript : MonoBehaviour {
             return;
         }
 
+        findActionToExecute();
+
         if (actionToExecute == null)
         {
             Debug.LogError("Could not find action to execute script - does this object have it? "+gameObject.name);
@@ -32,6 +34,13 @@ public class ClickScript : MonoBehaviour {
 
         audio = gameObject.GetComponent<AudioSource>();
 	}
+
+    private void findActionToExecute()
+    {
+        if (actionToExecute != null) return;
+
+        actionToExecute = gameObject.GetComponent<Jam.Actions.ActionBase>();
+    }
 
     public void OnActivate()
     {
