@@ -9610,6 +9610,7 @@ GameObject:
   - 114: {fileID: 712495478}
   - 82: {fileID: 712495482}
   - 135: {fileID: 712495475}
+  - 114: {fileID: 712495481}
   m_Layer: 0
   m_Name: Symbol1
   m_TagString: Untagged
@@ -9739,6 +9740,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventToTest: 0
+--- !u!114 &712495481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 712495472}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 960884537, guid: 6995e5f4125da4bd183d041c1e88ea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eATTENUATION_Type: 0
+  bFastSpatialization: 0
+  bOptimize: 1
+  bRelativityMode_2: 1
+  bShowAdvance: 0
+  bShowAudioClips: 1
+  bShowPlayFrom: 1
+  bShow3DProperties: 1
+  bShowAdvanceOptions: 1
+  bShowOptimization: 1
+  bShowMinRange: 0
+  bShowMaxRange: 0
+  bFastSpatState_Android: 1
+  bFastSpatState_Desktop: 0
+  bFastSpatState_iOS: 1
+  bUnityVersion_NAP: 0
+  fAdvanceUnitScaleFactor: 1
+  fDopplerLevel: 1
+  fSoundRange_MaxDist: 15
+  fSoundRange_MinDist: 0.5
+  sSourceName: 
+  sAudioClipPath:
+  - Assets/Sounds/Voices/01Ra.wav
+  sAudioClipLength:
+  - 00:00:05
+  theSoundOptions: []
+  nNodeCount: 1
+  nShownClips: 1
+  nPlayFromHours: 0
+  nPlayFromMins: 0
+  nPlayFromSecs: 0
+  fPlayFromLength: 0
+  rsAudioClips:
+  - {fileID: 8300000, guid: cbe4e056458527b4789f8ca3ce8258f4, type: 3}
+  tempAudioClips: []
 --- !u!82 &712495482
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11062,7 +11109,7 @@ Transform:
   m_LocalScale: {x: 14.50281, y: 14.5028, z: 14.5028}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
 --- !u!1 &1033965278
 GameObject:
   m_ObjectHideFlags: 0
@@ -13144,7 +13191,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 35
 --- !u!1 &1128765040
 GameObject:
   m_ObjectHideFlags: 0
@@ -13824,6 +13871,7 @@ GameObject:
   - 92: {fileID: 1227010854}
   - 124: {fileID: 1227010851}
   - 114: {fileID: 1227010850}
+  - 114: {fileID: 1227010859}
   - 114: {fileID: 1227010849}
   m_Layer: 0
   m_Name: Main Camera
@@ -13976,6 +14024,29 @@ MonoBehaviour:
   maximumY: 60
   frameCounter: 20
   disabled: 1
+--- !u!114 &1227010859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227010848}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1773642725, guid: 6995e5f4125da4bd183d041c1e88ea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bUseCustomHRTFSelection: 0
+  fHeadRadius: 0.1
+  fNeckHeight: 0.05
+  fTorsoRadius: 0.23
+  fPrevUnitScaleFactor: 1
+  fUnitScaleFactor: 1
+  nHRTFSelected: 0
+  nLoggingOn: 0
+  nRelativityMode: 0
+  sHRTFDescriptions: []
+  sLicense: VisiSonics-UID-992-Exp-21-May-2016-Trial-Key-41234-45246-43084-83322
+  eUNITType: 1
 --- !u!1 &1231541045 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 7d8281a1db9a7d9439a9ac251fbaaccc, type: 3}
@@ -15010,7 +15081,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 22
 --- !u!114 &1359004722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15380,7 +15451,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 31
 --- !u!1 &1384177150
 GameObject:
   m_ObjectHideFlags: 0
@@ -20063,7 +20134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
 --- !u!1 &2031756000
 GameObject:
   m_ObjectHideFlags: 0

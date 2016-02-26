@@ -43,3 +43,8 @@ Assets/Libraries
 targets
 *.gp4
 xbdeploy*.txt
+
+# Realspace 3D
+Assets/Gizmos/RealSpace3D*
+Assets/RealSpace3D
+Assets/StreamingAssets/RealSpace3D
