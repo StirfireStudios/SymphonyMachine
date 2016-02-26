@@ -100,5 +100,30 @@ namespace VRStandardAssets.Utils
                 OnTouchTriggerStop();
         }
 
+#if UNITY_EDITOR
+
+        public enum Event
+        { 
+            none, On_over, On_out, On_click, On_double_click, On_up, 
+            On_down, On_touch, On_untouch, On_touchtrigger, On_untouchtrigger
+        }
+
+        public Event eventToTest = Event.none;
+
+        public void Update()
+        {
+            if (eventToTest == Event.none) return;
+            if (eventToTest == Event.On_touchtrigger)
+            {
+                TouchTrigger();
+            }
+
+            eventToTest = Event.none;
+        }
+
+    
+
+#endif
+
     }
 }
