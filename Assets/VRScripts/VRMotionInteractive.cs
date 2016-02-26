@@ -32,6 +32,7 @@ namespace VRStandardAssets.Utils
             if (currentInteractible == null)
             {
                 Debug.LogWarning("Current Interactible is null but we have touching items?");
+                touchingItems.Clear();
                 return;
             }
             
@@ -79,6 +80,9 @@ namespace VRStandardAssets.Utils
                 return;
             }
 
+            Debug.Log("Entering trigger: ");
+            Debug.Log(other);
+
             if (touchingItems.Contains(interactible))
             {
                 return;
@@ -99,6 +103,9 @@ namespace VRStandardAssets.Utils
             {
                 return;
             }
+
+            Debug.Log("Exiting trigger: ");
+            Debug.Log(other);
 
             if (!touchingItems.Contains(interactible))
             {
@@ -147,11 +154,18 @@ namespace VRStandardAssets.Utils
 
             foreach (var interactive in touchingItems)
             {
-                var itemDistance = (interactive.transform.position - this.transform.position).sqrMagnitude;
-                if (itemDistance < distance)
+                if (interactive == null)
                 {
-                    closestItem = interactive;
-                    distance = itemDistance;
+                    touchingItems.Remove(interactive);
+                }
+                else
+                {
+                    var itemDistance = (interactive.transform.position - this.transform.position).sqrMagnitude;
+                    if (itemDistance < distance)
+                    {
+                        closestItem = interactive;
+                        distance = itemDistance;
+                    }
                 }
             }
 

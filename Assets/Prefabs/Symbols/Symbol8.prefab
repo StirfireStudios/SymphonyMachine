@@ -17,6 +17,7 @@ GameObject:
   - 114: {fileID: 11481862}
   - 135: {fileID: 13575976}
   - 54: {fileID: 5417130}
+  - 114: {fileID: 11446978}
   m_Layer: 2
   m_Name: Symbol8
   m_TagString: Untagged
@@ -90,7 +91,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184228}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24319158, guid: 040135b1775b891498157d66acff1807,
     type: 2}
@@ -159,6 +160,70 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &11446978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 960884537, guid: 6995e5f4125da4bd183d041c1e88ea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eATTENUATION_Type: 0
+  bFastSpatialization: 0
+  bOptimize: 1
+  bRelativityMode_2: 1
+  bShowAdvance: 0
+  bShowAudioClips: 1
+  bShowPlayFrom: 1
+  bShow3DProperties: 1
+  bShowAdvanceOptions: 1
+  bShowOptimization: 1
+  bShowMinRange: 0
+  bShowMaxRange: 0
+  bFastSpatState_Android: 1
+  bFastSpatState_Desktop: 0
+  bFastSpatState_iOS: 1
+  bUnityVersion_NAP: 0
+  fAdvanceUnitScaleFactor: 1
+  fDopplerLevel: 1
+  fSoundRange_MaxDist: 15
+  fSoundRange_MinDist: 0.5
+  sSourceName: Symbol2
+  sAudioClipPath:
+  - Assets/Sounds/Voices/08Na.wav
+  sAudioClipLength:
+  - 00:00:05
+  theSoundOptions:
+  - fVolume: 1
+    fOriginalVolume: 1
+    fPitch: 1
+    bLoopSound: 0
+    bMuteSound: 0
+    bPlayOnStart: 0
+    bPlay3DSound: 1
+    bShowSoundOptions: 1
+    bWasPlaying: 0
+    bOptimizePauseOn: 0
+    bOptimizeResumeOn: 0
+    bFXReverb: 0
+    fFXReverbLength: 0
+    eFXReverbState: 1
+    bVirtualRoomChange_MuteSound: 0
+    bDopplerDamper: 0
+    theAudioMixerGroup: {fileID: 24369500, guid: 040135b1775b891498157d66acff1807,
+      type: 2}
+  nNodeCount: 1
+  nShownClips: 1
+  nPlayFromHours: 0
+  nPlayFromMins: 0
+  nPlayFromSecs: 0
+  fPlayFromLength: 0
+  rsAudioClips:
+  - {fileID: 8300000, guid: 00407c6bc1004974684bda91306db9a9, type: 3}
+  tempAudioClips: []
 --- !u!114 &11467260
 MonoBehaviour:
   m_ObjectHideFlags: 1

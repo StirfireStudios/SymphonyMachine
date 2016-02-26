@@ -9,6 +9,7 @@ public class ClickScript : MonoBehaviour {
     public bool playAudio = true;
 
     private AudioSource audio;
+    private RealSpace3D.RealSpace3D_AudioSource audio3d;
 
 	// Use this for initialization
 	public void Start () 
@@ -33,6 +34,7 @@ public class ClickScript : MonoBehaviour {
         interactiveItem.OnTouchTrigger += OnActivate;
 
         audio = gameObject.GetComponent<AudioSource>();
+        audio3d = gameObject.GetComponent<RealSpace3D.RealSpace3D_AudioSource>();
 	}
 
     private void findActionToExecute()
@@ -50,9 +52,14 @@ public class ClickScript : MonoBehaviour {
         }
         actionToExecute.action.execute = true;
 
-        if (audio != null)
+        if (audio != null && playAudio)
         {
             audio.Play();
+        }
+
+        if (audio3d != null && playAudio)
+        {
+            audio3d.rs3d_PlaySound();
         }
     }
 

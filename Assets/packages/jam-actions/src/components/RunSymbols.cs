@@ -21,18 +21,19 @@ namespace Jam.Actions
             var old = player.current;
             bool success = player.ExecutePhrase(); // Resets phrase
 
-            var audio = gameObject.GetComponent<AudioSource>();
+            var audio = gameObject.GetComponent<RealSpace3D.RealSpace3D_AudioSource>();
             if (audio == null)
             {
-                audio = gameObject.AddComponent<AudioSource>();
-                audio.spatialBlend = 1;
+                Debug.Log("Whoa oh. no audio...");
+//                audio = gameObject.AddComponent<RealSpace3D.RealSpace3D_AudioSource>();
             }
 
             /// Play phrase~
             if (success)
             {
                 var audioPlayer = gameObject.AddComponent<PlayAudioSequence>();
-                audioPlayer.audio = audio;
+                audioPlayer.audio3d = audio;
+                
                 audioPlayer.maxPlaytime = 1f;
 
                 foreach (var symbol in old.symbols)
@@ -43,9 +44,10 @@ namespace Jam.Actions
             // Eh, don't bother with a player, just play the fail sound
             else
             {
-                if (!audio.isPlaying)
+                if (!audio.rs3d_IsPlaying())
                 {
-                    audio.PlayOneShot(failureSound);
+                    audio.rs3d_LoadAudioClip(failureSound, 0);
+                    audio.rs3d_PlaySound();
                 }
             }
         }

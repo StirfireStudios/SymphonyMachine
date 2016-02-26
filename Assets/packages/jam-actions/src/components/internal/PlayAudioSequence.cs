@@ -22,6 +22,8 @@ namespace Jam.Actions
         /// The audio source to play on
         public AudioSource audio;
 
+        public RealSpace3D.RealSpace3D_AudioSource audio3d;
+
         /// Sometimes audioClips last for ages because of their crazy fade out
         /// If any playing clip lasts longer than this, cut it off and start
         /// the next one. -1 = ignore
@@ -47,7 +49,9 @@ namespace Jam.Actions
             {
                 var instance = audioClips[0];
                 audioClips.RemoveAt(0);
-                audio.PlayOneShot(instance);
+                audio3d.rs3d_LoadAudioClip(instance, 0);
+                audio3d.rs3d_PlaySound();
+//                audio.PlayOneShot(instance);
                 Debug.Log("Play sequence: " + instance);
                 elapsed = 0f;
             }
@@ -61,9 +65,9 @@ namespace Jam.Actions
             }
             else
             {
-                if (audio != null)
+                if (audio3d != null)
                 {
-                    if (!audio.isPlaying)
+                    if (!audio3d.rs3d_IsPlaying(0))
                     {
                         NextClip();
                     }
