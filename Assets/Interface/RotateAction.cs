@@ -20,9 +20,11 @@ public class RotateAction : MonoBehaviour
             testRotateDirection = Direction.none;
         }
 
+
         if (transitioner.CurrentDirection == StateTransitioner.Direction.stopped)
         {
             currentDirection = Direction.none;
+            return;
         }
 
         Vector3 newRotation = new Vector3();
